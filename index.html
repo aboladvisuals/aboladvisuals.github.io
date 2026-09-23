@@ -820,4 +820,72 @@
           <div class="arch-row">
             <div class="arch-cell"><div class="label">Layer</div><div class="val">UI</div></div>
             <div class="arch-arrow" aria-hidden="true">→</div>
-            <d
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Frontend</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">API</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Database</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Results</div></div>
+          </div>
+          <div class="arch-caption">Example (Bibiunique): Book page → Next.js/React → /api/availability &amp; /api/bookings → PostgreSQL + Prisma → confirmation email + admin review</div>
+        </div>
+
+        <h3>What I can build</h3>
+        <div class="build-grid">
+          <div class="build-cell">
+            <h3>Booking systems</h3>
+            <p>Service catalogues, availability APIs, conflict-safe bookings, admin approval.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Executive BI product UIs</h3>
+            <p>Multi-view dashboards with alerts, reconciliation language, and charted KPIs.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Evidence-based tools</h3>
+            <p>Document parsing, structured matching, CLI + web UI over a tested engine.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Analytics pipelines</h3>
+            <p>Cleaning, SQL/Python EDA, KPI definition, and decision-ready reporting.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Lightweight web utilities</h3>
+            <p>Semantic HTML/CSS/JS tools for simple operational lookups and portals.</p>
+          </div>
+          <div class="build-cell">
+            <h3>API-backed scripts</h3>
+            <p>External REST consumption with structured export for further analysis.</p>
+          </div>
+        </div>
+
+        <h3>Featured applications</h3>
+
+        <article class="project featured">
+          <p class="project-kicker">Featured · Full-stack MVP</p>
+          <div class="chip-row">
+            <span class="chip track-soft">Full-Stack</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Live demo</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">Bibiunique Booking</span>
+            <span class="project-stack">Next.js · TypeScript · Tailwind · Prisma · PostgreSQL · NextAuth · Resend</span>
+          </div>
+          <p class="project-desc">Appointment scheduling MVP for an independent makeup artist business: public Home, Services, About, Contact, and Book pages; availability API; booking create with duplicate start-time prevention; admin login; dashboard to approve/cancel bookings and manage services; confirmation and owner notification email.</p>
+          <table class="metrics">
+            <caption>Bibiunique Booking — verified capabilities</caption>
+            <thead>
+              <tr><th scope="col">Capability</th><th scope="col">Evidence</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Public booking flow</td><td class="metric-val flag-good">Live on Vercel</td></tr>
+              <tr><td class="metric-name">Availability API</td><td class="metric-val">GET /api/availability</td></tr>
+              <tr><td class="metric-name">Slot conflict rule</td><td class="metric-val flag-note">Unique Booking.startsAt</td></tr>
+              <tr><td class="metric-name">Admin workflow</td><td class="metric-val">Approve / cancel + services</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://bibiunique-booking.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo — Bibiunique Booking</a>
+          
