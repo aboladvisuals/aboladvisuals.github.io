@@ -1019,4 +1019,66 @@
           </div>
         </div>
         <p class="skill-note"><strong>Cloud (learning):</strong> AWS analytics &amp; data-engineering learning paths (S3, Glue, Athena, Redshift, Bedrock) — training environment, not production experience. Full Stack JavaScript certified (The Odin Project).</p>
-      </
+      </section>
+
+      <footer id="contact" aria-labelledby="contact-heading">
+        <p class="section-label">H8</p>
+        <h2 id="contact-heading">Contact</h2>
+        <div class="contact-row">
+          <a href="mailto:aboladeanuoluwapo@gmail.com">aboladeanuoluwapo@gmail.com</a>
+          <a href="https://linkedin.com/in/emmanuel-aboladesek" target="_blank" rel="noopener noreferrer">linkedin.com/in/emmanuel-aboladesek</a>
+          <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">github.com/aboladvisuals</a>
+        </div>
+      </footer>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+<nav class="tab-bar" id="tabBar" aria-label="Section navigation">
+  <a href="#profile" class="active">Profile</a>
+  <a href="#experience">Experience</a>
+  <a href="#how-i-work">How I Work</a>
+  <a href="#data-bi">Data &amp; BI</a>
+  <a href="#fullstack">Full-Stack</a>
+  <a href="#building">Currently Building</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<script defer>
+  function buildRowRuler(){
+    var ruler = document.getElementById('rowRuler');
+    var contentCol = document.querySelector('.content-col');
+    if(!ruler || !contentCol) return;
+    var contentHeight = contentCol.offsetHeight;
+    var rowH = 34;
+    var count = Math.ceil(contentHeight / rowH);
+    ruler.innerHTML = '';
+    for(var i=1;i<=count;i++){
+      var s = document.createElement('span');
+      s.style.height = rowH+'px';
+      s.style.lineHeight = rowH+'px';
+      s.textContent = i;
+      ruler.appendChild(s);
+    }
+  }
+  window.addEventListener('load', buildRowRuler);
+  window.addEventListener('resize', buildRowRuler);
+
+  var tabs = document.querySelectorAll('.tab-bar a');
+  var sections = Array.from(tabs).map(function(t){ return document.querySelector(t.getAttribute('href')); });
+  function onScroll(){
+    var pos = window.scrollY + 120;
+    var current = sections[0];
+    sections.forEach(function(sec){ if(sec && sec.offsetTop <= pos) current = sec; });
+    if(!current) return;
+    tabs.forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('href') === '#'+current.id);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+</body>
+</html>
