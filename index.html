@@ -329,4 +329,230 @@
     border-right:1px solid var(--rule-soft);
     vertical-align:top;
   }
-  table.metrics tr:last-c
+  table.metrics tr:last-child td{ border-bottom:none; }
+  table.metrics td.metric-name{ color:var(--ink-soft); width:34%; }
+  table.metrics td.metric-val{ font-family:'IBM Plex Mono', monospace; font-weight:500; }
+  .flag-good{ background:var(--green-bg); color:var(--green); }
+  .flag-warn{ background:var(--amber-bg); color:var(--amber); }
+  .flag-note{ background:var(--blue-bg); color:var(--blue); }
+
+  .project-links{ margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; }
+  .project-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--blue);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .project-links a:hover{ border-bottom-color:var(--blue); }
+
+  .workflow{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border:1px solid var(--rule);
+    background:var(--surface);
+    border-radius:var(--radius);
+    counter-reset:step;
+    box-shadow:var(--shadow);
+  }
+  .workflow li{
+    display:flex;
+    gap:14px;
+    padding:13px 15px;
+    border-bottom:1px solid var(--rule-soft);
+    color:var(--ink-soft);
+    font-size:14.5px;
+  }
+  .workflow li:last-child{ border-bottom:none; }
+  .workflow li::before{
+    counter-increment:step;
+    content:counter(step, decimal-leading-zero);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    color:var(--blue);
+    min-width:2.2em;
+    padding-top:2px;
+  }
+
+  .arch{
+    margin:8px 0 0;
+    border:1px solid var(--rule);
+    background:var(--surface);
+    overflow-x:auto;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+  .arch-row{
+    display:flex;
+    align-items:stretch;
+    min-width:640px;
+  }
+  .arch-cell{
+    flex:1;
+    padding:15px 12px;
+    border-right:1px solid var(--rule-soft);
+    text-align:center;
+  }
+  .arch-cell:last-child{ border-right:none; }
+  .arch-cell .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin-bottom:6px;
+  }
+  .arch-cell .val{
+    font-weight:600;
+    font-size:14px;
+  }
+  .arch-arrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:28px;
+    flex-shrink:0;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--blue);
+    background:var(--paper-2);
+    border-right:1px solid var(--rule-soft);
+  }
+  .arch-caption{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:9px 12px;
+    border-top:1px solid var(--rule-soft);
+    background:var(--paper-2);
+  }
+
+  .build-grid,
+  .skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:1px;
+    border:1px solid var(--rule);
+    background:var(--rule-soft);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .skill-grid{ grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); }
+  .build-cell,
+  .skill-cell{
+    background:var(--surface);
+    padding:17px 18px;
+    transition:background .18s ease;
+  }
+  .build-cell:hover,
+  .skill-cell:hover{ background:#FBFBF8; }
+  .build-cell h3,
+  .skill-cell h3{
+    margin:0 0 8px;
+    font-size:12px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink-soft);
+    font-weight:500;
+    letter-spacing:0.02em;
+  }
+  .build-cell p{ margin:0; font-size:14.5px; color:var(--ink-soft); }
+  .skill-cell p{ margin:0; font-size:14.5px; }
+  .skill-note{
+    margin:16px 0 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    max-width:70ch;
+  }
+
+  .contact-row{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    align-items:baseline;
+  }
+  .contact-row a{
+    color:var(--blue);
+    text-decoration:none;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+    border-bottom:1px solid transparent;
+    transition:border-color .15s ease;
+  }
+  .contact-row a:hover{ border-bottom-color:var(--blue); }
+
+  .tab-bar{
+    position:fixed;
+    bottom:0; left:0; right:0;
+    background:rgba(233,229,216,0.94);
+    backdrop-filter:blur(10px);
+    border-top:1px solid var(--rule);
+    display:flex;
+    justify-content:center;
+    z-index:30;
+    overflow-x:auto;
+  }
+  .tab-bar a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:12px 13px;
+    border-right:1px solid var(--rule-soft);
+    white-space:nowrap;
+    transition:background .15s ease, color .15s ease;
+  }
+  .tab-bar a:hover{ background:var(--surface); color:var(--ink); }
+  .tab-bar a.active{ background:var(--surface); color:var(--blue); font-weight:600; }
+
+  @media (max-width:640px){
+    :root{ --header-w:0px; }
+    .row-ruler, .col-ruler{ display:none; }
+    .content-col{ padding:0 16px; }
+    .hero{ padding-top:26px; padding-bottom:32px; }
+    .hero .links a{ width:100%; text-align:center; }
+    .project{ margin-bottom:22px; }
+    .project-body{ padding:14px; }
+    .project-media img{ aspect-ratio:16 / 10; }
+    section, footer#contact{ padding:36px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .hero .links a,
+    .project,
+    .project-media img,
+    .build-cell,
+    .skill-cell,
+    .tab-bar a,
+    .project-links a,
+    .contact-row a{
+      transition:none !important;
+    }
+    .project:hover,
+    .hero .links a:hover{ transform:none; }
+    .project:hover .project-media img{ transform:none; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://aboladvisuals.github.io/#person",
+      "name": "Emmanuel Abolade",
+      "url": "https://aboladvisuals.github.io/",
+      "email": "mailto:aboladeanuoluwapo@gmail.com",
+      "jobTitle": [
+        "Data Analyst / Business Intelligence",
+        "Full-Stack Developer"
+      ],
+      "knowsAbout": [
+        "Data analysis",
+        "Business intelligence",
+        "SQL",
+        "Power BI",
+        "Python",
+        "Excel",
+        "Full-stack 
