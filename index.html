@@ -104,26 +104,6 @@
   }
   .content-col{ flex:1; min-width:0; padding:0 22px; }
 
-  .formula-bar{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin:22px 0 0;
-    padding:6px 10px;
-    background:#fff;
-    border:1px solid var(--rule);
-    border-radius:3px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px;
-    color:var(--ink-soft);
-  }
-  .formula-bar .cellref{
-    font-weight:600;
-    color:var(--ink);
-    padding-right:10px;
-    border-right:1px solid var(--rule-soft);
-  }
-  .formula-bar .fx{ color:var(--blue); font-style:italic; }
 
   .hero{
     padding:34px 0 40px;
@@ -458,6 +438,29 @@
   .tab-bar a:hover{ background:#fff; color:var(--ink); }
   .tab-bar a.active{ background:#fff; color:var(--blue); font-weight:600; }
 
+
+  .project{
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .project:hover{ border-color:#B7B09C; box-shadow:0 8px 24px rgba(27,36,48,0.06); }
+  .project-links a{
+    border:1px solid var(--blue-bg);
+    background:var(--blue-bg);
+    padding:5px 10px;
+  }
+  .project-links a:hover{ text-decoration:none; border-color:var(--blue); }
+  .hero .links a{ transition:border-color .15s ease, color .15s ease, background .15s ease; }
+  .hero .links a:hover{ background:var(--blue-bg); }
+  .tab-bar a.active{ box-shadow:inset 0 2px 0 var(--blue); }
+  .project-visual{ margin:12px 0 14px; border:1px solid var(--rule); background:var(--paper-2); overflow:hidden; }
+  .project-visual img{ display:block; width:100%; height:auto; max-height:280px; object-fit:cover; object-position:top; }
+  .more-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-top:8px; }
+  .more-card{ background:#fff; border:1px solid var(--rule); padding:14px 16px; }
+  .more-card h3{ margin:0 0 6px; font-size:15px; }
+  .more-card p{ margin:0 0 10px; font-size:13.5px; color:var(--ink-soft); }
+  .more-card a{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--blue); text-decoration:none; }
+  .more-card a:hover{ text-decoration:underline; }
+
   @media (max-width:640px){
     :root{ --header-w:0px; }
     .row-ruler, .col-ruler{ display:none; }
@@ -536,11 +539,6 @@
     <div class="row-ruler" id="rowRuler" aria-hidden="true"></div>
     <div class="content-col">
 
-      <div class="formula-bar" aria-hidden="true">
-        <span class="cellref">A1</span>
-        <span class="fx">fx</span>
-        <span>="Emmanuel Abolade"</span>
-      </div>
 
       <header class="hero" id="profile">
         <h1>Emmanuel Abolade</h1>
@@ -619,7 +617,8 @@
         <h2 id="data-bi-heading">Data &amp; BI</h2>
         <p class="section-intro">Selected analytics and business-intelligence case studies. Metrics below are from the project repositories and published write-ups.</p>
 
-        <article class="project">
+        <article class="project featured">
+          <p class="project-kicker">Featured · Operations intelligence</p>
           <div class="chip-row">
             <span class="chip track-data">Data &amp; BI</span>
             <span class="chip">Operations</span>
@@ -630,6 +629,9 @@
             <span class="project-stack">Excel · Power Query · PivotTables · Power BI</span>
           </div>
           <p class="project-desc">Portfolio case study — built a ticket-level baseline for 120,000 guest-support contacts to evaluate an automation opportunity.</p>
+          <figure class="project-visual">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/grandstay-hospitality-operations/main/executive%20dashboard%20grandstay.png" alt="GrandStay executive dashboard showing ticket volume, median first response time, SLA performance and repetitive-ticket share" loading="lazy" width="960" height="540">
+          </figure>
           <table class="metrics">
             <caption>GrandStay Hospitality key metrics</caption>
             <thead>
@@ -648,16 +650,20 @@
           </div>
         </article>
 
-        <article class="project">
+        <article class="project featured">
+          <p class="project-kicker">Featured · Financial controls</p>
           <div class="chip-row">
             <span class="chip track-data">Data &amp; BI</span>
             <span class="chip">Financial controls</span>
           </div>
           <div class="project-head">
             <span class="project-title">Restaurant Financial Intelligence &amp; CEO Dashboard</span>
-            <span class="project-stack">Python · Pandas · SQL · Excel · Power BI</span>
+            <span class="project-stack">Python · Pandas · SQL · Excel · Power Query · Power BI</span>
           </div>
           <p class="project-desc">Multi-unit hospitality financial analysis that surfaced a control gap, not just a dashboard. Grounding work for the ControlDeck NG product UI.</p>
+          <figure class="project-visual">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/restaurant_ceo_analysis/main/screenshots/CEO_Overview.png" alt="Restaurant CEO overview Power BI dashboard with recorded sales, receipts, payments and control alerts" loading="lazy" width="960" height="540">
+          </figure>
           <table class="metrics">
             <caption>Restaurant Financial Intelligence key metrics</caption>
             <thead>
@@ -759,8 +765,12 @@
           </div>
           <div class="project-head">
             <span class="project-title">E-commerce Orders — Cleaning, EDA &amp; SQL</span>
-            <span class="project-stack">Python (pandas) · SQLite / SQL</span>
+            <span class="project-stack">Python (pandas) · SQLite / SQL · matplotlib</span>
           </div>
+          <p class="project-desc">Same 1,200-order dataset across cleaning (pandas), SQL analysis (SQLite) and explanatory charts. Titles state the finding; axes start at zero.</p>
+          <figure class="project-visual">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/ecommerce-orders-visualization/main/charts/01_status_leak.png" alt="Chart showing 41 percent of e-commerce orders cancelled or returned and 519,674 dollars not collected" loading="lazy" width="960" height="540">
+          </figure>
           <table class="metrics">
             <caption>E-commerce Orders key metrics</caption>
             <thead>
@@ -787,11 +797,25 @@
             <span class="project-title">Daikibo Industrials — Deloitte Job Simulation</span>
             <span class="project-stack">Forage · Tableau · Excel</span>
           </div>
-          <p class="project-desc">Analysed factory device downtime and built an interactive Tableau dashboard with factory-to-device drill-through filtering. Completed August 2026.</p>
+          <p class="project-desc">Training simulation (Forage / Deloitte Australia), not employment. Analysed factory device downtime and built an interactive Tableau dashboard with factory-to-device drill-through filtering. Completed August 2026.</p>
           <div class="project-links">
             <a href="https://github.com/aboladvisuals/daikibo-deloitte-data-analytics" target="_blank" rel="noopener noreferrer">GitHub — Daikibo Deloitte simulation</a>
           </div>
         </article>
+
+        <h3>More Data &amp; BI projects</h3>
+        <div class="more-grid">
+          <article class="more-card">
+            <h3>DecodeLab — Order cleaning &amp; EDA</h3>
+            <p>Cleaned 1,200 e-commerce orders in pandas (types, dates, coupon fill, total checks) and documented distribution and status findings.</p>
+            <a href="https://github.com/aboladvisuals/decodelab-Project-1" target="_blank" rel="noopener noreferrer">GitHub — DecodeLab Project 1</a>
+          </article>
+          <article class="more-card">
+            <h3>SQL analysis companion</h3>
+            <p>SQLite queries on the cleaned orders: status leak, product revenue leaders, and high-value delivery rates.</p>
+            <a href="https://github.com/aboladvisuals/ecommerce-orders-sql-analysis" target="_blank" rel="noopener noreferrer">GitHub — E-commerce SQL analysis</a>
+          </article>
+        </div>
       </section>
 
       <section id="fullstack" aria-labelledby="fullstack-heading">
@@ -967,6 +991,20 @@
             <a href="https://github.com/aboladvisuals/rccg-games-portal" target="_blank" rel="noopener noreferrer">GitHub — RCCG Games Portal</a>
           </div>
         </article>
+
+        <h3>More projects / GitHub</h3>
+        <div class="more-grid">
+          <article class="more-card">
+            <h3>ControlDeck NG live UI</h3>
+            <p>Public GitHub Pages demo of the hospitality BI POC. Mock data shaped by the restaurant analysis; not a live POS feed.</p>
+            <a href="https://aboladvisuals.github.io/controldeck-ng/" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </article>
+          <article class="more-card">
+            <h3>Public GitHub profile</h3>
+            <p>Additional SQL, Python and course repositories live on GitHub. Featured work above is the curated set.</p>
+            <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">github.com/aboladvisuals</a>
+          </article>
+        </div>
       </section>
 
       <section id="building" aria-labelledby="building-heading">
