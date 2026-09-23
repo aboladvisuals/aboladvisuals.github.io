@@ -1,0 +1,295 @@
+late-columns:repeat(auto-fit, minmax(240px, 1fr)); }
+  .build-cell,
+  .skill-cell{
+    background:var(--surface);
+    padding:17px 18px;
+    transition:background .18s ease;
+  }
+  .build-cell:hover,
+  .skill-cell:hover{ background:#FBFBF8; }
+  .build-cell h3,
+  .skill-cell h3{
+    margin:0 0 8px;
+    font-size:12px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink-soft);
+    font-weight:500;
+    letter-spacing:0.02em;
+  }
+  .build-cell p{ margin:0; font-size:14.5px; color:var(--ink-soft); }
+  .skill-cell p{ margin:0; font-size:14.5px; }
+  .skill-note{
+    margin:16px 0 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    max-width:70ch;
+  }
+
+  .contact-row{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    align-items:baseline;
+  }
+  .contact-row a{
+    color:var(--blue);
+    text-decoration:none;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+    border-bottom:1px solid transparent;
+    transition:border-color .15s ease;
+  }
+  .contact-row a:hover{ border-bottom-color:var(--blue); }
+
+  .tab-bar{
+    position:fixed;
+    bottom:0; left:0; right:0;
+    background:rgba(233,229,216,0.94);
+    backdrop-filter:blur(10px);
+    border-top:1px solid var(--rule);
+    display:flex;
+    justify-content:center;
+    z-index:30;
+    overflow-x:auto;
+  }
+  .tab-bar a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:12px 13px;
+    border-right:1px solid var(--rule-soft);
+    white-space:nowrap;
+    transition:background .15s ease, color .15s ease;
+  }
+  .tab-bar a:hover{ background:var(--surface); color:var(--ink); }
+  .tab-bar a.active{ background:var(--surface); color:var(--blue); font-weight:600; }
+
+  @media (max-width:640px){
+    :root{ --header-w:0px; }
+    .row-ruler, .col-ruler{ display:none; }
+    .content-col{ padding:0 16px; }
+    .hero{ padding-top:26px; padding-bottom:32px; }
+    .hero .links a{ width:100%; text-align:center; }
+    .project{ margin-bottom:22px; }
+    .project-body{ padding:14px; }
+    .project-media img{ aspect-ratio:16 / 10; }
+    section, footer#contact{ padding:36px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .hero .links a,
+    .project,
+    .project-media img,
+    .build-cell,
+    .skill-cell,
+    .tab-bar a,
+    .project-links a,
+    .contact-row a{
+      transition:none !important;
+    }
+    .project:hover,
+    .hero .links a:hover{ transform:none; }
+    .project:hover .project-media img{ transform:none; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://aboladvisuals.github.io/#person",
+      "name": "Emmanuel Abolade",
+      "url": "https://aboladvisuals.github.io/",
+      "email": "mailto:aboladeanuoluwapo@gmail.com",
+      "jobTitle": [
+        "Data Analyst / Business Intelligence",
+        "Full-Stack Developer"
+      ],
+      "knowsAbout": [
+        "Data analysis",
+        "Business intelligence",
+        "SQL",
+        "Power BI",
+        "Python",
+        "Excel",
+        "Full-stack JavaScript",
+        "React",
+        "TypeScript",
+        "Next.js",
+        "PostgreSQL",
+        "REST APIs"
+      ],
+      "sameAs": [
+        "https://github.com/aboladvisuals",
+        "https://linkedin.com/in/emmanuel-aboladesek"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hull",
+        "addressCountry": "GB"
+      }
+    },
+    {
+      "@type": ["ProfilePage", "WebPage"],
+      "@id": "https://aboladvisuals.github.io/#webpage",
+      "url": "https://aboladvisuals.github.io/",
+      "name": "Emmanuel Abolade — Data Analyst / Business Intelligence & Full-Stack Developer",
+      "description": "Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Emmanuel Abolade",
+        "url": "https://aboladvisuals.github.io/"
+      },
+      "about": { "@id": "https://aboladvisuals.github.io/#person" },
+      "mainEntity": { "@id": "https://aboladvisuals.github.io/#person" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="sheet-frame">
+  <div class="col-ruler" aria-hidden="true">
+    <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
+  </div>
+  <div class="row-body">
+    <div class="row-ruler" id="rowRuler" aria-hidden="true"></div>
+    <div class="content-col">
+
+      <header class="hero" id="profile">
+        <h1>Emmanuel Abolade</h1>
+        <p class="role">Data Analyst / Business Intelligence &amp; Full-Stack Developer</p>
+        <p class="lede">I take operational and performance data from raw tables to a decision: clean it, define the KPI from the source field, check the grain before joining, and recommend only what the evidence supports. Based in Hull, UK.</p>
+        <p class="lede">The same discipline shows up when I build software. Booking flows, admin approval, and executive BI screens are treated like analytical products: clear entities, honest constraints, and interfaces that surface exceptions instead of hiding them.</p>
+        <div class="links">
+          <a href="mailto:aboladeanuoluwapo@gmail.com">Email Emmanuel Abolade</a>
+          <a href="https://linkedin.com/in/emmanuel-aboladesek" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+          <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+        </div>
+      </header>
+
+      <main>
+      <section id="experience" aria-labelledby="experience-heading">
+        <p class="section-label">B2</p>
+        <h2 id="experience-heading">Experience</h2>
+
+        <article class="job">
+          <div class="job-top">
+            <span class="job-title">Data Analyst — Amdari</span>
+            <span class="job-date">United Kingdom · 2025–Present</span>
+          </div>
+          <ul>
+            <li>Analyse business datasets to identify trends, patterns and performance gaps using Excel, Power Query, SQL, Python and R.</li>
+            <li>Develop analytical reports and dashboards in Power BI and Excel; build KPIs and performance metrics.</li>
+            <li>Query structured and relational datasets using SQL, including a three-table NHS A&amp;E analysis.</li>
+            <li>Present findings to stakeholders via dashboards, reports and stakeholder meetings.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-top">
+            <span class="job-title">Data Analyst — Pinntech Ltd</span>
+            <span class="job-date">United Kingdom · 2024–2025</span>
+          </div>
+          <ul>
+            <li>Cleaned and transformed data using Excel, Power Query and SQL; performed validation and quality checks.</li>
+            <li>Queried and aggregated relational data, including a 191-row NHS A&amp;E activity dataset.</li>
+            <li>Built PowerPoint presentations and presented directly in stakeholder meetings.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-top">
+            <span class="job-title">Freelance — Data Annotation, Outlier AI, Handshake</span>
+            <span class="job-date">Remote · Current</span>
+          </div>
+          <ul>
+            <li>Light, ongoing freelance work in data annotation / AI evaluation and full stack development tasks.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="how-i-work" aria-labelledby="how-i-work-heading">
+        <p class="section-label">C3</p>
+        <h2 id="how-i-work-heading">How I Work</h2>
+        <p class="section-intro">Analysis and software share one standard: define the question, respect the grain, enforce constraints, and only ship claims the evidence supports.</p>
+
+        <h3>Analytical practice</h3>
+        <ol class="workflow">
+          <li>Start from the business decision, not the chart.</li>
+          <li>Profile source tables and document grain before joins.</li>
+          <li>Clean and validate with explicit rules; keep exclusions auditable.</li>
+          <li>Define KPIs from source fields, not preferred narratives.</li>
+          <li>Cross-check findings in more than one tool when the stake is high.</li>
+          <li>Recommend actions only where the evidence is strong enough to act.</li>
+        </ol>
+
+        <h3>Data → software</h3>
+        <p class="section-intro" style="margin-top:0;">Restaurant financial analysis became ControlDeck NG — a productised UI over the same control gaps. Booking demand became Bibiunique — availability API, unique slot constraint, and admin approval instead of inbox chaos. Analysis that stops at a slide deck leaves the operational problem unsolved; software that ignores grain and validation invents confidence.</p>
+      </section>
+
+      <section id="data-bi" aria-labelledby="data-bi-heading">
+        <p class="section-label">D4</p>
+        <h2 id="data-bi-heading">Data &amp; BI</h2>
+        <p class="section-intro">Selected analytics and business-intelligence case studies. Metrics below are from the project repositories and published write-ups.</p>
+
+        <article class="project">
+          <figure class="project-media">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/grandstay-hospitality-operations/main/executive%20dashboard%20grandstay.png" alt="GrandStay Hospitality Power BI executive dashboard showing ticket volume, FRT, SLA, and peak demand charts" width="1400" height="788" loading="lazy" decoding="async">
+          </figure>
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Operations</span>
+            <span class="chip">Power BI</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">GrandStay Hospitality — Operations Intelligence</span>
+            <span class="project-stack">Excel · Power Query · PivotTables · Power BI</span>
+          </div>
+          <p class="project-desc">Portfolio case study — built a ticket-level baseline for 120,000 guest-support contacts to evaluate an automation opportunity.</p>
+          <table class="metrics">
+            <caption>GrandStay Hospitality key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Tickets analysed</td><td class="metric-val">120,000</td></tr>
+              <tr><td class="metric-name">Median FRT</td><td class="metric-val">4.7 min</td></tr>
+              <tr><td class="metric-name">SLA met</td><td class="metric-val flag-warn">28.09% (72% breach)</td></tr>
+              <tr><td class="metric-name">Repetitive tickets</td><td class="metric-val flag-note">60.1%</td></tr>
+              <tr><td class="metric-name">Peak-hour load</td><td class="metric-val">63% of tickets</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/grandstay-hospitality-operations" target="_blank" rel="noopener noreferrer">GitHub — GrandStay repository</a>
+          </div>
+        
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project-media">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/restaurant_ceo_analysis/main/screenshots/CEO_Overview.png" alt="Restaurant CEO Power BI overview with revenue KPIs, monthly trend, and revenue by business unit" width="1400" height="788" loading="lazy" decoding="async">
+          </figure>
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Financial controls</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">Restaurant Financial Intelligence &amp; CEO Dashboard</span>
+            <span class="project-stack">Python · Pandas · SQL · Excel · Power BI</span>
+          </div>
+          <p class="project-desc">Multi-unit hospitality financial analysis that surfaced a control gap, not just a dashboard. Grounding work for the ControlDeck NG product UI.</p>
+          <table class="metrics">
+            <caption>Restaurant Financial Intelligence key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">
