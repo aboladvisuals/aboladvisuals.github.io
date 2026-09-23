@@ -107,4 +107,89 @@
   .formula-bar{
     display:flex;
     align-items:center;
-    gap:10px
+    gap:10px;
+    margin:22px 0 0;
+    padding:6px 10px;
+    background:#fff;
+    border:1px solid var(--rule);
+    border-radius:3px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .formula-bar .cellref{
+    font-weight:600;
+    color:var(--ink);
+    padding-right:10px;
+    border-right:1px solid var(--rule-soft);
+  }
+  .formula-bar .fx{ color:var(--blue); font-style:italic; }
+
+  .hero{
+    padding:34px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .hero h1{
+    margin:0 0 6px;
+    font-size:clamp(32px, 5vw, 46px);
+    letter-spacing:-0.01em;
+    font-weight:700;
+  }
+  .hero .role{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:15px;
+    color:var(--blue);
+    margin:0 0 18px;
+  }
+  .hero p.lede{
+    max-width:62ch;
+    font-size:17px;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .hero .links{ display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
+  .hero .links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ink);
+    text-decoration:none;
+    border:1px solid var(--rule);
+    background:#fff;
+    padding:7px 12px;
+    border-radius:3px;
+  }
+  .hero .links a:hover{ border-color:var(--blue); color:var(--blue); }
+
+  section, footer#contact{ padding:44px 0; border-bottom:1px solid var(--rule); scroll-margin-top:60px; }
+  section:last-of-type{ border-bottom:none; }
+  footer#contact{ border-bottom:none; }
+  .section-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin:0 0 4px;
+  }
+  h2{
+    font-size:24px;
+    margin:0 0 22px;
+    font-weight:700;
+  }
+  h3{
+    font-size:16px;
+    margin:28px 0 10px;
+    font-weight:600;
+  }
+  h3:first-child{ margin-top:0; }
+  .section-intro{
+    color:var(--ink-soft);
+    max-width:70ch;
+    margin:-8px 0 24px;
+  }
+
+  .job{ margin-bottom:26px; }
+  .job:last-child{ margin-bottom:0; }
+  .job-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+   
