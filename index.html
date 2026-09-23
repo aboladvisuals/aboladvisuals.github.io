@@ -21,4 +21,77 @@
 <meta name="twitter:title" content="Emmanuel Abolade — Data Analyst / Business Intelligence &amp; Full-Stack Developer">
 <meta name="twitter:description" content="Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://f
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3F1EA;
+    --paper-2:#E9E5D8;
+    --ink:#15202B;
+    --ink-soft:#4A5568;
+    --rule:#C5BFAD;
+    --rule-soft:#D9D4C4;
+    --green:#1A6B40;
+    --green-bg:#E2EFE6;
+    --amber:#A85A16;
+    --amber-bg:#F4E6D4;
+    --blue:#2451E0;
+    --blue-bg:#E6EBFC;
+    --surface:#FFFFFF;
+    --shadow:0 1px 2px rgba(21,32,43,0.04), 0 8px 24px rgba(21,32,43,0.05);
+    --shadow-hover:0 2px 4px rgba(21,32,43,0.06), 0 14px 32px rgba(21,32,43,0.08);
+    --header-w:36px;
+    --radius:4px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 500px at 50% -80px, rgba(36,81,224,0.06), transparent 60%),
+      linear-gradient(180deg, #EEEBE2 0%, var(--paper) 180px);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.58;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+
+  a:focus-visible,
+  .tab-bar a:focus-visible,
+  .hero .links a:focus-visible,
+  .project-links a:focus-visible,
+  .contact-row a:focus-visible{
+    outline:2px solid var(--blue);
+    outline-offset:3px;
+  }
+
+  .sheet-frame{
+    max-width:1000px;
+    margin:0 auto;
+    padding-bottom:78px;
+  }
+
+  .col-ruler{
+    display:flex;
+    padding-left:var(--header-w);
+    position:sticky;
+    top:0;
+    background:rgba(233,229,216,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--rule);
+    z-index:20;
+  }
+  .col-ruler span{
+    flex:1;
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.04em;
+    color:var(--ink-soft);
+    padding:6px 0;
+    border-right:1px solid var(--rule-soft);
+  }
+  .col-ruler span:last-child{ border-right:no
