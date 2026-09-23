@@ -820,4 +820,265 @@
           <div class="arch-row">
             <div class="arch-cell"><div class="label">Layer</div><div class="val">UI</div></div>
             <div class="arch-arrow" aria-hidden="true">→</div>
-            <d
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Frontend</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">API</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Database</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Results</div></div>
+          </div>
+          <div class="arch-caption">Example (Bibiunique): Book page → Next.js/React → /api/availability &amp; /api/bookings → PostgreSQL + Prisma → confirmation email + admin review</div>
+        </div>
+
+        <h3>What I can build</h3>
+        <div class="build-grid">
+          <div class="build-cell">
+            <h3>Booking systems</h3>
+            <p>Service catalogues, availability APIs, conflict-safe bookings, admin approval.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Executive BI product UIs</h3>
+            <p>Multi-view dashboards with alerts, reconciliation language, and charted KPIs.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Evidence-based tools</h3>
+            <p>Document parsing, structured matching, CLI + web UI over a tested engine.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Analytics pipelines</h3>
+            <p>Cleaning, SQL/Python EDA, KPI definition, and decision-ready reporting.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Lightweight web utilities</h3>
+            <p>Semantic HTML/CSS/JS tools for simple operational lookups and portals.</p>
+          </div>
+          <div class="build-cell">
+            <h3>API-backed scripts</h3>
+            <p>External REST consumption with structured export for further analysis.</p>
+          </div>
+        </div>
+
+        <h3>Featured applications</h3>
+
+        <article class="project featured">
+          <p class="project-kicker">Featured · Full-stack MVP</p>
+          <div class="chip-row">
+            <span class="chip track-soft">Full-Stack</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Live demo</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">Bibiunique Booking</span>
+            <span class="project-stack">Next.js · TypeScript · Tailwind · Prisma · PostgreSQL · NextAuth · Resend</span>
+          </div>
+          <p class="project-desc">Appointment scheduling MVP for an independent makeup artist business: public Home, Services, About, Contact, and Book pages; availability API; booking create with duplicate start-time prevention; admin login; dashboard to approve/cancel bookings and manage services; confirmation and owner notification email.</p>
+          <table class="metrics">
+            <caption>Bibiunique Booking — verified capabilities</caption>
+            <thead>
+              <tr><th scope="col">Capability</th><th scope="col">Evidence</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Public booking flow</td><td class="metric-val flag-good">Live on Vercel</td></tr>
+              <tr><td class="metric-name">Availability API</td><td class="metric-val">GET /api/availability</td></tr>
+              <tr><td class="metric-name">Slot conflict rule</td><td class="metric-val flag-note">Unique Booking.startsAt</td></tr>
+              <tr><td class="metric-name">Admin workflow</td><td class="metric-val">Approve / cancel + services</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://bibiunique-booking.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo — Bibiunique Booking</a>
+            <a href="https://github.com/aboladvisuals/bibiunique-booking" target="_blank" rel="noopener noreferrer">GitHub — Bibiunique Booking</a>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <p class="project-kicker">Featured · Software UI over real analysis</p>
+          <div class="chip-row">
+            <span class="chip track-soft">Full-Stack / BI UI</span>
+            <span class="chip">React</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Live demo</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">ControlDeck NG — Executive BI Dashboard POC</span>
+            <span class="project-stack">Vite · React 19 · TypeScript · Tailwind · Recharts · React Router</span>
+          </div>
+          <p class="project-desc">Productised dashboard layer built on the restaurant analysis — CEO Home, Financial Control Centre, Sales Intelligence, Cost &amp; Profitability, Inventory, Purchasing, AI CEO Assistant (demo responses), and Executive Alerts. Uses mock operational data shaped by real findings; not a live bank or POS integration.</p>
+          <table class="metrics">
+            <caption>ControlDeck NG — grounding figures reflected in mock data</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Sales (grounding)</td><td class="metric-val">₦2.888B</td></tr>
+              <tr><td class="metric-name">Payments (grounding)</td><td class="metric-val">₦2.116B</td></tr>
+              <tr><td class="metric-name">Payments no payee</td><td class="metric-val flag-warn">19,146</td></tr>
+              <tr><td class="metric-name">Product screens</td><td class="metric-val flag-note">8 views</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://aboladvisuals.github.io/controldeck-ng/" target="_blank" rel="noopener noreferrer">Live Demo — ControlDeck NG</a>
+            <a href="https://github.com/aboladvisuals/controldeck-ng" target="_blank" rel="noopener noreferrer">GitHub — ControlDeck NG</a>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <p class="project-kicker">Featured · Software engineering</p>
+          <div class="chip-row">
+            <span class="chip track-soft">Application</span>
+            <span class="chip">Python</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">pytest</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">CV Analyzer &amp; Job Match Optimizer</span>
+            <span class="project-stack">Python · pdfplumber · python-docx · Streamlit · reportlab · pytest</span>
+          </div>
+          <p class="project-desc">Application that evaluates a CV against a real job description — and optional similar adverts — to produce an evidence matrix, gap analysis, personal statement tiers, and reviewable wording suggestions. Every claim traces back to CV text; it does not invent skills. CLI and Streamlit UI share the same tested engine.</p>
+          <table class="metrics">
+            <caption>CV Analyzer — engineering signals</caption>
+            <thead>
+              <tr><th scope="col">Signal</th><th scope="col">Detail</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Test suite</td><td class="metric-val flag-good">101 automated tests (project README)</td></tr>
+              <tr><td class="metric-name">Interfaces</td><td class="metric-val">CLI + Streamlit web UI</td></tr>
+              <tr><td class="metric-name">Matching approach</td><td class="metric-val flag-note">Rule-based, traceable phrases</td></tr>
+              <tr><td class="metric-name">Exports</td><td class="metric-val">DOCX / PDF reports</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/cv_analyzer" target="_blank" rel="noopener noreferrer">GitHub — CV Analyzer</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="chip-row">
+            <span class="chip">Front-end utility</span>
+            <span class="chip">Not full-stack</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">RCCG Games Day Coordinator Portal</span>
+            <span class="project-stack">HTML · CSS · JavaScript</span>
+          </div>
+          <p class="project-desc">Lightweight client-side portal: enter a first name to view an assigned role for a games-day event. Classified as a front-end utility, not a full-stack application.</p>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/rccg-games-portal" target="_blank" rel="noopener noreferrer">GitHub — RCCG Games Portal</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="building" aria-labelledby="building-heading">
+        <p class="section-label">F6</p>
+        <h2 id="building-heading">Currently Building</h2>
+        <p class="section-intro">Active development track — work in progress, not finished portfolio claims.</p>
+
+        <article class="job">
+          <div class="job-top"><span class="job-title">NHS A&amp;E Operational Performance Analysis</span></div>
+          <ul><li>Analysing NHS England public A&amp;E monthly data against the 78% four-hour target, using SQL Server and Power BI.</li></ul>
+        </article>
+        <article class="job">
+          <div class="job-top"><span class="job-title">Continuously developing</span></div>
+          <ul>
+            <li>Deepening full-stack delivery on real business workflows (booking, admin, persistence, deploy).</li>
+            <li>Turning analytical findings into usable product surfaces (ControlDeck-style BI UIs).</li>
+            <li>Strengthening test coverage and evidence discipline in tooling such as CV Analyzer.</li>
+            <li>AWS analytics &amp; data-engineering learning paths — training environment, not production experience.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-heading">
+        <p class="section-label">G7</p>
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-cell">
+            <h3>Data &amp; BI</h3>
+            <p>SQL Server, SSMS, Excel, Power Query, Power Pivot, Power BI, DAX, Python (pandas), R, Tableau, Looker Studio, BigQuery</p>
+          </div>
+          <div class="skill-cell">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Next.js, Tailwind CSS, Recharts, Vite</p>
+          </div>
+          <div class="skill-cell">
+            <h3>Backend</h3>
+            <p>Node.js, Next.js API routes, REST APIs, NextAuth, Prisma, Zod validation, Resend email, Python (CLI/Streamlit apps)</p>
+          </div>
+          <div class="skill-cell">
+            <h3>Databases</h3>
+            <p>PostgreSQL, SQL Server, SQLite, Prisma schema &amp; migrations</p>
+          </div>
+          <div class="skill-cell">
+            <h3>Tools</h3>
+            <p>Git/GitHub, VS Code / Cursor, pytest, Excel / Power Query, Jupyter</p>
+          </div>
+          <div class="skill-cell">
+            <h3>Practice</h3>
+            <p>Data cleaning &amp; validation, KPI definition, grain checking, EDA, root-cause analysis, evidence-based recommendations, stakeholder presentation</p>
+          </div>
+        </div>
+        <p class="skill-note"><strong>Cloud (learning):</strong> AWS analytics &amp; data-engineering learning paths (S3, Glue, Athena, Redshift, Bedrock) — training environment, not production experience. Full Stack JavaScript certified (The Odin Project).</p>
+      </section>
+
+      <footer id="contact" aria-labelledby="contact-heading">
+        <p class="section-label">H8</p>
+        <h2 id="contact-heading">Contact</h2>
+        <div class="contact-row">
+          <a href="mailto:aboladeanuoluwapo@gmail.com">aboladeanuoluwapo@gmail.com</a>
+          <a href="https://linkedin.com/in/emmanuel-aboladesek" target="_blank" rel="noopener noreferrer">linkedin.com/in/emmanuel-aboladesek</a>
+          <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">github.com/aboladvisuals</a>
+        </div>
+      </footer>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+<nav class="tab-bar" id="tabBar" aria-label="Section navigation">
+  <a href="#profile" class="active">Profile</a>
+  <a href="#experience">Experience</a>
+  <a href="#how-i-work">How I Work</a>
+  <a href="#data-bi">Data &amp; BI</a>
+  <a href="#fullstack">Full-Stack</a>
+  <a href="#building">Currently Building</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<script defer>
+  function buildRowRuler(){
+    var ruler = document.getElementById('rowRuler');
+    var contentCol = document.querySelector('.content-col');
+    if(!ruler || !contentCol) return;
+    var contentHeight = contentCol.offsetHeight;
+    var rowH = 34;
+    var count = Math.ceil(contentHeight / rowH);
+    ruler.innerHTML = '';
+    for(var i=1;i<=count;i++){
+      var s = document.createElement('span');
+      s.style.height = rowH+'px';
+      s.style.lineHeight = rowH+'px';
+      s.textContent = i;
+      ruler.appendChild(s);
+    }
+  }
+  window.addEventListener('load', buildRowRuler);
+  window.addEventListener('resize', buildRowRuler);
+
+  var tabs = document.querySelectorAll('.tab-bar a');
+  var sections = Array.from(tabs).map(function(t){ return document.querySelector(t.getAttribute('href')); });
+  function onScroll(){
+    var pos = window.scrollY + 120;
+    var current = sections[0];
+    sections.forEach(function(sec){ if(sec && sec.offsetTop <= pos) current = sec; });
+    if(!current) return;
+    tabs.forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('href') === '#'+current.id);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+</body>
+</html>
