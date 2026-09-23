@@ -7,7 +7,8 @@
 <meta name="description" content="Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://aboladvisuals.github.io/">
-<meta name="theme-color" content="#1E7145">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1A6B40">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Emmanuel Abolade — Data Analyst / Business Intelligence &amp; Full-Stack Developer">
 <meta property="og:description" content="Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.">
@@ -24,29 +25,37 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F5F3EC;
-    --paper-2:#EFEBDF;
-    --ink:#1B2430;
+    --paper:#F3F1EA;
+    --paper-2:#E9E5D8;
+    --ink:#15202B;
     --ink-soft:#4A5568;
-    --rule:#C9C4B4;
-    --rule-soft:#DEDACC;
-    --green:#1E7145;
-    --green-bg:#E3EFE6;
-    --amber:#B8641A;
-    --amber-bg:#F5E7D6;
-    --blue:#2F5DF4;
-    --blue-bg:#E7ECFD;
-    --header-w:34px;
+    --rule:#C5BFAD;
+    --rule-soft:#D9D4C4;
+    --green:#1A6B40;
+    --green-bg:#E2EFE6;
+    --amber:#A85A16;
+    --amber-bg:#F4E6D4;
+    --blue:#2451E0;
+    --blue-bg:#E6EBFC;
+    --surface:#FFFFFF;
+    --shadow:0 1px 2px rgba(21,32,43,0.04), 0 8px 24px rgba(21,32,43,0.05);
+    --shadow-hover:0 2px 4px rgba(21,32,43,0.06), 0 14px 32px rgba(21,32,43,0.08);
+    --header-w:36px;
+    --radius:4px;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--paper);
+    background:
+      radial-gradient(1200px 500px at 50% -80px, rgba(36,81,224,0.06), transparent 60%),
+      linear-gradient(180deg, #EEEBE2 0%, var(--paper) 180px);
     color:var(--ink);
     font-family:'IBM Plex Sans', sans-serif;
     font-size:16px;
-    line-height:1.55;
+    line-height:1.58;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
   }
   .mono{ font-family:'IBM Plex Mono', monospace; }
 
@@ -60,9 +69,9 @@
   }
 
   .sheet-frame{
-    max-width:980px;
+    max-width:1000px;
     margin:0 auto;
-    padding-bottom:70px;
+    padding-bottom:78px;
   }
 
   .col-ruler{
@@ -70,7 +79,8 @@
     padding-left:var(--header-w);
     position:sticky;
     top:0;
-    background:var(--paper-2);
+    background:rgba(233,229,216,0.92);
+    backdrop-filter:blur(8px);
     border-bottom:1px solid var(--rule);
     z-index:20;
   }
@@ -79,197 +89,9 @@
     text-align:center;
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
+    letter-spacing:0.04em;
     color:var(--ink-soft);
-    padding:5px 0;
-    border-right:1px solid var(--rule-soft);
-  }
-  .col-ruler span:last-child{ border-right:none; }
-
-  .row-body{ display:flex; }
-  .row-ruler{
-    width:var(--header-w);
-    flex-shrink:0;
-    background:var(--paper-2);
-    border-right:1px solid var(--rule);
-    display:flex;
-    flex-direction:column;
-  }
-  .row-ruler span{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    text-align:center;
     padding:6px 0;
-    border-bottom:1px solid var(--rule-soft);
-  }
-  .content-col{ flex:1; min-width:0; padding:0 22px; }
-
-  .formula-bar{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin:22px 0 0;
-    padding:6px 10px;
-    background:#fff;
-    border:1px solid var(--rule);
-    border-radius:3px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px;
-    color:var(--ink-soft);
-  }
-  .formula-bar .cellref{
-    font-weight:600;
-    color:var(--ink);
-    padding-right:10px;
     border-right:1px solid var(--rule-soft);
   }
-  .formula-bar .fx{ color:var(--blue); font-style:italic; }
-
-  .hero{
-    padding:34px 0 40px;
-    border-bottom:1px solid var(--rule);
-  }
-  .hero h1{
-    margin:0 0 6px;
-    font-size:clamp(32px, 5vw, 46px);
-    letter-spacing:-0.01em;
-    font-weight:700;
-  }
-  .hero .role{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:15px;
-    color:var(--blue);
-    margin:0 0 18px;
-  }
-  .hero p.lede{
-    max-width:62ch;
-    font-size:17px;
-    color:var(--ink-soft);
-    margin:0 0 14px;
-  }
-  .hero .links{ display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
-  .hero .links a{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px;
-    color:var(--ink);
-    text-decoration:none;
-    border:1px solid var(--rule);
-    background:#fff;
-    padding:7px 12px;
-    border-radius:3px;
-  }
-  .hero .links a:hover{ border-color:var(--blue); color:var(--blue); }
-
-  section, footer#contact{ padding:44px 0; border-bottom:1px solid var(--rule); scroll-margin-top:60px; }
-  section:last-of-type{ border-bottom:none; }
-  footer#contact{ border-bottom:none; }
-  .section-label{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-    margin:0 0 4px;
-  }
-  h2{
-    font-size:24px;
-    margin:0 0 22px;
-    font-weight:700;
-  }
-  h3{
-    font-size:16px;
-    margin:28px 0 10px;
-    font-weight:600;
-  }
-  h3:first-child{ margin-top:0; }
-  .section-intro{
-    color:var(--ink-soft);
-    max-width:70ch;
-    margin:-8px 0 24px;
-  }
-
-  .job{ margin-bottom:26px; }
-  .job:last-child{ margin-bottom:0; }
-  .job-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    gap:12px;
-    flex-wrap:wrap;
-  }
-  .job-title{ font-weight:600; font-size:17px; }
-  .job-date{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    color:var(--ink-soft);
-    white-space:nowrap;
-  }
-  .job ul{ margin:8px 0 0; padding-left:20px; color:var(--ink-soft); }
-  .job li{ margin-bottom:5px; }
-
-  .project{
-    margin-bottom:34px;
-    padding:18px 18px 16px;
-    background:#fff;
-    border:1px solid var(--rule);
-  }
-  .project:last-child{ margin-bottom:0; }
-  .project.featured{
-    border-color:var(--blue);
-    box-shadow:inset 3px 0 0 var(--blue);
-  }
-  .project-kicker{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--blue);
-    margin:0 0 6px;
-    letter-spacing:0.02em;
-  }
-  .project-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    flex-wrap:wrap;
-    gap:8px;
-    margin-bottom:4px;
-  }
-  .project-title{ font-weight:600; font-size:17px; }
-  .project-stack{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-  }
-  .project-desc{ color:var(--ink-soft); margin:6px 0 12px; max-width:70ch; }
-  .chip-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px;
-    margin:0 0 12px;
-  }
-  .chip{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    padding:3px 8px;
-    border:1px solid var(--rule);
-    background:var(--paper-2);
-    color:var(--ink-soft);
-    border-radius:2px;
-  }
-  .chip.track-data{ background:var(--green-bg); color:var(--green); border-color:transparent; }
-  .chip.track-soft{ background:var(--blue-bg); color:var(--blue); border-color:transparent; }
-
-  table.metrics{
-    width:100%;
-    border-collapse:collapse;
-    background:#fff;
-    border:1px solid var(--rule);
-    font-size:14px;
-  }
-  table.metrics caption{
-    caption-side:top;
-    text-align:left;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    padding:0 0 6px;
-  }
-  table.metrics th{
-    text-align:left;
+  .col-ruler span:last-child{ border-right:no
