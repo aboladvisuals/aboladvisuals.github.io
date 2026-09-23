@@ -273,3 +273,76 @@
   }
   table.metrics th{
     text-align:left;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:500;
+    font-size:11px;
+    color:var(--ink-soft);
+    background:var(--paper-2);
+    padding:7px 12px;
+    border-bottom:1px solid var(--rule);
+    border-right:1px solid var(--rule-soft);
+  }
+  table.metrics th:last-child, table.metrics td:last-child{ border-right:none; }
+  table.metrics td{
+    padding:8px 12px;
+    border-bottom:1px solid var(--rule-soft);
+    border-right:1px solid var(--rule-soft);
+    vertical-align:top;
+  }
+  table.metrics tr:last-child td{ border-bottom:none; }
+  table.metrics td.metric-name{ color:var(--ink-soft); width:34%; }
+  table.metrics td.metric-val{ font-family:'IBM Plex Mono', monospace; font-weight:500; }
+  .flag-good{ background:var(--green-bg); color:var(--green); }
+  .flag-warn{ background:var(--amber-bg); color:var(--amber); }
+  .flag-note{ background:var(--blue-bg); color:var(--blue); }
+
+  .project-links{ margin-top:12px; display:flex; gap:14px; flex-wrap:wrap; }
+  .project-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--blue);
+    text-decoration:none;
+  }
+  .project-links a:hover{ text-decoration:underline; }
+
+  .workflow{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border:1px solid var(--rule);
+    background:#fff;
+    counter-reset:step;
+  }
+  .workflow li{
+    display:flex;
+    gap:14px;
+    padding:12px 14px;
+    border-bottom:1px solid var(--rule-soft);
+    color:var(--ink-soft);
+    font-size:14.5px;
+  }
+  .workflow li:last-child{ border-bottom:none; }
+  .workflow li::before{
+    counter-increment:step;
+    content:counter(step, decimal-leading-zero);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    color:var(--blue);
+    min-width:2.2em;
+    padding-top:2px;
+  }
+
+  .arch{
+    margin:8px 0 0;
+    border:1px solid var(--rule);
+    background:#fff;
+    overflow-x:auto;
+  }
+  .arch-row{
+    display:flex;
+    align-items:stretch;
+    min-width:640px;
+  }
+  .arch-cell{
+ 
