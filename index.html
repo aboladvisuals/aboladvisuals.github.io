@@ -345,4 +345,92 @@
     min-width:640px;
   }
   .arch-cell{
- 
+    flex:1;
+    padding:14px 12px;
+    border-right:1px solid var(--rule-soft);
+    text-align:center;
+  }
+  .arch-cell:last-child{ border-right:none; }
+  .arch-cell .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin-bottom:6px;
+  }
+  .arch-cell .val{
+    font-weight:600;
+    font-size:14px;
+  }
+  .arch-arrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:28px;
+    flex-shrink:0;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--blue);
+    background:var(--paper-2);
+    border-right:1px solid var(--rule-soft);
+  }
+  .arch-caption{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:8px 12px;
+    border-top:1px solid var(--rule-soft);
+    background:var(--paper-2);
+  }
+
+  .build-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:0;
+    border:1px solid var(--rule);
+    background:var(--rule-soft);
+  }
+  .build-cell{
+    background:#fff;
+    padding:16px 18px;
+  }
+  .build-cell h3{
+    margin:0 0 8px;
+    font-size:12px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .build-cell p{ margin:0; font-size:14.5px; color:var(--ink-soft); }
+
+  .skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:0;
+    border:1px solid var(--rule);
+    background:var(--rule-soft);
+  }
+  .skill-cell{
+    background:#fff;
+    padding:16px 18px;
+  }
+  .skill-cell h3{
+    margin:0 0 8px;
+    font-size:12px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .skill-cell p{ margin:0; font-size:14.5px; }
+  .skill-note{
+    margin:14px 0 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    max-width:70ch;
+  }
+
+  .contact-row{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    align-items:baseline;
+  }
+  .contact-row a{ color:var(--blue); text-decoratio
