@@ -1,0 +1,226 @@
+Recorded sales</td><td class="metric-val">≈ ₦2.89bn</td></tr>
+              <tr><td class="metric-name">Recorded payments</td><td class="metric-val">≈ ₦2.12bn</td></tr>
+              <tr><td class="metric-name">Payments without payee</td><td class="metric-val flag-warn">19,146</td></tr>
+              <tr><td class="metric-name">Key finding</td><td class="metric-val flag-warn">Expenses collapse from Apr 2026 — profit unreliable until reconciled</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/restaurant_ceo_analysis" target="_blank" rel="noopener noreferrer">GitHub — Restaurant CEO analysis</a>
+          </div>
+        
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project-media">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/olist_marketplace_sla/main/screenshots/01_delivery_sla.png" alt="Olist marketplace delivery SLA dashboard with late-delivery metrics and seller charts" width="1400" height="788" loading="lazy" decoding="async">
+          </figure>
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Marketplace SLA</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">Olist Marketplace — Delivery SLA &amp; Seller Sizing</span>
+            <span class="project-stack">SQL Server · T-SQL · Python · Tableau</span>
+          </div>
+          <p class="project-desc">Public Kaggle e-commerce dataset — cross-validated in both SQL and Python.</p>
+          <table class="metrics">
+            <caption>Olist Marketplace key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Orders analysed</td><td class="metric-val">96,470 delivered</td></tr>
+              <tr><td class="metric-name">Late-delivery rate</td><td class="metric-val flag-warn">6.77%</td></tr>
+              <tr><td class="metric-name">Severely late (&gt;8 days)</td><td class="metric-val flag-warn">44% of late orders</td></tr>
+              <tr><td class="metric-name">Recommendation</td><td class="metric-val flag-good">Coach top 15 sellers by late volume</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/olist_marketplace_sla" target="_blank" rel="noopener noreferrer">GitHub — Olist Marketplace SLA</a>
+          </div>
+        
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Support RCA</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">CloudDesk — Support Resolution Root Cause</span>
+            <span class="project-stack">Python · Jupyter · pandas</span>
+          </div>
+          <p class="project-desc">Investigated extended SaaS support resolution times across 2,400 tickets — testing documentation, reassignment, team, and category hypotheses against CSAT and renewal outcomes.</p>
+          <table class="metrics">
+            <caption>CloudDesk key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Tickets analysed</td><td class="metric-val">2,400</td></tr>
+              <tr><td class="metric-name">Median resolution</td><td class="metric-val">7.80 hours</td></tr>
+              <tr><td class="metric-name">Median investigation</td><td class="metric-val">6.15 hours</td></tr>
+              <tr><td class="metric-name">Average CSAT</td><td class="metric-val">4.52</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/clouddesk_analytics" target="_blank" rel="noopener noreferrer">GitHub — CloudDesk analytics</a>
+          </div>
+        
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Manufacturing</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">GreenTech Manufacturing Downtime Analysis</span>
+            <span class="project-stack">SQL Server · Power BI · Excel · Power Query · DAX</span>
+          </div>
+          <table class="metrics">
+            <caption>GreenTech Manufacturing key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Batches analysed</td><td class="metric-val">645</td></tr>
+              <tr><td class="metric-name">Downtime events</td><td class="metric-val">885</td></tr>
+              <tr><td class="metric-name">Batch delay rate</td><td class="metric-val flag-warn">56.3%</td></tr>
+              <tr><td class="metric-name">Leading cause</td><td class="metric-val flag-note">Cleaning/Sanitation (86 incidents)</td></tr>
+            </tbody>
+          </table>
+        
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project-media">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/ecommerce-orders-visualization/main/charts/01_status_leak.png" alt="E-commerce orders status chart showing cancelled and returned revenue leakage" width="1400" height="788" loading="lazy" decoding="async">
+          </figure>
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">EDA / SQL</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">E-commerce Orders — Cleaning, EDA &amp; SQL</span>
+            <span class="project-stack">Python (pandas) · SQLite / SQL</span>
+          </div>
+          <table class="metrics">
+            <caption>E-commerce Orders key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Orders cleaned</td><td class="metric-val">1,200</td></tr>
+              <tr><td class="metric-name">Cancelled / Returned</td><td class="metric-val flag-warn">41% of orders</td></tr>
+              <tr><td class="metric-name">Revenue not collected</td><td class="metric-val flag-warn">$519,674</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/ecommerce-orders-sql-analysis" target="_blank" rel="noopener noreferrer">GitHub — E-commerce SQL analysis</a>
+            <a href="https://github.com/aboladvisuals/ecommerce-orders-visualization" target="_blank" rel="noopener noreferrer">GitHub — visualisation charts</a>
+          </div>
+        
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project-media">
+            <img src="https://raw.githubusercontent.com/aboladvisuals/daikibo-deloitte-data-analytics/main/screenshots/Dashboard.png" alt="Daikibo Industrials Tableau factory downtime dashboard from Deloitte job simulation" width="1400" height="788" loading="lazy" decoding="async">
+          </figure>
+          <div class="project-body">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Job simulation</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">Daikibo Industrials — Deloitte Job Simulation</span>
+            <span class="project-stack">Forage · Tableau · Excel</span>
+          </div>
+          <p class="project-desc">Analysed factory device downtime and built an interactive Tableau dashboard with factory-to-device drill-through filtering. Completed August 2026.</p>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/daikibo-deloitte-data-analytics" target="_blank" rel="noopener noreferrer">GitHub — Daikibo Deloitte simulation</a>
+          </div>
+        
+          </div>
+        </article>
+      </section>
+
+      <section id="fullstack" aria-labelledby="fullstack-heading">
+        <p class="section-label">E5</p>
+        <h2 id="fullstack-heading">Full-Stack Development</h2>
+        <p class="section-intro">Capability to ship small business systems and analytical product UIs: typed front ends, API routes, relational persistence, auth, and evidence-aware tooling. Full Stack JavaScript certified (The Odin Project).</p>
+
+        <h3>How I build software</h3>
+        <ol class="workflow">
+          <li>Clarify the business problem, users, and non-goals.</li>
+          <li>Map the happy path and the failure cases that matter (conflicts, empty slots, bad input).</li>
+          <li>Sketch entities and constraints before UI chrome.</li>
+          <li>Choose a stack that fits the problem size — not a larger one for show.</li>
+          <li>Structure the repo: pages/UI, API routes, shared lib, database schema.</li>
+          <li>Build the core flow end-to-end before secondary pages.</li>
+          <li>Validate input at the boundary; keep business rules in one place.</li>
+          <li>Persist with database constraints that match the real rule (for example unique booking start times).</li>
+          <li>Add auth and admin only where ownership decisions are required.</li>
+          <li>Wire side effects deliberately (email, notifications) after the write path is sound.</li>
+          <li>Test critical paths and adversarial cases; keep analysis logic separate from UI shells.</li>
+          <li>Deploy, set environment config, and verify the live path matches local behaviour.</li>
+        </ol>
+
+        <h3>Architecture pattern</h3>
+        <div class="arch" role="img" aria-label="Architecture flow from user interface through frontend, API, database, to results">
+          <div class="arch-row">
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">UI</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Frontend</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">API</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Database</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">Results</div></div>
+          </div>
+          <div class="arch-caption">Example (Bibiunique): Book page → Next.js/React → /api/availability &amp; /api/bookings → PostgreSQL + Prisma → confirmation email + admin review</div>
+        </div>
+
+        <h3>What I can build</h3>
+        <div class="build-grid">
+          <div class="build-cell">
+            <h3>Booking systems</h3>
+            <p>Service catalogues, availability APIs, conflict-safe bookings, admin approval.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Executive BI product UIs</h3>
+            <p>Multi-view dashboards with alerts, reconciliation language, and charted KPIs.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Evidence-based tools</h3>
+            <p>Document parsing, structured matching, CLI + web UI over a tested engine.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Analytics pipelines</h3>
+            <p>Cleaning, SQL/Python EDA, KPI definition, and decision-ready reporting.</p>
+          </div>
+          <div class="build-cell">
+            <h3>Lightweight web utilities</h3>
+            <p>Semantic HTML/CSS/JS tools for simple operational lookups and portals.</p>
+          </div>
+          <div class="build-cell">
+            <h3>API-backed scripts</h3>
+            <p>External REST consumption with structured export for further analysis.</p>
+          </div>
+        </div>
+
+        <h3>Featured applications</h3>
+
+        <article class="project featured">
+          <figure class="project-media">
+       
