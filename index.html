@@ -433,4 +433,119 @@
     flex-wrap:wrap;
     align-items:baseline;
   }
-  .contact-row a{ color:var(--blue); text-decoratio
+  .contact-row a{ color:var(--blue); text-decoration:none; font-family:'IBM Plex Mono', monospace; font-size:14px; }
+  .contact-row a:hover{ text-decoration:underline; }
+
+  .tab-bar{
+    position:fixed;
+    bottom:0; left:0; right:0;
+    background:var(--paper-2);
+    border-top:1px solid var(--rule);
+    display:flex;
+    justify-content:center;
+    z-index:30;
+    overflow-x:auto;
+  }
+  .tab-bar a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:11px 12px;
+    border-right:1px solid var(--rule-soft);
+    white-space:nowrap;
+  }
+  .tab-bar a:hover{ background:#fff; color:var(--ink); }
+  .tab-bar a.active{ background:#fff; color:var(--blue); font-weight:600; }
+
+  @media (max-width:640px){
+    :root{ --header-w:0px; }
+    .row-ruler, .col-ruler{ display:none; }
+    .content-col{ padding:0 16px; }
+    .hero{ padding-top:20px; }
+    .project{ padding:14px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://aboladvisuals.github.io/#person",
+      "name": "Emmanuel Abolade",
+      "url": "https://aboladvisuals.github.io/",
+      "email": "mailto:aboladeanuoluwapo@gmail.com",
+      "jobTitle": [
+        "Data Analyst / Business Intelligence",
+        "Full-Stack Developer"
+      ],
+      "knowsAbout": [
+        "Data analysis",
+        "Business intelligence",
+        "SQL",
+        "Power BI",
+        "Python",
+        "Excel",
+        "Full-stack JavaScript",
+        "React",
+        "TypeScript",
+        "Next.js",
+        "PostgreSQL",
+        "REST APIs"
+      ],
+      "sameAs": [
+        "https://github.com/aboladvisuals",
+        "https://linkedin.com/in/emmanuel-aboladesek"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hull",
+        "addressCountry": "GB"
+      }
+    },
+    {
+      "@type": ["ProfilePage", "WebPage"],
+      "@id": "https://aboladvisuals.github.io/#webpage",
+      "url": "https://aboladvisuals.github.io/",
+      "name": "Emmanuel Abolade — Data Analyst / Business Intelligence & Full-Stack Developer",
+      "description": "Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Emmanuel Abolade",
+        "url": "https://aboladvisuals.github.io/"
+      },
+      "about": { "@id": "https://aboladvisuals.github.io/#person" },
+      "mainEntity": { "@id": "https://aboladvisuals.github.io/#person" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="sheet-frame">
+  <div class="col-ruler" aria-hidden="true">
+    <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
+  </div>
+  <div class="row-body">
+    <div class="row-ruler" id="rowRuler" aria-hidden="true"></div>
+    <div class="content-col">
+
+      <div class="formula-bar" aria-hidden="true">
+        <span class="cellref">A1</span>
+        <span class="fx">fx</span>
+        <span>="Emmanuel Abolade"</span>
+      </div>
+
+      <header class="hero" id="profile">
+        <h1>Emmanuel Abolade</h1>
+        <p class="role">Data Analyst / Business Intelligence &amp; Full-Stack Developer</p>
+        <p class="lede">I take operational and performance data from raw tables to a decision: clean it, define the KPI from the source field, check the grain before joining, and recommend only what the evidence supports. Based in Hull, UK.</p>
+        <p class="lede">The same discipline shows up when I build software. Booking flows, admin approval, and executive BI screens are treated like analytical products: clear entities, honest constraints, and interfaces that surface exceptions instead of hiding them.</p>
+        <div class="links">
+          <
