@@ -758,4 +758,66 @@
             <span class="chip">EDA / SQL</span>
           </div>
           <div class="project-head">
-            <span class="project-title">E-commerce Orders — Cleanin
+            <span class="project-title">E-commerce Orders — Cleaning, EDA &amp; SQL</span>
+            <span class="project-stack">Python (pandas) · SQLite / SQL</span>
+          </div>
+          <table class="metrics">
+            <caption>E-commerce Orders key metrics</caption>
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="metric-name">Orders cleaned</td><td class="metric-val">1,200</td></tr>
+              <tr><td class="metric-name">Cancelled / Returned</td><td class="metric-val flag-warn">41% of orders</td></tr>
+              <tr><td class="metric-name">Revenue not collected</td><td class="metric-val flag-warn">$519,674</td></tr>
+            </tbody>
+          </table>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/ecommerce-orders-sql-analysis" target="_blank" rel="noopener noreferrer">GitHub — E-commerce SQL analysis</a>
+            <a href="https://github.com/aboladvisuals/ecommerce-orders-visualization" target="_blank" rel="noopener noreferrer">GitHub — visualisation charts</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="chip-row">
+            <span class="chip track-data">Data &amp; BI</span>
+            <span class="chip">Job simulation</span>
+          </div>
+          <div class="project-head">
+            <span class="project-title">Daikibo Industrials — Deloitte Job Simulation</span>
+            <span class="project-stack">Forage · Tableau · Excel</span>
+          </div>
+          <p class="project-desc">Analysed factory device downtime and built an interactive Tableau dashboard with factory-to-device drill-through filtering. Completed August 2026.</p>
+          <div class="project-links">
+            <a href="https://github.com/aboladvisuals/daikibo-deloitte-data-analytics" target="_blank" rel="noopener noreferrer">GitHub — Daikibo Deloitte simulation</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="fullstack" aria-labelledby="fullstack-heading">
+        <p class="section-label">E5</p>
+        <h2 id="fullstack-heading">Full-Stack Development</h2>
+        <p class="section-intro">Capability to ship small business systems and analytical product UIs: typed front ends, API routes, relational persistence, auth, and evidence-aware tooling. Full Stack JavaScript certified (The Odin Project).</p>
+
+        <h3>How I build software</h3>
+        <ol class="workflow">
+          <li>Clarify the business problem, users, and non-goals.</li>
+          <li>Map the happy path and the failure cases that matter (conflicts, empty slots, bad input).</li>
+          <li>Sketch entities and constraints before UI chrome.</li>
+          <li>Choose a stack that fits the problem size — not a larger one for show.</li>
+          <li>Structure the repo: pages/UI, API routes, shared lib, database schema.</li>
+          <li>Build the core flow end-to-end before secondary pages.</li>
+          <li>Validate input at the boundary; keep business rules in one place.</li>
+          <li>Persist with database constraints that match the real rule (for example unique booking start times).</li>
+          <li>Add auth and admin only where ownership decisions are required.</li>
+          <li>Wire side effects deliberately (email, notifications) after the write path is sound.</li>
+          <li>Test critical paths and adversarial cases; keep analysis logic separate from UI shells.</li>
+          <li>Deploy, set environment config, and verify the live path matches local behaviour.</li>
+        </ol>
+
+        <h3>Architecture pattern</h3>
+        <div class="arch" role="img" aria-label="Architecture flow from user interface through frontend, API, database, to results">
+          <div class="arch-row">
+            <div class="arch-cell"><div class="label">Layer</div><div class="val">UI</div></div>
+            <div class="arch-arrow" aria-hidden="true">→</div>
+            <d
