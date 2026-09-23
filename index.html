@@ -1,1 +1,551 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmanuel Abolade — Data Analyst / Business Intelligence &amp; Full-Stack Developer</title>
+<meta name="description" content="Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aboladvisuals.github.io/">
+<meta name="theme-color" content="#1E7145">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Emmanuel Abolade — Data Analyst / Business Intelligence &amp; Full-Stack Developer">
+<meta property="og:description" content="Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.">
+<meta property="og:url" content="https://aboladvisuals.github.io/">
+<meta property="og:site_name" content="Emmanuel Abolade">
+<meta property="og:locale" content="en_GB">
+<meta property="profile:first_name" content="Emmanuel">
+<meta property="profile:last_name" content="Abolade">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Emmanuel Abolade — Data Analyst / Business Intelligence &amp; Full-Stack Developer">
+<meta name="twitter:description" content="Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F3EC;
+    --paper-2:#EFEBDF;
+    --ink:#1B2430;
+    --ink-soft:#4A5568;
+    --rule:#C9C4B4;
+    --rule-soft:#DEDACC;
+    --green:#1E7145;
+    --green-bg:#E3EFE6;
+    --amber:#B8641A;
+    --amber-bg:#F5E7D6;
+    --blue:#2F5DF4;
+    --blue-bg:#E7ECFD;
+    --header-w:34px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+
+  a:focus-visible,
+  .tab-bar a:focus-visible,
+  .hero .links a:focus-visible,
+  .project-links a:focus-visible,
+  .contact-row a:focus-visible{
+    outline:2px solid var(--blue);
+    outline-offset:3px;
+  }
+
+  .sheet-frame{
+    max-width:980px;
+    margin:0 auto;
+    padding-bottom:70px;
+  }
+
+  .col-ruler{
+    display:flex;
+    padding-left:var(--header-w);
+    position:sticky;
+    top:0;
+    background:var(--paper-2);
+    border-bottom:1px solid var(--rule);
+    z-index:20;
+  }
+  .col-ruler span{
+    flex:1;
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:5px 0;
+    border-right:1px solid var(--rule-soft);
+  }
+  .col-ruler span:last-child{ border-right:none; }
+
+  .row-body{ display:flex; }
+  .row-ruler{
+    width:var(--header-w);
+    flex-shrink:0;
+    background:var(--paper-2);
+    border-right:1px solid var(--rule);
+    display:flex;
+    flex-direction:column;
+  }
+  .row-ruler span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    text-align:center;
+    padding:6px 0;
+    border-bottom:1px solid var(--rule-soft);
+  }
+  .content-col{ flex:1; min-width:0; padding:0 22px; }
+
+  .formula-bar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:22px 0 0;
+    padding:6px 10px;
+    background:#fff;
+    border:1px solid var(--rule);
+    border-radius:3px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .formula-bar .cellref{
+    font-weight:600;
+    color:var(--ink);
+    padding-right:10px;
+    border-right:1px solid var(--rule-soft);
+  }
+  .formula-bar .fx{ color:var(--blue); font-style:italic; }
+
+  .hero{
+    padding:34px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .hero h1{
+    margin:0 0 6px;
+    font-size:clamp(32px, 5vw, 46px);
+    letter-spacing:-0.01em;
+    font-weight:700;
+  }
+  .hero .role{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:15px;
+    color:var(--blue);
+    margin:0 0 18px;
+  }
+  .hero p.lede{
+    max-width:62ch;
+    font-size:17px;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .hero .links{ display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
+  .hero .links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ink);
+    text-decoration:none;
+    border:1px solid var(--rule);
+    background:#fff;
+    padding:7px 12px;
+    border-radius:3px;
+  }
+  .hero .links a:hover{ border-color:var(--blue); color:var(--blue); }
+
+  section, footer#contact{ padding:44px 0; border-bottom:1px solid var(--rule); scroll-margin-top:60px; }
+  section:last-of-type{ border-bottom:none; }
+  footer#contact{ border-bottom:none; }
+  .section-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin:0 0 4px;
+  }
+  h2{
+    font-size:24px;
+    margin:0 0 22px;
+    font-weight:700;
+  }
+  h3{
+    font-size:16px;
+    margin:28px 0 10px;
+    font-weight:600;
+  }
+  h3:first-child{ margin-top:0; }
+  .section-intro{
+    color:var(--ink-soft);
+    max-width:70ch;
+    margin:-8px 0 24px;
+  }
+
+  .job{ margin-bottom:26px; }
+  .job:last-child{ margin-bottom:0; }
+  .job-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .job-title{ font-weight:600; font-size:17px; }
+  .job-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+  .job ul{ margin:8px 0 0; padding-left:20px; color:var(--ink-soft); }
+  .job li{ margin-bottom:5px; }
+
+  .project{
+    margin-bottom:34px;
+    padding:18px 18px 16px;
+    background:#fff;
+    border:1px solid var(--rule);
+  }
+  .project:last-child{ margin-bottom:0; }
+  .project.featured{
+    border-color:var(--blue);
+    box-shadow:inset 3px 0 0 var(--blue);
+  }
+  .project-kicker{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--blue);
+    margin:0 0 6px;
+    letter-spacing:0.02em;
+  }
+  .project-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:4px;
+  }
+  .project-title{ font-weight:600; font-size:17px; }
+  .project-stack{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .project-desc{ color:var(--ink-soft); margin:6px 0 12px; max-width:70ch; }
+  .chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin:0 0 12px;
+  }
+  .chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    padding:3px 8px;
+    border:1px solid var(--rule);
+    background:var(--paper-2);
+    color:var(--ink-soft);
+    border-radius:2px;
+  }
+  .chip.track-data{ background:var(--green-bg); color:var(--green); border-color:transparent; }
+  .chip.track-soft{ background:var(--blue-bg); color:var(--blue); border-color:transparent; }
+
+  table.metrics{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border:1px solid var(--rule);
+    font-size:14px;
+  }
+  table.metrics caption{
+    caption-side:top;
+    text-align:left;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:0 0 6px;
+  }
+  table.metrics th{
+    text-align:left;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:500;
+    font-size:11px;
+    color:var(--ink-soft);
+    background:var(--paper-2);
+    padding:7px 12px;
+    border-bottom:1px solid var(--rule);
+    border-right:1px solid var(--rule-soft);
+  }
+  table.metrics th:last-child, table.metrics td:last-child{ border-right:none; }
+  table.metrics td{
+    padding:8px 12px;
+    border-bottom:1px solid var(--rule-soft);
+    border-right:1px solid var(--rule-soft);
+    vertical-align:top;
+  }
+  table.metrics tr:last-child td{ border-bottom:none; }
+  table.metrics td.metric-name{ color:var(--ink-soft); width:34%; }
+  table.metrics td.metric-val{ font-family:'IBM Plex Mono', monospace; font-weight:500; }
+  .flag-good{ background:var(--green-bg); color:var(--green); }
+  .flag-warn{ background:var(--amber-bg); color:var(--amber); }
+  .flag-note{ background:var(--blue-bg); color:var(--blue); }
+
+  .project-links{ margin-top:12px; display:flex; gap:14px; flex-wrap:wrap; }
+  .project-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--blue);
+    text-decoration:none;
+  }
+  .project-links a:hover{ text-decoration:underline; }
+
+  .workflow{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border:1px solid var(--rule);
+    background:#fff;
+    counter-reset:step;
+  }
+  .workflow li{
+    display:flex;
+    gap:14px;
+    padding:12px 14px;
+    border-bottom:1px solid var(--rule-soft);
+    color:var(--ink-soft);
+    font-size:14.5px;
+  }
+  .workflow li:last-child{ border-bottom:none; }
+  .workflow li::before{
+    counter-increment:step;
+    content:counter(step, decimal-leading-zero);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    color:var(--blue);
+    min-width:2.2em;
+    padding-top:2px;
+  }
+
+  .arch{
+    margin:8px 0 0;
+    border:1px solid var(--rule);
+    background:#fff;
+    overflow-x:auto;
+  }
+  .arch-row{
+    display:flex;
+    align-items:stretch;
+    min-width:640px;
+  }
+  .arch-cell{
+    flex:1;
+    padding:14px 12px;
+    border-right:1px solid var(--rule-soft);
+    text-align:center;
+  }
+  .arch-cell:last-child{ border-right:none; }
+  .arch-cell .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin-bottom:6px;
+  }
+  .arch-cell .val{
+    font-weight:600;
+    font-size:14px;
+  }
+  .arch-arrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:28px;
+    flex-shrink:0;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--blue);
+    background:var(--paper-2);
+    border-right:1px solid var(--rule-soft);
+  }
+  .arch-caption{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:8px 12px;
+    border-top:1px solid var(--rule-soft);
+    background:var(--paper-2);
+  }
+
+  .build-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:0;
+    border:1px solid var(--rule);
+    background:var(--rule-soft);
+  }
+  .build-cell{
+    background:#fff;
+    padding:16px 18px;
+  }
+  .build-cell h3{
+    margin:0 0 8px;
+    font-size:12px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .build-cell p{ margin:0; font-size:14.5px; color:var(--ink-soft); }
+
+  .skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:0;
+    border:1px solid var(--rule);
+    background:var(--rule-soft);
+  }
+  .skill-cell{
+    background:#fff;
+    padding:16px 18px;
+  }
+  .skill-cell h3{
+    margin:0 0 8px;
+    font-size:12px;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .skill-cell p{ margin:0; font-size:14.5px; }
+  .skill-note{
+    margin:14px 0 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    max-width:70ch;
+  }
+
+  .contact-row{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    align-items:baseline;
+  }
+  .contact-row a{ color:var(--blue); text-decoration:none; font-family:'IBM Plex Mono', monospace; font-size:14px; }
+  .contact-row a:hover{ text-decoration:underline; }
+
+  .tab-bar{
+    position:fixed;
+    bottom:0; left:0; right:0;
+    background:var(--paper-2);
+    border-top:1px solid var(--rule);
+    display:flex;
+    justify-content:center;
+    z-index:30;
+    overflow-x:auto;
+  }
+  .tab-bar a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:11px 12px;
+    border-right:1px solid var(--rule-soft);
+    white-space:nowrap;
+  }
+  .tab-bar a:hover{ background:#fff; color:var(--ink); }
+  .tab-bar a.active{ background:#fff; color:var(--blue); font-weight:600; }
+
+  @media (max-width:640px){
+    :root{ --header-w:0px; }
+    .row-ruler, .col-ruler{ display:none; }
+    .content-col{ padding:0 16px; }
+    .hero{ padding-top:20px; }
+    .project{ padding:14px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://aboladvisuals.github.io/#person",
+      "name": "Emmanuel Abolade",
+      "url": "https://aboladvisuals.github.io/",
+      "email": "mailto:aboladeanuoluwapo@gmail.com",
+      "jobTitle": [
+        "Data Analyst / Business Intelligence",
+        "Full-Stack Developer"
+      ],
+      "knowsAbout": [
+        "Data analysis",
+        "Business intelligence",
+        "SQL",
+        "Power BI",
+        "Python",
+        "Excel",
+        "Full-stack JavaScript",
+        "React",
+        "TypeScript",
+        "Next.js",
+        "PostgreSQL",
+        "REST APIs"
+      ],
+      "sameAs": [
+        "https://github.com/aboladvisuals",
+        "https://linkedin.com/in/emmanuel-aboladesek"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hull",
+        "addressCountry": "GB"
+      }
+    },
+    {
+      "@type": ["ProfilePage", "WebPage"],
+      "@id": "https://aboladvisuals.github.io/#webpage",
+      "url": "https://aboladvisuals.github.io/",
+      "name": "Emmanuel Abolade — Data Analyst / Business Intelligence & Full-Stack Developer",
+      "description": "Emmanuel Abolade is a Data Analyst and Business Intelligence professional and Full-Stack Developer in Hull, UK. Work spans SQL, Power BI, Python, Excel, and full-stack JavaScript — from KPI analysis to booking systems and BI product UIs.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Emmanuel Abolade",
+        "url": "https://aboladvisuals.github.io/"
+      },
+      "about": { "@id": "https://aboladvisuals.github.io/#person" },
+      "mainEntity": { "@id": "https://aboladvisuals.github.io/#person" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="sheet-frame">
+  <div class="col-ruler" aria-hidden="true">
+    <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
+  </div>
+  <div class="row-body">
+    <div class="row-ruler" id="rowRuler" aria-hidden="true"></div>
+    <div class="content-col">
+
+      <div class="formula-bar" aria-hidden="true">
+        <span class="cellref">A1</span>
+        <span class="fx">fx</span>
+        <span>="Emmanuel Abolade"</span>
+      </div>
+
+      <header class="hero" id="profile">
+        <h1>Emmanuel Abolade</h1>
+        <p class="role">Data Analyst / Business Intelligence &amp; Full-Stack Developer</p>
+        <p class="lede">I take operational and performance data from raw tables to a decision: clean it, define the KPI from the source field, check the grain before joining, and recommend only what the evidence supports. Based in Hull, UK.</p>
+        <p class="lede">The same discipline shows up when I build software. Booking flows, admin approval, and executive BI screens are treated like analytical products: clear entities, honest constraints, and interfaces that surface exceptions instead of hiding them.</p>
+        <div class="links">
+          <
