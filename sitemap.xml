@@ -2,5 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aboladvisuals.github.io/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://aboladvisuals.github.io/projects/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://aboladvisuals.github.io/projects/grandstay-hospitality-operations/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://aboladvisuals.github.io/projects/restaurant-financial-intelligence/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://aboladvisuals.github.io/projects/event-travel-intelligence/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://aboladvisuals.github.io/projects/controldeck-ng/</loc>
+    <lastmod>2026-11-11</lastmod>
   </url>
 </urlset>
