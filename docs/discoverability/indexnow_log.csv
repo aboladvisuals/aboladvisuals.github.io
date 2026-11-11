@@ -1,0 +1,2 @@
+datetime_gmt,endpoint,url_count,http_status,meaning,notes
+2026-11-11 22:33:13,https://api.indexnow.org/indexnow,8,202,"Accepted; key validation pending (per indexnow.org docs)","Submitted after PR #3 deploy (229fbac). Key file: /54d2afcfb4f2748905da2337ebb3037d.txt. Acceptance is not a guarantee of crawling or indexing."
