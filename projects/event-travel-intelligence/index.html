@@ -162,7 +162,20 @@ Analysis response</pre>
 <tr><td>TfGM alerts / car parks APIs</td><td>Alerts and occupancy</td><td>Only with an API key</td></tr>
 <tr><td>TomTom routing</td><td>Measured delay vs no-traffic route</td><td>Only with an API key</td></tr>
 </tbody></table>
-<p>This is a rules- and model-based decision engine, not a machine-learning model. The fictional <code>test-event-manchester</code> record in the repository exists only to prove the engine reads configuration dynamically.</p>
+<h2>Limits</h2>
+<ul>
+<li>This is a rules- and model-based decision engine, not a machine-learning model.</li>
+<li>On the public deployment no live traffic or parking-occupancy keys are configured, so those layers report &ldquo;Unavailable&rdquo; or &ldquo;Unknown&rdquo; rather than estimates.</li>
+<li>The fictional <code>test-event-manchester</code> record exists only to prove the engine reads configuration dynamically; it is not a real event.</li>
+</ul>
+<h2>What this project demonstrates</h2>
+<ul>
+<li><strong>API development:</strong> a FastAPI service with health and readiness endpoints, rate limiting and structured logs, deployed on Render.</li>
+<li><strong>Data-driven design:</strong> a versioned JSON event catalogue with SQLite as the operational store and cache.</li>
+<li><strong>Integration with external services:</strong> Nominatim, OSRM and optional keyed providers, with graceful fallback.</li>
+<li><strong>Honest product behaviour:</strong> modelled estimates are never presented as measured live data.</li>
+<li><strong>Testing:</strong> automated test modules covering the API, events, journeys, transport and parking.</li>
+</ul>
 
 <footer class="site">
 <p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
