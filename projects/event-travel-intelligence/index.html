@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Travel Intelligence — Python FastAPI Full-Stack Case Study | Emmanuel Abolade</title>
+<meta name="description" content="Full-stack case study by Emmanuel Abolade: a FastAPI, OSRM and Leaflet tool for event-day journey estimates in the UK, separating modelled from live data.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Emmanuel Abolade">
+<link rel="canonical" href="https://aboladvisuals.github.io/projects/event-travel-intelligence/">
+<meta name="theme-color" content="#1E7145">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Event Travel Intelligence — Python FastAPI Full-Stack Case Study | Emmanuel Abolade">
+<meta property="og:description" content="Full-stack case study by Emmanuel Abolade: a FastAPI, OSRM and Leaflet tool for event-day journey estimates in the UK, separating modelled from live data.">
+<meta property="og:url" content="https://aboladvisuals.github.io/projects/event-travel-intelligence/">
+<meta property="og:site_name" content="Emmanuel Abolade">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Event Travel Intelligence — Python FastAPI Full-Stack Case Study | Emmanuel Abolade">
+<meta name="twitter:description" content="Full-stack case study by Emmanuel Abolade: a FastAPI, OSRM and Leaflet tool for event-day journey estimates in the UK, separating modelled from live data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/case-study.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboladvisuals.github.io/projects/event-travel-intelligence/#article",
+      "headline": "Event Travel Intelligence (Python, FastAPI and Leaflet)",
+      "description": "Full-stack case study by Emmanuel Abolade: a FastAPI, OSRM and Leaflet tool for event-day journey estimates in the UK, separating modelled from live data.",
+      "url": "https://aboladvisuals.github.io/projects/event-travel-intelligence/",
+      "mainEntityOfPage": "https://aboladvisuals.github.io/projects/event-travel-intelligence/",
+      "inLanguage": "en-GB",
+      "author": {
+        "@type": "Person",
+        "@id": "https://aboladvisuals.github.io/#person",
+        "name": "Emmanuel Abolade",
+        "url": "https://aboladvisuals.github.io/"
+      },
+      "publisher": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      },
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "isPartOf": {
+        "@id": "https://aboladvisuals.github.io/#website"
+      },
+      "citation": [
+        "https://github.com/aboladvisuals/event-travel-intelligence"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Event Travel Intelligence",
+      "codeRepository": "https://github.com/aboladvisuals/event-travel-intelligence",
+      "programmingLanguage": [
+        "Python",
+        "JavaScript"
+      ],
+      "description": "Event-day journey intelligence: FastAPI backend, Leaflet frontend, OSRM routing.",
+      "author": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      },
+      "url": "https://aboladvisuals.github.io/event-travel-intelligence/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://aboladvisuals.github.io/projects/event-travel-intelligence/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Emmanuel Abolade",
+          "item": "https://aboladvisuals.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Case studies",
+          "item": "https://aboladvisuals.github.io/projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Event Travel Intelligence",
+          "item": "https://aboladvisuals.github.io/projects/event-travel-intelligence/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+<a href="/">Emmanuel Abolade · Data Analyst, BI &amp; Full-Stack Developer · Hull, UK</a>
+<a href="/projects/">All case studies</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol>
+<li><a href="/">Emmanuel Abolade</a></li>
+<li><a href="/projects/">Case studies</a></li>
+<li aria-current="page">Event Travel Intelligence</li>
+</ol></nav>
+<h1>Event Travel Intelligence (Python, FastAPI and Leaflet)</h1>
+<p class="kicker">Full-stack · Python · FastAPI · JavaScript · SQLite · Render</p>
+<p class="lede">A full-stack decision-support tool for journeys to major UK events. A user enters a starting location and picks an event, and the system returns the normal driving route, an event-adjusted journey estimate, crowd risk, configured disruptions, Park &amp; Ride access times and return-journey timing, while keeping modelled estimates clearly separate from measured live data.</p>
+<div class="links"><a href="https://aboladvisuals.github.io/event-travel-intelligence/" rel="noopener">Live application</a><a href="https://github.com/aboladvisuals/event-travel-intelligence" rel="noopener">GitHub repository</a><a href="https://github.com/aboladvisuals/event-travel-intelligence/blob/main/CASE_STUDY.md" rel="noopener">Engineering case study (repo)</a></div>
+<div class="facts">
+<div class="fact"><span class="k">Backend</span><span class="v">Python · FastAPI · SQLite (Redis optional), hosted on Render</span></div>
+<div class="fact"><span class="k">Frontend</span><span class="v">HTML · CSS · JavaScript · Leaflet, hosted on GitHub Pages</span></div>
+<div class="fact"><span class="k">Data services</span><span class="v">Nominatim geocoding · OSRM routing · OpenStreetMap tiles</span></div>
+<div class="fact"><span class="k">Tests</span><span class="v">Test modules in <code>tests/</code> for API, events, journey, live transport, parking and platform</span></div>
+</div>
+<h2>Problem</h2>
+<p>Large events create travel conditions that ordinary route planners do not model well: traffic-management windows, extra delay near the venue, crowd pressure, road restrictions and uncertain Park &amp; Ride access. People travelling from different UK towns need one place to see the normal route, how the event changes it, and whether any live data is actually available.</p>
+<h2>Architecture</h2>
+<pre>User
+  ↓
+GitHub Pages frontend (HTML/CSS/JS + Leaflet)
+  ↓
+FastAPI API on Render
+  ↓
+JSON event catalogue + SQLite operational store
+  ↓
+Geocoding / routing / optional transport and parking providers
+  ↓
+Journey intelligence engine
+  ↓
+Analysis response</pre>
+<table><caption>Main backend modules</caption><thead><tr><th scope="col">Layer</th><th scope="col">Location</th></tr></thead><tbody>
+<tr><td>Event schema</td><td><code>backend/event_model.py</code></td></tr><tr><td>Event store</td><td><code>backend/event_store.py</code></td></tr><tr><td>Travel engine</td><td><code>backend/travel_engine.py</code></td></tr><tr><td>Live transport</td><td><code>backend/live_transport.py</code></td></tr><tr><td>Parking</td><td><code>backend/parking_intelligence.py</code></td></tr><tr><td>Cache / SQLite</td><td><code>backend/cache.py</code>, <code>backend/db.py</code></td></tr><tr><td>API</td><td><code>backend/main.py</code></td></tr>
+</tbody></table>
+<h2>Key technical decisions</h2>
+<ul>
+<li><strong>Events are data, not code.</strong> A versioned JSON catalogue (<code>data/events/*.json</code>) is the source of truth, so adding an event means adding data rather than rewriting the engine.</li>
+<li><strong>Modelled vs measured is never blurred.</strong> The estimate is <code>round(normal_OSRM_minutes × event_factor + extra_event_delay)</code>; live traffic minutes are added only when a real feed returns them. Without a key, live traffic shows as &ldquo;Unavailable&rdquo;.</li>
+<li><strong>No invented occupancy.</strong> Park &amp; Ride shows drive, transfer and total access time; occupancy appears only from an official feed, otherwise &ldquo;Unknown / No live occupancy feed&rdquo;.</li>
+<li><strong>Graceful degradation.</strong> If the API is unavailable, the static frontend can load local catalogue files and still compute an event-adjusted route with Nominatim and OSRM.</li>
+<li><strong>Operational hygiene.</strong> Memory + SQLite cache, Nominatim 429 retry, per-IP rate limiting, structured JSON request logs, and health/readiness endpoints. Cached live data older than 15 minutes is treated as stale.</li>
+</ul>
+<h2>Data and external services</h2>
+<table><caption>What each source provides on the public deployment</caption><thead><tr><th scope="col">Service</th><th scope="col">Use</th><th scope="col">Live measured data?</th></tr></thead><tbody>
+<tr><td>Nominatim</td><td>UK-biased geocoding</td><td>No, locations only</td></tr>
+<tr><td>OSRM</td><td>Normal driving route, duration, geometry</td><td>No, routing estimate</td></tr>
+<tr><td>Leaflet / OpenStreetMap</td><td>Map display</td><td>No</td></tr>
+<tr><td>National Highways closures API</td><td>Structured closures</td><td>Only with an API key</td></tr>
+<tr><td>TfGM alerts / car parks APIs</td><td>Alerts and occupancy</td><td>Only with an API key</td></tr>
+<tr><td>TomTom routing</td><td>Measured delay vs no-traffic route</td><td>Only with an API key</td></tr>
+</tbody></table>
+<p>This is a rules- and model-based decision engine, not a machine-learning model. The fictional <code>test-event-manchester</code> record in the repository exists only to prove the engine reads configuration dynamically.</p>
+<!-- TODO(Emmanuel): add a screenshot of the live app (save it in this repo under /assets/) and, if you have them, real usage numbers. Do not add numbers you cannot show. -->
+
+<footer class="site">
+<p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
+<p><a href="/">Portfolio home</a><a href="/projects/">Case studies</a><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></p>
+<p>Last updated <time datetime="2026-11-11">11 November 2026</time>.</p>
+</footer>
+</main>
+</body>
+</html>

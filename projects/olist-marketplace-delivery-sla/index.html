@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olist Marketplace Delivery SLA &amp; Seller Sizing — SQL Server Case Study | Emmanuel Abolade</title>
+<meta name="description" content="SQL Server and Python case study by Emmanuel Abolade: late-delivery rate (6.77%) and seller sizing across 96,470 delivered Olist marketplace orders.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Emmanuel Abolade">
+<link rel="canonical" href="https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/">
+<meta name="theme-color" content="#1E7145">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Olist Marketplace Delivery SLA &amp; Seller Sizing — SQL Server Case Study | Emmanuel Abolade">
+<meta property="og:description" content="SQL Server and Python case study by Emmanuel Abolade: late-delivery rate (6.77%) and seller sizing across 96,470 delivered Olist marketplace orders.">
+<meta property="og:url" content="https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/">
+<meta property="og:site_name" content="Emmanuel Abolade">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://raw.githubusercontent.com/aboladvisuals/olist_marketplace_sla/main/screenshots/01_delivery_sla.png">
+<meta property="og:image:alt" content="Olist Tableau delivery SLA dashboard">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/aboladvisuals/olist_marketplace_sla/main/screenshots/01_delivery_sla.png">
+<meta name="twitter:title" content="Olist Marketplace Delivery SLA &amp; Seller Sizing — SQL Server Case Study | Emmanuel Abolade">
+<meta name="twitter:description" content="SQL Server and Python case study by Emmanuel Abolade: late-delivery rate (6.77%) and seller sizing across 96,470 delivered Olist marketplace orders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/case-study.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/#article",
+      "headline": "Olist Marketplace — Delivery SLA & Seller Sizing (SQL case study)",
+      "description": "SQL Server and Python case study by Emmanuel Abolade: late-delivery rate (6.77%) and seller sizing across 96,470 delivered Olist marketplace orders.",
+      "url": "https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/",
+      "mainEntityOfPage": "https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/",
+      "inLanguage": "en-GB",
+      "author": {
+        "@type": "Person",
+        "@id": "https://aboladvisuals.github.io/#person",
+        "name": "Emmanuel Abolade",
+        "url": "https://aboladvisuals.github.io/"
+      },
+      "publisher": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      },
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "isPartOf": {
+        "@id": "https://aboladvisuals.github.io/#website"
+      },
+      "image": "https://raw.githubusercontent.com/aboladvisuals/olist_marketplace_sla/main/screenshots/01_delivery_sla.png",
+      "citation": [
+        "https://github.com/aboladvisuals/olist_marketplace_sla"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Emmanuel Abolade",
+          "item": "https://aboladvisuals.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Case studies",
+          "item": "https://aboladvisuals.github.io/projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Olist Marketplace SLA",
+          "item": "https://aboladvisuals.github.io/projects/olist-marketplace-delivery-sla/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+<a href="/">Emmanuel Abolade · Data Analyst, BI &amp; Full-Stack Developer · Hull, UK</a>
+<a href="/projects/">All case studies</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol>
+<li><a href="/">Emmanuel Abolade</a></li>
+<li><a href="/projects/">Case studies</a></li>
+<li aria-current="page">Olist Marketplace SLA</li>
+</ol></nav>
+<h1>Olist Marketplace — Delivery SLA &amp; Seller Sizing (SQL case study)</h1>
+<p class="kicker">Data &amp; BI · SQL Server · T-SQL · Python · Tableau</p>
+<p class="lede">Which marketplace deliveries miss the promised date, which sellers carry that late volume, and how big is the problem? An analysis of the public Olist Brazilian e-commerce dataset in SQL Server (T-SQL), cross-checked in Python and visualised in Tableau.</p>
+<div class="links"><a href="https://github.com/aboladvisuals/olist_marketplace_sla" rel="noopener">GitHub repository</a><a href="https://github.com/aboladvisuals/olist_marketplace_sla/blob/main/sql/sla.sql" rel="noopener">T-SQL script</a><a href="https://github.com/aboladvisuals/olist_marketplace_sla/blob/main/python/sla_check.py" rel="noopener">Python cross-check</a><a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" rel="noopener">Dataset (Kaggle)</a></div>
+<div class="facts">
+<div class="fact"><span class="k">Tools</span><span class="v">SQL Server · T-SQL · Python · Tableau</span></div>
+<div class="fact"><span class="k">Data</span><span class="v">Public Olist dataset (orders, items, sellers, reviews)</span></div>
+<div class="fact"><span class="k">Denominator</span><span class="v">96,470 delivered orders with both dates</span></div>
+<div class="fact"><span class="k">Validation</span><span class="v">SQL and Python agree: 96,470 / 6,534 / 0.0677</span></div>
+</div>
+<figure><img src="https://raw.githubusercontent.com/aboladvisuals/olist_marketplace_sla/main/screenshots/01_delivery_sla.png" alt="Tableau Delivery SLA dashboard for Olist showing 96,470 delivered orders, 6,534 late orders, a 6.77% late rate and late orders by delay bucket" width="1151" height="624" loading="lazy"><figcaption>Tableau Delivery SLA view (screenshot from the repository).</figcaption></figure>
+<h2>Definitions</h2>
+<ul>
+<li><strong>Denominator:</strong> orders with <code>order_status = 'delivered'</code> that have both a delivered date and an estimated date (96,470).</li>
+<li><strong>Late:</strong> delivered on a <em>calendar day after</em> the estimated day. Same-day delivery counts as on time.</li>
+</ul>
+<p>The core rule in T-SQL compares dates, not timestamps:</p>
+<pre>case when cast(order_delivered_customer_date as date)
+        &gt; cast(order_estimated_delivery_date as date)
+     then 1 else 0 end as is_late</pre>
+<h2>Results</h2>
+<table><caption>Delivery SLA and seller sizing</caption><thead><tr><th scope="col">KPI</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>Delivered orders with dates</td><td>96,470</td></tr>
+<tr><td>Late orders</td><td>6,534 (6.77%)</td></tr>
+<tr><td>8+ days late</td><td>2,862 (44% of late orders)</td></tr>
+<tr><td>High-rate sellers (20+ orders, late rate ≥ 20%)</td><td>23 sellers, 3.8% of late lines</td></tr>
+<tr><td>Top 15 sellers by late lines</td><td>1,517 lines (~21% of late lines)</td></tr>
+<tr><td>Average review, on-time vs late</td><td>4.29 vs 2.27</td></tr>
+</tbody></table>
+<h2>Recommendations</h2>
+<ul>
+<li>Coach the top 15 sellers by <strong>late volume</strong>, not the 23 sellers with the highest late <em>rate</em>, because volume is where most late lines sit.</li>
+<li>Treat 8+ day delays separately from 1–3 day slips.</li>
+<li>Do not penalise sellers with fewer than 20 orders.</li>
+</ul>
+<h2>Limits</h2>
+<p>Lateness is an order-level fact copied onto every item line. Reviews are not one per order. The dataset contains no cost or CSAT money impact, so none is claimed.</p>
+
+<footer class="site">
+<p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
+<p><a href="/">Portfolio home</a><a href="/projects/">Case studies</a><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></p>
+<p>Last updated <time datetime="2026-11-11">11 November 2026</time>.</p>
+</footer>
+</main>
+</body>
+</html>
