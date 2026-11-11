@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudDesk Support Root Cause Analysis — Python &amp; Power BI Case Study | Emmanuel Abolade</title>
+<meta name="description" content="Python, statsmodels and Power BI case study by Emmanuel Abolade: root-cause analysis of 2,400 SaaS support tickets, linking resolution time to CSAT.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Emmanuel Abolade">
+<link rel="canonical" href="https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/">
+<meta name="theme-color" content="#1E7145">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CloudDesk Support Root Cause Analysis — Python &amp; Power BI Case Study | Emmanuel Abolade">
+<meta property="og:description" content="Python, statsmodels and Power BI case study by Emmanuel Abolade: root-cause analysis of 2,400 SaaS support tickets, linking resolution time to CSAT.">
+<meta property="og:url" content="https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/">
+<meta property="og:site_name" content="Emmanuel Abolade">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<meta name="twitter:title" content="CloudDesk Support Root Cause Analysis — Python &amp; Power BI Case Study | Emmanuel Abolade">
+<meta name="twitter:description" content="Python, statsmodels and Power BI case study by Emmanuel Abolade: root-cause analysis of 2,400 SaaS support tickets, linking resolution time to CSAT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/case-study.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/#article",
+      "headline": "CloudDesk — Support Resolution Root Cause Analysis (Python & Power BI)",
+      "description": "Python, statsmodels and Power BI case study by Emmanuel Abolade: root-cause analysis of 2,400 SaaS support tickets, linking resolution time to CSAT.",
+      "url": "https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/",
+      "mainEntityOfPage": "https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/",
+      "inLanguage": "en-GB",
+      "author": {
+        "@type": "Person",
+        "@id": "https://aboladvisuals.github.io/#person",
+        "name": "Emmanuel Abolade",
+        "url": "https://aboladvisuals.github.io/"
+      },
+      "publisher": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      },
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "isPartOf": {
+        "@id": "https://aboladvisuals.github.io/#website"
+      },
+      "image": "https://aboladvisuals.github.io/assets/screenshots/clouddesk-executive-overview.webp",
+      "citation": [
+        "https://github.com/aboladvisuals/clouddesk_analytics"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Emmanuel Abolade",
+          "item": "https://aboladvisuals.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Case studies",
+          "item": "https://aboladvisuals.github.io/projects/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CloudDesk Support RCA",
+          "item": "https://aboladvisuals.github.io/projects/clouddesk-support-root-cause/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+<a href="/">Emmanuel Abolade · Data Analyst, BI &amp; Full-Stack Developer · Hull, UK</a>
+<a href="/projects/">All case studies</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol>
+<li><a href="/">Emmanuel Abolade</a></li>
+<li><a href="/projects/">Case studies</a></li>
+<li aria-current="page">CloudDesk Support RCA</li>
+</ol></nav>
+<h1>CloudDesk — Support Resolution Root Cause Analysis (Python &amp; Power BI)</h1>
+<p class="kicker">Data &amp; BI · Python · statsmodels · Power BI</p>
+<p class="lede">A root-cause analysis of 2,400 SaaS support tickets: where resolution time is actually spent, which factors are associated with long resolutions, and how that relates to customer satisfaction and renewal. Analysis in Python (pandas, SciPy, statsmodels) with a four-page Power BI management dashboard.</p>
+<div class="links"><a href="https://github.com/aboladvisuals/clouddesk_analytics" rel="noopener">GitHub repository</a><a href="https://github.com/aboladvisuals/clouddesk_analytics/blob/main/outputs/CloudDesk_Final_RCA.md" rel="noopener">Final RCA report</a><a href="https://github.com/aboladvisuals/clouddesk_analytics/blob/main/outputs/CloudDesk_RCA_Backlog.csv" rel="noopener">Operational backlog (CSV)</a></div>
+<div class="facts">
+<div class="fact"><span class="k">Type</span><span class="v">Portfolio analysis of a SaaS support scenario (CloudDesk)</span></div>
+<div class="fact"><span class="k">Tools</span><span class="v">Python · pandas · NumPy · SciPy · statsmodels · Jupyter · Power BI</span></div>
+<div class="fact"><span class="k">Data</span><span class="v">2,400 support tickets (one row per ticket) + release-notes log</span></div>
+<div class="fact"><span class="k">Model</span><span class="v">Robust log-transformed regression, R² 0.709 (adjusted 0.707)</span></div>
+</div>
+<figure><img src="/assets/screenshots/clouddesk-executive-overview.webp" alt="CloudDesk Power BI executive overview: 2,400 tickets, median resolution 7.80 hours, P90 18.10 hours, median investigation 6.15 hours, first response 1.53 hours, average CSAT 4.52" width="1219" height="675" loading="lazy" decoding="async"><figcaption>Executive Overview page of the Power BI dashboard (screenshot from the repository).</figcaption></figure>
+<h2>Problem</h2>
+<p>Support tickets were taking several hours or longer to resolve. Leadership&rsquo;s working hypothesis was that documentation gaps were the main bottleneck. The project tested that hypothesis against alternatives: reassignment, team, ticket category, channel, priority, customer segment, FAQ status and release windows.</p>
+<h2>Data and method</h2>
+<ul>
+<li>Resolution broken into stages: creation, first response, investigation and resolution.</li>
+<li>Profiling, cleaning and transformation in Jupyter notebooks (<code>01_data_ingestion</code>, <code>02_data_cleaning</code>, <code>3_business_impact</code>), producing an analytical dataset and a dashboard dataset.</li>
+<li>Because resolution time is right-skewed, a robust log-transformed regression was used; Variance Inflation Factor checks found no serious multicollinearity. An interaction model added little, so the simpler model was kept.</li>
+</ul>
+<h2>Results</h2>
+<table><caption>Resolution timeline across 2,400 tickets</caption><thead><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>Median resolution</td><td>7.80 hours</td></tr><tr><td>Mean resolution</td><td>9.74 hours</td></tr><tr><td>P90 resolution</td><td>18.10 hours</td></tr><tr><td>Median first response</td><td>1.53 hours</td></tr><tr><td>Median investigation</td><td>6.15 hours</td></tr><tr><td>Average CSAT</td><td>4.52</td></tr><tr><td>Renewal rate</td><td>97.38%</td></tr>
+</tbody></table>
+<table><caption>Factors associated with longer resolution (median hours)</caption><thead><tr><th scope="col">Factor</th><th scope="col">Comparison</th></tr></thead><tbody>
+<tr><td>Documentation available</td><td>5.89 with documentation vs 12.22 without</td></tr>
+<tr><td>Reassignments</td><td>6.42 (0) · 11.77 (1) · 21.68 (2)</td></tr>
+<tr><td>Team</td><td>Tier 1: 9.63 (1,176 tickets, 3 agents) vs Tier 2: 6.39 (1,224 tickets, 11 agents)</td></tr>
+<tr><td>Category</td><td>Performance/Latency 22.02 · Webhook Failures 12.32 · Security/Compliance 11.24 (overall 7.80)</td></tr>
+</tbody></table>
+<figure><img src="/assets/screenshots/clouddesk-root-cause.webp" alt="CloudDesk Power BI root cause analysis page showing documentation availability, reassignment, team and category effects on resolution time" width="1208" height="679" loading="lazy" decoding="async"><figcaption>Root Cause Analysis page of the dashboard.</figcaption></figure>
+<h2>Customer impact</h2>
+<p>Resolution time is negatively associated with CSAT (Pearson −0.419, Spearman −0.328, p &lt; 0.001). Average CSAT falls from 4.73 in the fastest quarter of tickets to 4.20 in the slowest. Tickets linked to non-renewal had a median resolution of 27.55 hours versus 7.70 for renewed, but there are only 63 such tickets, so this is reported as an association, not a cause.</p>
+<h2>Recommendations</h2>
+<p>The findings were turned into an eight-item operational backlog with success metrics, covering a documentation audit and improvements, reassignment and routing, ownership and escalation rules, a team workload review, diagnostic workflows for Performance/Latency and Webhook Failures, and an investigation-time KPI.</p>
+<h2>Limits</h2>
+<ul>
+<li>All results are statistical associations, not causal estimates.</li>
+<li>Channel, priority, segment, FAQ status and release-window status showed limited independent explanatory value in the multivariate model.</li>
+<li>Renewal effects rest on 63 non-renewal tickets and should be retested at customer level.</li>
+</ul>
+<h2>What this project demonstrates</h2>
+<ul>
+<li><strong>Python analytics:</strong> a reproducible notebook workflow from ingestion to business impact.</li>
+<li><strong>Statistics:</strong> robust regression on a skewed outcome, multicollinearity checks and correlation testing, with careful causal language.</li>
+<li><strong>Power BI:</strong> a four-page management dashboard built on the processed Python output.</li>
+<li><strong>Operational recommendations:</strong> findings converted into a prioritised backlog with measurable success metrics.</li>
+</ul>
+
+<footer class="site">
+<p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
+<p><a href="/">Portfolio home</a><a href="/projects/">Case studies</a><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></p>
+<p>Last updated <time datetime="2026-11-11">11 November 2026</time>.</p>
+</footer>
+</main>
+</body>
+</html>

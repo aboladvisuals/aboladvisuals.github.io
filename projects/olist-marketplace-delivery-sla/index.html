@@ -135,6 +135,13 @@
 <li>Treat 8+ day delays separately from 1–3 day slips.</li>
 <li>Do not penalise sellers with fewer than 20 orders.</li>
 </ul>
+<h2>What this project demonstrates</h2>
+<ul>
+<li><strong>SQL Server / T-SQL:</strong> explicit denominator and lateness rules, date-level comparison, seller aggregation.</li>
+<li><strong>Cross-validation:</strong> the same KPI reproduced in Python (96,470 / 6,534 / 0.0677).</li>
+<li><strong>Tableau:</strong> delivery SLA and seller views.</li>
+<li><strong>Prioritisation:</strong> sizing sellers by late volume rather than late rate, so effort goes where most late orders are.</li>
+</ul>
 <h2>Limits</h2>
 <p>Lateness is an order-level fact copied onto every item line. Reviews are not one per order. The dataset contains no cost or CSAT money impact, so none is claimed.</p>
 

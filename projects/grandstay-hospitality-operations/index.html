@@ -150,6 +150,13 @@
 <li>Review roster against peak demand rather than hiring 1:1 with monthly ticket growth.</li>
 <li>Report median FRT and FRT by channel instead of a single 10-minute company average.</li>
 </ol>
+<h2>What this project demonstrates</h2>
+<ul>
+<li><strong>Power Query modelling:</strong> ticket-level metrics (<code>FRT</code>, <code>HANDLE_TIME_MIN</code>, <code>SLA_STATUS</code>) built against each ticket&rsquo;s own SLA target.</li>
+<li><strong>Grain discipline:</strong> ticket and monthly cost tables kept separate rather than joined at mismatched grains.</li>
+<li><strong>Power BI reporting:</strong> a three-page dashboard (executive, time and demand, cost and workforce).</li>
+<li><strong>Decision support:</strong> recommendations tied to the evidence, with an explicit warning against ranking automation by a misleading field.</li>
+</ul>
 <h2>Limits</h2>
 <p>No CSAT conclusion is drawn. The knowledge file is a sample. Cost cannot be sliced by channel. No bot was implemented, and no hours-saved or money-saved outcome exists in this dataset. The <code>.pbix</code> file and the 50&nbsp;MB Excel workbook are intentionally kept off GitHub.</p>
 
