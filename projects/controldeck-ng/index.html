@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ControlDeck NG — React and TypeScript Executive BI Dashboard | Emmanuel Abolade</title>
-<meta name="description" content="React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, grounded in real analysis.">
+<meta name="description" content="React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, built on a portfolio analysis.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Emmanuel Abolade">
 <link rel="canonical" href="https://aboladvisuals.github.io/projects/controldeck-ng/">
@@ -12,13 +12,20 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ControlDeck NG — React and TypeScript Executive BI Dashboard | Emmanuel Abolade">
-<meta property="og:description" content="React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, grounded in real analysis.">
+<meta property="og:description" content="React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, built on a portfolio analysis.">
 <meta property="og:url" content="https://aboladvisuals.github.io/projects/controldeck-ng/">
 <meta property="og:site_name" content="Emmanuel Abolade">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:title" content="ControlDeck NG — React and TypeScript Executive BI Dashboard | Emmanuel Abolade">
-<meta name="twitter:description" content="React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, grounded in real analysis.">
+<meta name="twitter:description" content="React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, built on a portfolio analysis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,7 +38,7 @@
       "@type": "Article",
       "@id": "https://aboladvisuals.github.io/projects/controldeck-ng/#article",
       "headline": "ControlDeck NG — Executive BI Dashboard (React & TypeScript)",
-      "description": "React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, grounded in real analysis.",
+      "description": "React 19 and TypeScript proof of concept by Emmanuel Abolade: an executive BI and financial-control dashboard for Nigerian hospitality, built on a portfolio analysis.",
       "url": "https://aboladvisuals.github.io/projects/controldeck-ng/",
       "mainEntityOfPage": "https://aboladvisuals.github.io/projects/controldeck-ng/",
       "inLanguage": "en-GB",
@@ -49,6 +56,7 @@
       "isPartOf": {
         "@id": "https://aboladvisuals.github.io/#website"
       },
+      "image": "https://aboladvisuals.github.io/assets/screenshots/controldeck-ng-ceo-home.webp",
       "citation": [
         "https://github.com/aboladvisuals/controldeck-ng"
       ]
@@ -107,14 +115,15 @@
 </ol></nav>
 <h1>ControlDeck NG — Executive BI Dashboard (React &amp; TypeScript)</h1>
 <p class="kicker">Full-stack / BI UI · Vite · React 19 · TypeScript · Recharts</p>
-<p class="lede">A proof-of-concept executive dashboard for Nigerian restaurant, bar and club owners, built with Vite, React 19 and TypeScript. It turns the findings of a <a href="/projects/restaurant-financial-intelligence/">restaurant financial analysis</a> into a product surface: KPIs, reconciliation exceptions and alerts a CEO can act on.</p>
+<p class="lede">A proof-of-concept executive dashboard for Nigerian restaurant, bar and club owners, built with Vite, React 19 and TypeScript. It turns the findings of the <a href="/projects/restaurant-financial-intelligence/">restaurant financial analysis</a> portfolio project into a product surface: KPIs, reconciliation exceptions and alerts a CEO can act on.</p>
 <div class="links"><a href="https://aboladvisuals.github.io/controldeck-ng/" rel="noopener">Live demo</a><a href="https://github.com/aboladvisuals/controldeck-ng" rel="noopener">GitHub repository</a></div>
 <div class="facts">
 <div class="fact"><span class="k">Stack</span><span class="v">Vite · React 19 · TypeScript · Tailwind CSS v4 · Recharts · React Router · Lucide</span></div>
 <div class="fact"><span class="k">Hosting</span><span class="v">GitHub Pages (static build)</span></div>
-<div class="fact"><span class="k">Data</span><span class="v">Mock operational data shaped by real analysis findings</span></div>
+<div class="fact"><span class="k">Data</span><span class="v">Mock operational data shaped by the restaurant analysis findings</span></div>
 <div class="fact"><span class="k">Status</span><span class="v">Proof of concept, not production software</span></div>
 </div>
+<figure><img src="/assets/screenshots/controldeck-ng-ceo-home.webp" alt="ControlDeck NG CEO Home screen with naira KPI cards (YTD sales ₦2.89B, payments ₦2.12B, cash/bank ₦795.2M), a revenue and expense trend chart, and critical alerts such as 19,146 payments missing payee" width="1280" height="800" loading="lazy" decoding="async"><figcaption>CEO Home screen of the live demo, captured from aboladvisuals.github.io/controldeck-ng/ on 11 November 2026 (mock data).</figcaption></figure>
 <p class="note">Honest scope: ControlDeck NG uses mock data and is not connected to a live bank or POS system. Its AI CEO Assistant returns demo responses grounded in sample metrics. Per the repository README, the product idea, business framing and analytics are Emmanuel&rsquo;s; the UI implementation was developed with AI coding assistance under his direction.</p>
 <h2>What it demonstrates</h2>
 <p>An intelligence and control layer above hospitality operations: POS, payments, inventory and expenses feed a central view, reconciliation exceptions are surfaced, and the CEO sees a dashboard plus Q&amp;A. Exception language is deliberate: &ldquo;Exception requiring management review&rdquo;, never an accusation of fraud.</p>
@@ -139,7 +148,6 @@
 <pre>npm install
 npm run dev       # http://localhost:5173/controldeck-ng/
 npm run build</pre>
-<!-- TODO(Emmanuel): add a real screenshot of the live demo (e.g. assets/controldeck-live.svg already exists in this repo but is not used; a PNG/WebP would work better for search and social previews). -->
 
 <footer class="site">
 <p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>

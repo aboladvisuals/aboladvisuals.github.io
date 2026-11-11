@@ -16,7 +16,14 @@
 <meta property="og:url" content="https://aboladvisuals.github.io/projects/event-travel-intelligence/">
 <meta property="og:site_name" content="Emmanuel Abolade">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:title" content="Event Travel Intelligence — Python FastAPI Full-Stack Case Study | Emmanuel Abolade">
 <meta name="twitter:description" content="Full-stack case study by Emmanuel Abolade: a FastAPI, OSRM and Leaflet tool for event-day journey estimates in the UK, separating modelled from live data.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,6 +56,7 @@
       "isPartOf": {
         "@id": "https://aboladvisuals.github.io/#website"
       },
+      "image": "https://aboladvisuals.github.io/assets/screenshots/event-travel-intelligence-home.webp",
       "citation": [
         "https://github.com/aboladvisuals/event-travel-intelligence"
       ]
@@ -116,6 +124,7 @@
 <div class="fact"><span class="k">Data services</span><span class="v">Nominatim geocoding · OSRM routing · OpenStreetMap tiles</span></div>
 <div class="fact"><span class="k">Tests</span><span class="v">Test modules in <code>tests/</code> for API, events, journey, live transport, parking and platform</span></div>
 </div>
+<figure><img src="/assets/screenshots/event-travel-intelligence-home.webp" alt="Event Travel Intelligence home screen showing the selected event, venue, date, capacity, traffic-management window and an event search box" width="1280" height="800" loading="lazy" decoding="async"><figcaption>Event selection screen of the live application, captured on 11 November 2026.</figcaption></figure>
 <h2>Problem</h2>
 <p>Large events create travel conditions that ordinary route planners do not model well: traffic-management windows, extra delay near the venue, crowd pressure, road restrictions and uncertain Park &amp; Ride access. People travelling from different UK towns need one place to see the normal route, how the event changes it, and whether any live data is actually available.</p>
 <h2>Architecture</h2>
@@ -135,6 +144,7 @@ Analysis response</pre>
 <table><caption>Main backend modules</caption><thead><tr><th scope="col">Layer</th><th scope="col">Location</th></tr></thead><tbody>
 <tr><td>Event schema</td><td><code>backend/event_model.py</code></td></tr><tr><td>Event store</td><td><code>backend/event_store.py</code></td></tr><tr><td>Travel engine</td><td><code>backend/travel_engine.py</code></td></tr><tr><td>Live transport</td><td><code>backend/live_transport.py</code></td></tr><tr><td>Parking</td><td><code>backend/parking_intelligence.py</code></td></tr><tr><td>Cache / SQLite</td><td><code>backend/cache.py</code>, <code>backend/db.py</code></td></tr><tr><td>API</td><td><code>backend/main.py</code></td></tr>
 </tbody></table>
+<figure><img src="/assets/screenshots/event-travel-intelligence-journey-summary.webp" alt="Event Travel Intelligence journey summary for a trip from Hull to Old Trafford: 106.1 miles, 123 minutes outbound, return estimate 244 minutes arriving 00:34 the next day" width="1160" height="350" loading="lazy" decoding="async"><figcaption>Journey summary returned by the live application for a Hull start on 11 November 2026. Live traffic was reported as unavailable, so these are event-adjusted estimates.</figcaption></figure>
 <h2>Key technical decisions</h2>
 <ul>
 <li><strong>Events are data, not code.</strong> A versioned JSON catalogue (<code>data/events/*.json</code>) is the source of truth, so adding an event means adding data rather than rewriting the engine.</li>
@@ -153,7 +163,6 @@ Analysis response</pre>
 <tr><td>TomTom routing</td><td>Measured delay vs no-traffic route</td><td>Only with an API key</td></tr>
 </tbody></table>
 <p>This is a rules- and model-based decision engine, not a machine-learning model. The fictional <code>test-event-manchester</code> record in the repository exists only to prove the engine reads configuration dynamically.</p>
-<!-- TODO(Emmanuel): add a screenshot of the live app (save it in this repo under /assets/) and, if you have them, real usage numbers. Do not add numbers you cannot show. -->
 
 <footer class="site">
 <p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
