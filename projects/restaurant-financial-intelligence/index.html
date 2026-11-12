@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Restaurant Financial Intelligence — Python &amp; Power BI Case Study | Emmanuel Abolade</title>
 <meta name="description" content="Python, SQL and Power BI case study by Emmanuel Abolade: revenue, payments and financial-control analysis for a multi-unit restaurant, with a CEO dashboard.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Emmanuel Abolade">
 <link rel="canonical" href="https://aboladvisuals.github.io/projects/restaurant-financial-intelligence/">
-<meta name="theme-color" content="#1E7145">
+<meta name="theme-color" content="#07090f">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Restaurant Financial Intelligence — Python &amp; Power BI Case Study | Emmanuel Abolade">
@@ -22,14 +23,15 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
-<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:title" content="Restaurant Financial Intelligence — Python &amp; Power BI Case Study | Emmanuel Abolade">
 <meta name="twitter:description" content="Python, SQL and Power BI case study by Emmanuel Abolade: revenue, payments and financial-control analysis for a multi-unit restaurant, with a CEO dashboard.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/case-study.css">
+<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<script>(function(d){d.className='js'+(matchMedia('(prefers-reduced-motion: reduce)').matches?'':' motion')})(document.documentElement)</script>
+<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/site.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,7 +54,7 @@
         "@id": "https://aboladvisuals.github.io/#person"
       },
       "datePublished": "2026-11-11",
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "isPartOf": {
         "@id": "https://aboladvisuals.github.io/#website"
       },
@@ -90,28 +92,41 @@
 </script>
 </head>
 <body>
-<header class="topbar"><div class="wrap">
-<a href="/">Emmanuel Abolade · Data Analyst, BI &amp; Full-Stack Developer · Hull, UK</a>
-<a href="/projects/">All case studies</a>
-</div></header>
-<main class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header solid">
+<div class="wrap bar">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">EA</span><span>Emmanuel Abolade<small>Data · BI · Full-Stack · Hull, UK</small></span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+<nav id="site-nav" class="nav" aria-label="Primary">
+<a href="/#work">Work</a>
+<a href="/projects/" aria-current="page">Case studies</a>
+<a href="/#skills">Skills</a>
+<a href="/#experience">Experience</a>
+<a href="/#contact" class="nav-cta">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero">
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="wrap">
 <nav class="crumbs" aria-label="Breadcrumb"><ol>
 <li><a href="/">Emmanuel Abolade</a></li>
 <li><a href="/projects/">Case studies</a></li>
 <li aria-current="page">Restaurant Financial Intelligence</li>
 </ol></nav>
-<h1>Restaurant Financial Intelligence &amp; CEO Dashboard</h1>
 <p class="kicker">Data &amp; BI · Python · pandas · SQL · Power BI</p>
+<h1>Restaurant Financial Intelligence &amp; CEO Dashboard</h1>
 <p class="lede">A decision-focused financial analysis of a multi-unit restaurant business: revenue, payments, profitability, costs, financial controls and data quality, delivered as a Python pipeline and a Power BI CEO dashboard. The headline finding was a control problem, not a profit number.</p>
-<div class="links"><a href="https://github.com/aboladvisuals/restaurant_ceo_analysis" rel="noopener">GitHub repository</a><a href="/projects/controldeck-ng/">Follow-on product: ControlDeck NG</a></div>
-<div class="facts">
-<div class="fact"><span class="k">Tools</span><span class="v">Python · pandas · SQL · Excel · Power Query · Power BI</span></div>
-<div class="fact"><span class="k">Pipeline</span><span class="v">16 numbered Python scripts, from data audit to dashboard data layer</span></div>
-<div class="fact"><span class="k">Deliverable</span><span class="v">Power BI CEO dashboard + Excel outputs + management action plan</span></div>
-<div class="fact"><span class="k">Type</span><span class="v">Portfolio analysis · figures in Nigerian naira (₦)</span></div>
+<div class="actions"><a class="btn btn-primary" href="https://github.com/aboladvisuals/restaurant_ceo_analysis" rel="noopener">GitHub repository <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn" href="/projects/controldeck-ng/">Follow-on product: ControlDeck NG <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+<div class="facts"><div class="fact"><span class="k">Tools</span><span class="v">Python · pandas · SQL · Excel · Power Query · Power BI</span></div><div class="fact"><span class="k">Pipeline</span><span class="v">16 numbered Python scripts, from data audit to dashboard data layer</span></div><div class="fact"><span class="k">Deliverable</span><span class="v">Power BI CEO dashboard + Excel outputs + management action plan</span></div><div class="fact"><span class="k">Type</span><span class="v">Portfolio analysis · figures in Nigerian naira (₦)</span></div></div>
 </div>
-<figure><img src="/assets/screenshots/restaurant-ceo-overview.webp" alt="Power BI CEO overview dashboard for the restaurant business showing recorded sales, receipts, payments and control alerts" width="1012" height="595" loading="lazy"><figcaption>CEO Overview page of the Power BI dashboard (screenshot from the repository).</figcaption></figure>
-<h2>Approach</h2>
+</section>
+<div class="wrap case-layout">
+<aside class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#approach">Approach</a></li><li><a href="#key-financial-snapshot">Key financial snapshot</a></li><li><a href="#financial-control-findings">Financial control findings</a></li><li><a href="#the-critical-accounting-issue">The critical accounting issue</a></li><li><a href="#ceo-action-priorities">CEO action priorities</a></li><li><a href="#limits">Limits</a></li><li><a href="#what-this-project-demonstrates">What this project demonstrates</a></li><li><a href="#from-analysis-to-product">From analysis to product</a></li></ol></aside>
+<article class="prose">
+<figure><img alt="Power BI CEO overview dashboard for the restaurant business showing recorded sales, receipts, payments and control alerts" decoding="async" height="595" loading="lazy" src="/assets/screenshots/restaurant-ceo-overview.webp" width="1012"/><figcaption>CEO Overview page of the Power BI dashboard (screenshot from the repository).</figcaption></figure>
+<h2 id="approach">Approach</h2>
 <p>The repository is organised as a reproducible pipeline in <code>scripts/</code>, numbered in run order:</p>
 <pre>01_data_audit → 02_build_pnl → 03_build_monthly_pnl → 04_monthly_performance
 → 05_expense_break → 06_payment_vs_pnl → 07_payment_categories → 08_payment_trends
@@ -119,54 +134,87 @@
 → 12_cost_analysis → 13_financial_controls → 14_management_action_plan
 → 15_ceo_executive_summary → 16_build_dashboard_data</pre>
 <p>Each step writes an Excel or CSV output to <code>outputs/</code> (for example <code>financial_controls_analysis.xlsx</code> and <code>management_action_plan.xlsx</code>), and the final step builds the data layer used by the Power BI dashboard.</p>
-<h2>Key financial snapshot</h2>
-<table><caption>Recorded totals from the analysis</caption><thead><tr><th scope="col">Metric</th><th scope="col">Result</th></tr></thead><tbody>
+<h2 id="key-financial-snapshot">Key financial snapshot</h2>
+<div aria-label="Recorded totals from the analysis" class="table-wrap" role="region" tabindex="0"><table><caption>Recorded totals from the analysis</caption><thead><tr><th scope="col">Metric</th><th scope="col">Result</th></tr></thead><tbody>
 <tr><td>Recorded sales</td><td>₦2.888bn</td></tr><tr><td>Total receipts</td><td>₦2.917bn</td></tr><tr><td>Total payments</td><td>₦2.116bn</td></tr><tr><td>Reported bank/cash</td><td>₦795.17m</td></tr><tr><td>Restaurant revenue share</td><td>~42.4%</td></tr><tr><td>Restaurant + Club/Lounge</td><td>~66.5%</td></tr>
-</tbody></table>
-<table><caption>Payment spend by category</caption><thead><tr><th scope="col">Category</th><th scope="col">Approx. spend</th><th scope="col">Share</th></tr></thead><tbody>
+</tbody></table></div>
+<div aria-label="Payment spend by category" class="table-wrap" role="region" tabindex="0"><table><caption>Payment spend by category</caption><thead><tr><th scope="col">Category</th><th scope="col">Approx. spend</th><th scope="col">Share</th></tr></thead><tbody>
 <tr><td>Food &amp; Kitchen</td><td>₦735.6m</td><td>34.8%</td></tr><tr><td>Beverages</td><td>₦510.0m</td><td>24.1%</td></tr><tr><td>Other / Unclassified</td><td>₦556.3m</td><td>26.3%</td></tr>
-</tbody></table>
-<h2>Financial control findings</h2>
+</tbody></table></div>
+<h2 id="financial-control-findings">Financial control findings</h2>
 <ul>
 <li><strong>19,146</strong> payments without a payee.</li>
 <li><strong>33,605</strong> receipts without a reference, and <strong>24,159</strong> without a description.</li>
 <li>About <strong>₦5.74m</strong> in positive receivables.</li>
-<li>A large &ldquo;Other / Unclassified&rdquo; payment category, which signals a classification weakness.</li>
+<li>A large “Other / Unclassified” payment category, which signals a classification weakness.</li>
 </ul>
 <p class="note">Control weaknesses are reported as exceptions for management review. They are not evidence of fraud, and the analysis does not claim they are.</p>
-<figure><img src="/assets/screenshots/restaurant-financial-controls.webp" alt="Power BI financial controls page showing payments without payee and receipts without reference" width="1194" height="605" loading="lazy"><figcaption>Financial Controls page of the dashboard.</figcaption></figure>
-<h2>The critical accounting issue</h2>
+<figure><img alt="Power BI financial controls page showing payments without payee and receipts without reference" decoding="async" height="605" loading="lazy" src="/assets/screenshots/restaurant-financial-controls.webp" width="1194"/><figcaption>Financial Controls page of the dashboard.</figcaption></figure>
+<h2 id="the-critical-accounting-issue">The critical accounting issue</h2>
 <p>Recorded expenses collapse from April 2026 onward, from about ₦58.5m in March 2026 to about ₦2.1m in April and under ₦1m in each later month. That makes profit margins from April 2026 look unusually high. The recommendation was that reported profitability from that point should not be relied on until expense records are reconciled.</p>
-<h2>CEO action priorities</h2>
+<h2 id="ceo-action-priorities">CEO action priorities</h2>
 <ol>
 <li>Reconcile financial records from April 2026 onward.</li>
 <li>Restore complete and consistent expense recording.</li>
 <li>Make payee, receipt reference and transaction description mandatory where appropriate.</li>
-<li>Reclassify major &ldquo;Other / Unclassified&rdquo; payments.</li>
+<li>Reclassify major “Other / Unclassified” payments.</li>
 <li>Introduce monthly bank reconciliation.</li>
 <li>Strengthen purchasing and stock controls around food and beverage spend.</li>
 </ol>
-<h2>Limits</h2>
+<h2 id="limits">Limits</h2>
 <ul>
 <li>Control weaknesses (missing payees, references and descriptions) are reported as exceptions for review, not as evidence of fraud.</li>
 <li>Profitability from April 2026 onward is flagged as unreliable until expense records are reconciled, so no profit conclusion is drawn for that period.</li>
 <li>The business is not named, and this page does not publish source records.</li>
 </ul>
-<h2>What this project demonstrates</h2>
+<h2 id="what-this-project-demonstrates">What this project demonstrates</h2>
 <ul>
 <li><strong>Python data pipeline:</strong> 16 ordered pandas scripts from data audit to a dashboard data layer, each writing an inspectable output.</li>
 <li><strong>Financial and control analysis:</strong> revenue mix, payment categories, profitability and data-quality checks.</li>
 <li><strong>Power BI executive reporting:</strong> CEO Overview, Revenue &amp; Cost and Financial Controls pages.</li>
 <li><strong>Judgement:</strong> identifying when a headline number (profit) should not be trusted, and saying so.</li>
 </ul>
-<h2>From analysis to product</h2>
+<h2 id="from-analysis-to-product">From analysis to product</h2>
 <p>The same findings later shaped the mock data and screens of <a href="/projects/controldeck-ng/">ControlDeck NG</a>, a React proof of concept for an executive control dashboard.</p>
-
-<footer class="site">
-<p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
-<p><a href="/">Portfolio home</a><a href="/projects/">Case studies</a><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></p>
-<p>Last updated <time datetime="2026-11-11">11 November 2026</time>.</p>
-</footer>
+<p class="source-note">Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
+</article>
+</div>
+<nav class="wrap case-next" aria-label="More case studies">
+<a href="/projects/event-travel-intelligence/"><span>Previous case study</span><b>Event Travel Intelligence</b></a>
+<a class="next" href="/projects/controldeck-ng/"><span>Next case study</span><b>ControlDeck NG</b></a>
+</nav>
 </main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>Emmanuel Abolade</h2>
+<p>Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. I turn operational data into decisions, and decisions into working software.</p>
+<p>Every figure on this site comes from a linked public repository, a published write-up or a live demo.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/projects/">All case studies</a></li>
+<li><a href="/projects/#skills-evidence">Skills and evidence</a></li>
+<li><a href="/#experience">Experience</a></li>
+</ul>
+</div>
+<div>
+<h2>Connect</h2>
+<ul>
+<li><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></li>
+<li><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a></li>
+<li><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="fine">
+<span>© 2026 Emmanuel Abolade · Hull, United Kingdom</span>
+<span>Last updated <time datetime="2026-11-12">12 November 2026</time></span>
+</div>
+</div>
+</footer>
 </body>
 </html>

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emmanuel Abolade — Data Analyst, BI Developer &amp; Full-Stack Developer, Hull UK</title>
 <meta name="description" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer in Hull, UK. SQL, Power BI, Python and React case studies with code.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://aboladvisuals.github.io/">
-<meta name="theme-color" content="#1E7145">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="author" content="Emmanuel Abolade">
-<meta name="google-site-verification" content="iWt-13vcx-ZYsT2TU1pMf49JvFjMpe5KXFu-865V3rM" />
+<link rel="canonical" href="https://aboladvisuals.github.io/">
+<meta name="theme-color" content="#07090f">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="google-site-verification" content="iWt-13vcx-ZYsT2TU1pMf49JvFjMpe5KXFu-865V3rM">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Emmanuel Abolade — Data Analyst, BI Developer &amp; Full-Stack Developer, Hull UK">
 <meta property="og:description" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer in Hull, UK. SQL, Power BI, Python and React case studies with code.">
@@ -26,465 +27,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
-<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:title" content="Emmanuel Abolade — Data Analyst, BI Developer &amp; Full-Stack Developer, Hull UK">
 <meta name="twitter:description" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer in Hull, UK. SQL, Power BI, Python and React case studies with code.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#F5F3EC;
-    --paper-2:#EFEBDF;
-    --ink:#1B2430;
-    --ink-soft:#4A5568;
-    --rule:#C9C4B4;
-    --rule-soft:#DEDACC;
-    --green:#1E7145;
-    --green-bg:#E3EFE6;
-    --amber:#9C5414;
-    --amber-bg:#F5E7D6;
-    --blue:#2A55E6;
-    --blue-bg:#E7ECFD;
-    --header-w:34px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'IBM Plex Sans', sans-serif;
-    font-size:16px;
-    line-height:1.55;
-  }
-  .mono{ font-family:'IBM Plex Mono', monospace; }
-
-  a:focus-visible,
-  .tab-bar a:focus-visible,
-  .hero .links a:focus-visible,
-  .project-links a:focus-visible,
-  .contact-row a:focus-visible{
-    outline:2px solid var(--blue);
-    outline-offset:3px;
-  }
-
-  .sheet-frame{
-    max-width:980px;
-    margin:0 auto;
-    padding-bottom:70px;
-  }
-
-  .col-ruler{
-    display:flex;
-    padding-left:var(--header-w);
-    position:sticky;
-    top:0;
-    background:var(--paper-2);
-    border-bottom:1px solid var(--rule);
-    z-index:20;
-  }
-  .col-ruler span{
-    flex:1;
-    text-align:center;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    padding:5px 0;
-    border-right:1px solid var(--rule-soft);
-  }
-  .col-ruler span:last-child{ border-right:none; }
-
-  .row-body{ display:flex; }
-  .row-ruler{
-    width:var(--header-w);
-    flex-shrink:0;
-    background:var(--paper-2);
-    border-right:1px solid var(--rule);
-    display:flex;
-    flex-direction:column;
-  }
-  .row-ruler span{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    text-align:center;
-    padding:6px 0;
-    border-bottom:1px solid var(--rule-soft);
-  }
-  .content-col{ flex:1; min-width:0; padding:0 22px; }
-
-
-  .hero{
-    padding:34px 0 40px;
-    border-bottom:1px solid var(--rule);
-  }
-  .hero h1{
-    margin:0 0 6px;
-    font-size:clamp(32px, 5vw, 46px);
-    letter-spacing:-0.01em;
-    font-weight:700;
-  }
-  .hero .role{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:15px;
-    color:var(--blue);
-    margin:0 0 18px;
-  }
-  .hero p.lede{
-    max-width:62ch;
-    font-size:17px;
-    color:var(--ink-soft);
-    margin:0 0 14px;
-  }
-  .hero .links{ display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
-  .hero .links a{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:13px;
-    color:var(--ink);
-    text-decoration:none;
-    border:1px solid var(--rule);
-    background:#fff;
-    padding:7px 12px;
-    border-radius:3px;
-  }
-  .hero .links a:hover{ border-color:var(--blue); color:var(--blue); }
-
-  section, footer#contact{ padding:44px 0; border-bottom:1px solid var(--rule); scroll-margin-top:60px; }
-  section:last-of-type{ border-bottom:none; }
-  footer#contact{ border-bottom:none; }
-  .section-label{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-    margin:0 0 4px;
-  }
-  h2{
-    font-size:24px;
-    margin:0 0 22px;
-    font-weight:700;
-  }
-  h3{
-    font-size:16px;
-    margin:28px 0 10px;
-    font-weight:600;
-  }
-  h3:first-child{ margin-top:0; }
-  .section-intro{
-    color:var(--ink-soft);
-    max-width:70ch;
-    margin:-8px 0 24px;
-  }
-
-  .job{ margin-bottom:26px; }
-  .job:last-child{ margin-bottom:0; }
-  .job-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    gap:12px;
-    flex-wrap:wrap;
-  }
-  .job-title{ font-weight:600; font-size:17px; }
-  .job-date{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    color:var(--ink-soft);
-    white-space:nowrap;
-  }
-  .job ul{ margin:8px 0 0; padding-left:20px; color:var(--ink-soft); }
-  .job li{ margin-bottom:5px; }
-
-  .project{
-    margin-bottom:34px;
-    padding:18px 18px 16px;
-    background:#fff;
-    border:1px solid var(--rule);
-  }
-  .project:last-child{ margin-bottom:0; }
-  .project.featured{
-    border-color:var(--blue);
-    box-shadow:inset 3px 0 0 var(--blue);
-  }
-  .project-kicker{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--blue);
-    margin:0 0 6px;
-    letter-spacing:0.02em;
-  }
-  .project-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    flex-wrap:wrap;
-    gap:8px;
-    margin-bottom:4px;
-  }
-  .project-title{ font-weight:600; font-size:17px; margin:0; line-height:1.4; }
-  .private-note{ font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-soft); padding:5px 0; }
-  .project-stack{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-  }
-  .project-desc{ color:var(--ink-soft); margin:6px 0 12px; max-width:70ch; }
-  .chip-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px;
-    margin:0 0 12px;
-  }
-  .chip{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    padding:3px 8px;
-    border:1px solid var(--rule);
-    background:var(--paper-2);
-    color:var(--ink-soft);
-    border-radius:2px;
-  }
-  .chip.track-data{ background:var(--green-bg); color:var(--green); border-color:transparent; }
-  .chip.track-soft{ background:var(--blue-bg); color:var(--blue); border-color:transparent; }
-
-  table.metrics{
-    width:100%;
-    border-collapse:collapse;
-    background:#fff;
-    border:1px solid var(--rule);
-    font-size:14px;
-  }
-  table.metrics caption{
-    caption-side:top;
-    text-align:left;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    padding:0 0 6px;
-  }
-  table.metrics th{
-    text-align:left;
-    font-family:'IBM Plex Mono', monospace;
-    font-weight:500;
-    font-size:11px;
-    color:var(--ink-soft);
-    background:var(--paper-2);
-    padding:7px 12px;
-    border-bottom:1px solid var(--rule);
-    border-right:1px solid var(--rule-soft);
-  }
-  table.metrics th:last-child, table.metrics td:last-child{ border-right:none; }
-  table.metrics td{
-    padding:8px 12px;
-    border-bottom:1px solid var(--rule-soft);
-    border-right:1px solid var(--rule-soft);
-    vertical-align:top;
-  }
-  table.metrics tr:last-child td{ border-bottom:none; }
-  table.metrics td.metric-name{ color:var(--ink-soft); width:34%; }
-  table.metrics td.metric-val{ font-family:'IBM Plex Mono', monospace; font-weight:500; }
-  .flag-good{ background:var(--green-bg); color:var(--green); }
-  .flag-warn{ background:var(--amber-bg); color:var(--amber); }
-  .flag-note{ background:var(--blue-bg); color:var(--blue); }
-
-  .project-links{ margin-top:12px; display:flex; gap:14px; flex-wrap:wrap; }
-  .project-links a{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    color:var(--blue);
-    text-decoration:none;
-  }
-  .project-links a:hover{ text-decoration:underline; }
-
-  .workflow{
-    list-style:none;
-    margin:0;
-    padding:0;
-    border:1px solid var(--rule);
-    background:#fff;
-    counter-reset:step;
-  }
-  .workflow li{
-    display:flex;
-    gap:14px;
-    padding:12px 14px;
-    border-bottom:1px solid var(--rule-soft);
-    color:var(--ink-soft);
-    font-size:14.5px;
-  }
-  .workflow li:last-child{ border-bottom:none; }
-  .workflow li::before{
-    counter-increment:step;
-    content:counter(step, decimal-leading-zero);
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    font-weight:600;
-    color:var(--blue);
-    min-width:2.2em;
-    padding-top:2px;
-  }
-
-  .arch{
-    margin:8px 0 0;
-    border:1px solid var(--rule);
-    background:#fff;
-    overflow-x:auto;
-  }
-  .arch-row{
-    display:flex;
-    align-items:stretch;
-    min-width:640px;
-  }
-  .arch-cell{
-    flex:1;
-    padding:14px 12px;
-    border-right:1px solid var(--rule-soft);
-    text-align:center;
-  }
-  .arch-cell:last-child{ border-right:none; }
-  .arch-cell .label{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    margin-bottom:6px;
-  }
-  .arch-cell .val{
-    font-weight:600;
-    font-size:14px;
-  }
-  .arch-arrow{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:28px;
-    flex-shrink:0;
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--blue);
-    background:var(--paper-2);
-    border-right:1px solid var(--rule-soft);
-  }
-  .arch-caption{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    padding:8px 12px;
-    border-top:1px solid var(--rule-soft);
-    background:var(--paper-2);
-  }
-
-  .build-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    gap:0;
-    border:1px solid var(--rule);
-    background:var(--rule-soft);
-  }
-  .build-cell{
-    background:#fff;
-    padding:16px 18px;
-  }
-  .build-cell h3, .build-cell h4{
-    margin:0 0 8px;
-    font-size:12px;
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--ink-soft);
-    font-weight:500;
-  }
-  .build-cell p{ margin:0; font-size:14.5px; color:var(--ink-soft); }
-
-  .skill-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-    gap:0;
-    border:1px solid var(--rule);
-    background:var(--rule-soft);
-  }
-  .skill-cell{
-    background:#fff;
-    padding:16px 18px;
-  }
-  .skill-cell h3{
-    margin:0 0 8px;
-    font-size:12px;
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--ink-soft);
-    font-weight:500;
-  }
-  .skill-cell p{ margin:0; font-size:14.5px; }
-  .skill-note{
-    margin:14px 0 0;
-    font-size:13.5px;
-    color:var(--ink-soft);
-    max-width:70ch;
-  }
-
-  .contact-row{
-    display:flex;
-    gap:22px;
-    flex-wrap:wrap;
-    align-items:baseline;
-  }
-  .contact-row a{ color:var(--blue); text-decoration:none; font-family:'IBM Plex Mono', monospace; font-size:14px; }
-  .contact-row a:hover{ text-decoration:underline; }
-
-  .tab-bar{
-    position:fixed;
-    bottom:0; left:0; right:0;
-    background:var(--paper-2);
-    border-top:1px solid var(--rule);
-    display:flex;
-    justify-content:center;
-    z-index:30;
-    overflow-x:auto;
-  }
-  .tab-bar a{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-    text-decoration:none;
-    padding:11px 12px;
-    border-right:1px solid var(--rule-soft);
-    white-space:nowrap;
-  }
-  .tab-bar a:hover{ background:#fff; color:var(--ink); }
-  .tab-bar a.active{ background:#fff; color:var(--blue); font-weight:600; }
-
-
-  .project{
-    transition:border-color .15s ease, box-shadow .15s ease;
-  }
-  .project:hover{ border-color:#B7B09C; box-shadow:0 8px 24px rgba(27,36,48,0.06); }
-  .project-links a{
-    border:1px solid var(--blue-bg);
-    background:var(--blue-bg);
-    padding:5px 10px;
-  }
-  .project-links a:hover{ text-decoration:none; border-color:var(--blue); }
-  .hero .links a{ transition:border-color .15s ease, color .15s ease, background .15s ease; }
-  .hero .links a:hover{ background:var(--blue-bg); }
-  .tab-bar a.active{ box-shadow:inset 0 2px 0 var(--blue); }
-  .project-visual{ margin:12px 0 14px; border:1px solid var(--rule); background:var(--paper-2); overflow:hidden; }
-  .project-visual img{ display:block; width:100%; height:auto; max-height:280px; object-fit:cover; object-position:top; }
-  .more-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-top:8px; }
-  .more-card{ background:#fff; border:1px solid var(--rule); padding:14px 16px; }
-  .more-card h3, .more-card h4{ margin:0 0 6px; font-size:15px; }
-  .more-card p{ margin:0 0 10px; font-size:13.5px; color:var(--ink-soft); }
-  .more-card a{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--blue); text-decoration:none; }
-  .more-card a:hover{ text-decoration:underline; }
-
-  @media (max-width:640px){
-    :root{ --header-w:0px; }
-    .row-ruler, .col-ruler{ display:none; }
-    .content-col{ padding:0 16px; }
-    .hero{ padding-top:20px; }
-    .project{ padding:14px; }
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    html{ scroll-behavior:auto; }
-  }
-</style>
+<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<script>(function(d){d.className='js'+(matchMedia('(prefers-reduced-motion: reduce)').matches?'':' motion')})(document.documentElement)</script>
+<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/site.js" defer></script>
+<noscript><style>.hero .poster{display:block}</style></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -500,7 +52,7 @@
         "Business Intelligence Developer",
         "Full-Stack Software Developer"
       ],
-      "description": "Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK, working with SQL, Power BI, Python, Excel, React, TypeScript and Next.js.",
+      "description": "Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK, working with SQL, Power BI, Python, Excel, React, TypeScript, Next.js, FastAPI and Supabase.",
       "knowsAbout": [
         "Data analysis",
         "Business intelligence",
@@ -513,7 +65,11 @@
         "TypeScript",
         "Next.js",
         "PostgreSQL",
-        "REST APIs"
+        "REST APIs",
+        "FastAPI",
+        "Supabase",
+        "Data visualisation",
+        "Streamlit"
       ],
       "sameAs": [
         "https://github.com/aboladvisuals",
@@ -527,20 +83,36 @@
       }
     },
     {
-      "@type": ["ProfilePage", "WebPage"],
+      "@type": [
+        "ProfilePage",
+        "WebPage"
+      ],
       "@id": "https://aboladvisuals.github.io/#webpage",
       "url": "https://aboladvisuals.github.io/",
       "name": "Emmanuel Abolade — Data Analyst, BI Developer & Full-Stack Developer, Hull UK",
       "description": "Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer in Hull, UK. SQL, Power BI, Python and React case studies with code.",
-      "isPartOf": { "@id": "https://aboladvisuals.github.io/#website" },
+      "isPartOf": {
+        "@id": "https://aboladvisuals.github.io/#website"
+      },
       "inLanguage": "en-GB",
-      "dateModified": "2026-11-11",
-      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://aboladvisuals.github.io/assets/og-image.png", "width": 1200, "height": 630 },
+      "dateModified": "2026-11-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://aboladvisuals.github.io/assets/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
       "hasPart": [
-        { "@id": "https://aboladvisuals.github.io/projects/#webpage" }
+        {
+          "@id": "https://aboladvisuals.github.io/projects/#webpage"
+        }
       ],
-      "about": { "@id": "https://aboladvisuals.github.io/#person" },
-      "mainEntity": { "@id": "https://aboladvisuals.github.io/#person" }
+      "about": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      },
+      "mainEntity": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      }
     },
     {
       "@type": "WebSite",
@@ -548,644 +120,336 @@
       "name": "Emmanuel Abolade",
       "url": "https://aboladvisuals.github.io/",
       "inLanguage": "en-GB",
-      "publisher": { "@id": "https://aboladvisuals.github.io/#person" }
+      "publisher": {
+        "@id": "https://aboladvisuals.github.io/#person"
+      }
     }
   ]
 }
 </script>
 </head>
 <body>
-
-<div class="sheet-frame">
-  <div class="col-ruler" aria-hidden="true">
-    <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
-  </div>
-  <div class="row-body">
-    <div class="row-ruler" id="rowRuler" aria-hidden="true"></div>
-    <div class="content-col">
-
-
-      <header class="hero" id="profile">
-        <h1>Emmanuel Abolade</h1>
-        <p class="role">Data Analyst · Business Intelligence Developer · Full-Stack Software Developer</p>
-        <p class="lede">I take operational and performance data from raw tables to a decision: clean it, define the KPI from the source field, check the grain before joining, and recommend only what the evidence supports. Based in Hull, UK.</p>
-        <p class="lede">The same discipline shows up when I build software. Booking flows, admin approval, and executive BI screens are treated like analytical products: clear entities, honest constraints, and interfaces that surface exceptions instead of hiding them.</p>
-        <div class="links">
-          <a href="mailto:aboladeanuoluwapo@gmail.com">Email Emmanuel Abolade</a>
-          <a href="https://linkedin.com/in/emmanuel-aboladesek" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
-          <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">GitHub profile</a>
-        </div>
-      </header>
-
-      <main>
-      <section id="experience" aria-labelledby="experience-heading">
-        <p class="section-label">B2</p>
-        <h2 id="experience-heading">Experience</h2>
-
-        <article class="job">
-          <div class="job-top">
-            <span class="job-title">Data Analyst — Amdari</span>
-            <span class="job-date">United Kingdom · 2025–Present</span>
-          </div>
-          <ul>
-            <li>Analyse business datasets to identify trends, patterns and performance gaps using Excel, Power Query, SQL, Python and R.</li>
-            <li>Develop analytical reports and dashboards in Power BI and Excel; build KPIs and performance metrics.</li>
-            <li>Query structured and relational datasets using SQL, including a three-table NHS A&amp;E analysis.</li>
-            <li>Present findings to stakeholders via dashboards, reports and stakeholder meetings.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-top">
-            <span class="job-title">Data Analyst — Pinntech Ltd</span>
-            <span class="job-date">United Kingdom · 2024–2025</span>
-          </div>
-          <ul>
-            <li>Cleaned and transformed data using Excel, Power Query and SQL; performed validation and quality checks.</li>
-            <li>Queried and aggregated relational data, including a 191-row NHS A&amp;E activity dataset.</li>
-            <li>Built PowerPoint presentations and presented directly in stakeholder meetings.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-top">
-            <span class="job-title">Freelance — Data Annotation, Outlier AI, Handshake</span>
-            <span class="job-date">Remote · Current</span>
-          </div>
-          <ul>
-            <li>Light, ongoing freelance work in data annotation / AI evaluation and full stack development tasks.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="how-i-work" aria-labelledby="how-i-work-heading">
-        <p class="section-label">C3</p>
-        <h2 id="how-i-work-heading">How I Work</h2>
-        <p class="section-intro">Analysis and software share one standard: define the question, respect the grain, enforce constraints, and only ship claims the evidence supports.</p>
-
-        <h3>Analytical practice</h3>
-        <ol class="workflow">
-          <li>Start from the business decision, not the chart.</li>
-          <li>Profile source tables and document grain before joins.</li>
-          <li>Clean and validate with explicit rules; keep exclusions auditable.</li>
-          <li>Define KPIs from source fields, not preferred narratives.</li>
-          <li>Cross-check findings in more than one tool when the stake is high.</li>
-          <li>Recommend actions only where the evidence is strong enough to act.</li>
-        </ol>
-
-        <h3>Data → software</h3>
-        <p class="section-intro" style="margin-top:0;">Restaurant financial analysis became ControlDeck NG — a productised UI over the same control gaps. Booking demand became Bibiunique — availability API, unique slot constraint, and admin approval instead of inbox chaos. Analysis that stops at a slide deck leaves the operational problem unsolved; software that ignores grain and validation invents confidence.</p>
-      </section>
-
-      <section id="data-bi" aria-labelledby="data-bi-heading">
-        <p class="section-label">D4</p>
-        <h2 id="data-bi-heading">Data &amp; BI</h2>
-        <p class="section-intro">Selected analytics and business-intelligence case studies. Metrics below are from the project repositories and published write-ups.</p>
-
-        <article class="project featured">
-          <p class="project-kicker">Featured · Operations intelligence</p>
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">Operations</span>
-            <span class="chip">Power BI</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">GrandStay Hospitality — Operations Intelligence</h3>
-            <span class="project-stack">Excel · Power Query · PivotTables · Power BI</span>
-          </div>
-          <p class="project-desc">Portfolio case study — built a ticket-level baseline for 120,000 guest-support contacts to evaluate an automation opportunity.</p>
-          <figure class="project-visual">
-            <img src="/assets/screenshots/grandstay-executive-dashboard.webp" alt="GrandStay executive dashboard showing ticket volume, median first response time, SLA performance and repetitive-ticket share" loading="lazy" width="960" height="540">
-          </figure>
-          <table class="metrics">
-            <caption>GrandStay Hospitality key metrics</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Tickets analysed</td><td class="metric-val">120,000</td></tr>
-              <tr><td class="metric-name">Median FRT</td><td class="metric-val">4.7 min</td></tr>
-              <tr><td class="metric-name">SLA met</td><td class="metric-val flag-warn">28.09% (72% breach)</td></tr>
-              <tr><td class="metric-name">Repetitive tickets</td><td class="metric-val flag-note">60.1%</td></tr>
-              <tr><td class="metric-name">Peak-hour load</td><td class="metric-val">63% of tickets</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="/projects/grandstay-hospitality-operations/">Case study</a>
-            <a href="https://github.com/aboladvisuals/grandstay-hospitality-operations" target="_blank" rel="noopener noreferrer">GitHub — GrandStay repository</a>
-          </div>
-        </article>
-
-        <article class="project featured">
-          <p class="project-kicker">Featured · Financial controls</p>
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">Financial controls</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">Restaurant Financial Intelligence &amp; CEO Dashboard</h3>
-            <span class="project-stack">Python · Pandas · SQL · Excel · Power Query · Power BI</span>
-          </div>
-          <p class="project-desc">Multi-unit hospitality financial analysis that surfaced a control gap, not just a dashboard. Grounding work for the ControlDeck NG product UI.</p>
-          <figure class="project-visual">
-            <img src="/assets/screenshots/restaurant-ceo-overview.webp" alt="Restaurant CEO overview Power BI dashboard with recorded sales, receipts, payments and control alerts" loading="lazy" width="960" height="540">
-          </figure>
-          <table class="metrics">
-            <caption>Restaurant Financial Intelligence key metrics</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Recorded sales</td><td class="metric-val">≈ ₦2.89bn</td></tr>
-              <tr><td class="metric-name">Recorded payments</td><td class="metric-val">≈ ₦2.12bn</td></tr>
-              <tr><td class="metric-name">Payments without payee</td><td class="metric-val flag-warn">19,146</td></tr>
-              <tr><td class="metric-name">Key finding</td><td class="metric-val flag-warn">Expenses collapse from Apr 2026 — profit unreliable until reconciled</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="/projects/restaurant-financial-intelligence/">Case study</a>
-            <a href="https://github.com/aboladvisuals/restaurant_ceo_analysis" target="_blank" rel="noopener noreferrer">GitHub — Restaurant CEO analysis</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">Marketplace SLA</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">Olist Marketplace — Delivery SLA &amp; Seller Sizing</h3>
-            <span class="project-stack">SQL Server · T-SQL · Python · Tableau</span>
-          </div>
-          <p class="project-desc">Public Kaggle e-commerce dataset — cross-validated in both SQL and Python.</p>
-          <table class="metrics">
-            <caption>Olist Marketplace key metrics</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Orders analysed</td><td class="metric-val">96,470 delivered</td></tr>
-              <tr><td class="metric-name">Late-delivery rate</td><td class="metric-val flag-warn">6.77%</td></tr>
-              <tr><td class="metric-name">Severely late (&gt;8 days)</td><td class="metric-val flag-warn">44% of late orders</td></tr>
-              <tr><td class="metric-name">Recommendation</td><td class="metric-val flag-good">Coach top 15 sellers by late volume</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="/projects/olist-marketplace-delivery-sla/">Case study</a>
-            <a href="https://github.com/aboladvisuals/olist_marketplace_sla" target="_blank" rel="noopener noreferrer">GitHub — Olist Marketplace SLA</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">Support RCA</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">CloudDesk — Support Resolution Root Cause</h3>
-            <span class="project-stack">Python · Jupyter · pandas</span>
-          </div>
-          <p class="project-desc">Investigated extended SaaS support resolution times across 2,400 tickets — testing documentation, reassignment, team, and category hypotheses against CSAT and renewal outcomes.</p>
-          <table class="metrics">
-            <caption>CloudDesk key metrics</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Tickets analysed</td><td class="metric-val">2,400</td></tr>
-              <tr><td class="metric-name">Median resolution</td><td class="metric-val">7.80 hours</td></tr>
-              <tr><td class="metric-name">Median investigation</td><td class="metric-val">6.15 hours</td></tr>
-              <tr><td class="metric-name">Average CSAT</td><td class="metric-val">4.52</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="/projects/clouddesk-support-root-cause/">Case study</a>
-            <a href="https://github.com/aboladvisuals/clouddesk_analytics" target="_blank" rel="noopener noreferrer">GitHub — CloudDesk analytics</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">Manufacturing</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">GreenTech Manufacturing Downtime Analysis</h3>
-            <span class="project-stack">SQL Server · Power BI · Excel · Power Query · DAX</span>
-          </div>
-          <table class="metrics">
-            <caption>GreenTech Manufacturing key metrics</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Batches analysed</td><td class="metric-val">645</td></tr>
-              <tr><td class="metric-name">Downtime events</td><td class="metric-val">885</td></tr>
-              <tr><td class="metric-name">Batch delay rate</td><td class="metric-val flag-warn">56.3%</td></tr>
-              <tr><td class="metric-name">Leading cause</td><td class="metric-val flag-note">Cleaning/Sanitation (86 incidents)</td></tr>
-            </tbody>
-          </table>
-        </article>
-
-        <article class="project">
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">EDA / SQL</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">E-commerce Orders — Cleaning, EDA &amp; SQL</h3>
-            <span class="project-stack">Python (pandas) · SQLite / SQL · matplotlib</span>
-          </div>
-          <p class="project-desc">Same 1,200-order dataset across cleaning (pandas), SQL analysis (SQLite) and explanatory charts. Titles state the finding; axes start at zero.</p>
-          <figure class="project-visual">
-            <img src="/assets/screenshots/ecommerce-orders-status-leak.webp" alt="Chart showing 41 percent of e-commerce orders cancelled or returned and 519,674 dollars not collected" loading="lazy" width="960" height="540">
-          </figure>
-          <table class="metrics">
-            <caption>E-commerce Orders key metrics</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Orders cleaned</td><td class="metric-val">1,200</td></tr>
-              <tr><td class="metric-name">Cancelled / Returned</td><td class="metric-val flag-warn">41% of orders</td></tr>
-              <tr><td class="metric-name">Revenue not collected</td><td class="metric-val flag-warn">$519,674</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="https://github.com/aboladvisuals/ecommerce-orders-sql-analysis" target="_blank" rel="noopener noreferrer">GitHub — E-commerce SQL analysis</a>
-            <a href="https://github.com/aboladvisuals/ecommerce-orders-visualization" target="_blank" rel="noopener noreferrer">GitHub — visualisation charts</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="chip-row">
-            <span class="chip track-data">Data &amp; BI</span>
-            <span class="chip">Job simulation</span>
-          </div>
-          <div class="project-head">
-            <h3 class="project-title">Daikibo Industrials — Deloitte Job Simulation</h3>
-            <span class="project-stack">Forage · Tableau · Excel</span>
-          </div>
-          <p class="project-desc">Training simulation (Forage / Deloitte Australia), not employment. Analysed factory device downtime and built an interactive Tableau dashboard with factory-to-device drill-through filtering. Completed August 2026.</p>
-          <div class="project-links">
-            <a href="https://github.com/aboladvisuals/daikibo-deloitte-data-analytics" target="_blank" rel="noopener noreferrer">GitHub — Daikibo Deloitte simulation</a>
-          </div>
-        </article>
-
-        <h3>More Data &amp; BI projects</h3>
-        <div class="more-grid">
-          <article class="more-card">
-            <h4>DecodeLab — Order cleaning &amp; EDA</h4>
-            <p>Cleaned 1,200 e-commerce orders in pandas (types, dates, coupon fill, total checks) and documented distribution and status findings.</p>
-            <a href="https://github.com/aboladvisuals/decodelab-Project-1" target="_blank" rel="noopener noreferrer">GitHub — DecodeLab Project 1</a>
-          </article>
-          <article class="more-card">
-            <h4>SQL analysis companion</h4>
-            <p>SQLite queries on the cleaned orders: status leak, product revenue leaders, and high-value delivery rates.</p>
-            <a href="https://github.com/aboladvisuals/ecommerce-orders-sql-analysis" target="_blank" rel="noopener noreferrer">GitHub — E-commerce SQL analysis</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="fullstack" aria-labelledby="fullstack-heading">
-        <p class="section-label">E5</p>
-        <h2 id="fullstack-heading">Full-Stack Development</h2>
-        <p class="section-intro">Capability to ship small business systems and analytical product UIs: typed front ends, API routes, relational persistence, auth, and evidence-aware tooling. Full Stack JavaScript certified (The Odin Project).</p>
-
-        <h3>How I build software</h3>
-        <ol class="workflow">
-          <li>Clarify the business problem, users, and non-goals.</li>
-          <li>Map the happy path and the failure cases that matter (conflicts, empty slots, bad input).</li>
-          <li>Sketch entities and constraints before UI chrome.</li>
-          <li>Choose a stack that fits the problem size — not a larger one for show.</li>
-          <li>Structure the repo: pages/UI, API routes, shared lib, database schema.</li>
-          <li>Build the core flow end-to-end before secondary pages.</li>
-          <li>Validate input at the boundary; keep business rules in one place.</li>
-          <li>Persist with database constraints that match the real rule (for example unique booking start times).</li>
-          <li>Add auth and admin only where ownership decisions are required.</li>
-          <li>Wire side effects deliberately (email, notifications) after the write path is sound.</li>
-          <li>Test critical paths and adversarial cases; keep analysis logic separate from UI shells.</li>
-          <li>Deploy, set environment config, and verify the live path matches local behaviour.</li>
-        </ol>
-
-        <h3>Architecture pattern</h3>
-        <div class="arch" role="img" aria-label="Architecture flow from user interface through frontend, API, database, to results">
-          <div class="arch-row">
-            <div class="arch-cell"><div class="label">Layer</div><div class="val">UI</div></div>
-            <div class="arch-arrow" aria-hidden="true">→</div>
-            <div class="arch-cell"><div class="label">Layer</div><div class="val">Frontend</div></div>
-            <div class="arch-arrow" aria-hidden="true">→</div>
-            <div class="arch-cell"><div class="label">Layer</div><div class="val">API</div></div>
-            <div class="arch-arrow" aria-hidden="true">→</div>
-            <div class="arch-cell"><div class="label">Layer</div><div class="val">Database</div></div>
-            <div class="arch-arrow" aria-hidden="true">→</div>
-            <div class="arch-cell"><div class="label">Layer</div><div class="val">Results</div></div>
-          </div>
-          <div class="arch-caption">Example (Bibiunique): Book page → Next.js/React → /api/availability &amp; /api/bookings → PostgreSQL + Prisma → confirmation email + admin review</div>
-        </div>
-
-        <h3>What I can build</h3>
-        <div class="build-grid">
-          <div class="build-cell">
-            <h4>Booking systems</h4>
-            <p>Service catalogues, availability APIs, conflict-safe bookings, admin approval.</p>
-          </div>
-          <div class="build-cell">
-            <h4>Executive BI product UIs</h4>
-            <p>Multi-view dashboards with alerts, reconciliation language, and charted KPIs.</p>
-          </div>
-          <div class="build-cell">
-            <h4>Evidence-based tools</h4>
-            <p>Document parsing, structured matching, CLI + web UI over a tested engine.</p>
-          </div>
-          <div class="build-cell">
-            <h4>Analytics pipelines</h4>
-            <p>Cleaning, SQL/Python EDA, KPI definition, and decision-ready reporting.</p>
-          </div>
-          <div class="build-cell">
-            <h4>Lightweight web utilities</h4>
-            <p>Semantic HTML/CSS/JS tools for simple operational lookups and portals.</p>
-          </div>
-          <div class="build-cell">
-            <h4>API-backed scripts</h4>
-            <p>External REST consumption with structured export for further analysis.</p>
-          </div>
-        </div>
-
-        <h3>Featured applications</h3>
-
-        <article class="project featured">
-          <p class="project-kicker">Featured · Data &amp; Decision Intelligence</p>
-          <div class="chip-row">
-            <span class="chip track-soft">Analytics</span>
-            <span class="chip">Python</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">OSRM</span>
-            <span class="chip">Leaflet</span>
-          </div>
-          <div class="project-head">
-            <h4 class="project-title">Event Travel Intelligence</h4>
-            <span class="project-stack">Python · FastAPI · JavaScript · Nominatim · OSRM · Leaflet · SQLite</span>
-          </div>
-          <p class="project-desc">Travel intelligence platform for journeys to major events. Users enter a starting location and select an event to receive route analysis, event-adjusted journey estimates, travel risk, verified disruptions, Park &amp; Ride options, interactive mapping, and overnight return-journey analysis. The system clearly separates modelled conditions from measured live data.</p>
-          <table class="metrics">
-            <caption>Event Travel Intelligence — production capabilities</caption>
-            <thead>
-              <tr><th scope="col">Capability</th><th scope="col">Status</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Event intelligence</td><td class="metric-val flag-good">Dynamic events + search</td></tr>
-              <tr><td class="metric-name">Journey analysis</td><td class="metric-val">Outbound + return + overnight</td></tr>
-              <tr><td class="metric-name">Transport intelligence</td><td class="metric-val">Verified + live-ready</td></tr>
-              <tr><td class="metric-name">Deployment</td><td class="metric-val flag-good">GitHub Pages + Render</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="/projects/event-travel-intelligence/">Case study</a>
-            <a href="https://aboladvisuals.github.io/event-travel-intelligence/" target="_blank" rel="noopener noreferrer">Live Demo — Event Travel Intelligence</a>
-            <a href="https://github.com/aboladvisuals/event-travel-intelligence" target="_blank" rel="noopener noreferrer">GitHub — Event Travel Intelligence</a>
-          </div>
-        </article>
-
-        <article class="project featured">
-          <p class="project-kicker">Featured · Full-stack MVP</p>
-          <div class="chip-row">
-            <span class="chip track-soft">Full-Stack</span>
-            <span class="chip">Next.js</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">Live demo</span>
-          </div>
-          <div class="project-head">
-            <h4 class="project-title">Bibiunique Booking</h4>
-            <span class="project-stack">Next.js · TypeScript · Tailwind · Prisma · PostgreSQL · NextAuth · Resend</span>
-          </div>
-          <p class="project-desc">Appointment scheduling MVP for an independent makeup artist business: public Home, Services, About, Contact, and Book pages; availability API; booking create with duplicate start-time prevention; admin login; dashboard to approve/cancel bookings and manage services; confirmation and owner notification email.</p>
-          <table class="metrics">
-            <caption>Bibiunique Booking — verified capabilities</caption>
-            <thead>
-              <tr><th scope="col">Capability</th><th scope="col">Evidence</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Public booking flow</td><td class="metric-val flag-good">Live on Vercel</td></tr>
-              <tr><td class="metric-name">Availability API</td><td class="metric-val">GET /api/availability</td></tr>
-              <tr><td class="metric-name">Slot conflict rule</td><td class="metric-val flag-note">Unique Booking.startsAt</td></tr>
-              <tr><td class="metric-name">Admin workflow</td><td class="metric-val">Approve / cancel + services</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="https://bibiunique-booking.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo — Bibiunique Booking</a>
-            <span class="private-note">Source code: private repository</span>
-          </div>
-        </article>
-
-        <article class="project featured">
-          <p class="project-kicker">Featured · Software UI over real analysis</p>
-          <div class="chip-row">
-            <span class="chip track-soft">Full-Stack / BI UI</span>
-            <span class="chip">React</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">Live demo</span>
-          </div>
-          <div class="project-head">
-            <h4 class="project-title">ControlDeck NG — Executive BI Dashboard POC</h4>
-            <span class="project-stack">Vite · React 19 · TypeScript · Tailwind · Recharts · React Router</span>
-          </div>
-          <p class="project-desc">Productised dashboard layer built on the restaurant analysis — CEO Home, Financial Control Centre, Sales Intelligence, Cost &amp; Profitability, Inventory, Purchasing, AI CEO Assistant (demo responses), and Executive Alerts. Uses mock operational data shaped by real findings; not a live bank or POS integration.</p>
-          <table class="metrics">
-            <caption>ControlDeck NG — grounding figures reflected in mock data</caption>
-            <thead>
-              <tr><th scope="col">Metric</th><th scope="col">Value</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Sales (grounding)</td><td class="metric-val">₦2.888B</td></tr>
-              <tr><td class="metric-name">Payments (grounding)</td><td class="metric-val">₦2.116B</td></tr>
-              <tr><td class="metric-name">Payments no payee</td><td class="metric-val flag-warn">19,146</td></tr>
-              <tr><td class="metric-name">Product screens</td><td class="metric-val flag-note">8 views</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="/projects/controldeck-ng/">Case study</a>
-            <a href="https://aboladvisuals.github.io/controldeck-ng/" target="_blank" rel="noopener noreferrer">Live Demo — ControlDeck NG</a>
-            <a href="https://github.com/aboladvisuals/controldeck-ng" target="_blank" rel="noopener noreferrer">GitHub — ControlDeck NG</a>
-          </div>
-        </article>
-
-        <article class="project featured">
-          <p class="project-kicker">Featured · Software engineering</p>
-          <div class="chip-row">
-            <span class="chip track-soft">Application</span>
-            <span class="chip">Python</span>
-            <span class="chip">Streamlit</span>
-            <span class="chip">pytest</span>
-          </div>
-          <div class="project-head">
-            <h4 class="project-title">CV Analyzer &amp; Job Match Optimizer</h4>
-            <span class="project-stack">Python · pdfplumber · python-docx · Streamlit · reportlab · pytest</span>
-          </div>
-          <p class="project-desc">Application that evaluates a CV against a real job description — and optional similar adverts — to produce an evidence matrix, gap analysis, personal statement tiers, and reviewable wording suggestions. Every claim traces back to CV text; it does not invent skills. CLI and Streamlit UI share the same tested engine.</p>
-          <table class="metrics">
-            <caption>CV Analyzer — engineering signals</caption>
-            <thead>
-              <tr><th scope="col">Signal</th><th scope="col">Detail</th></tr>
-            </thead>
-            <tbody>
-              <tr><td class="metric-name">Test suite</td><td class="metric-val flag-good">101 automated tests (project README)</td></tr>
-              <tr><td class="metric-name">Interfaces</td><td class="metric-val">CLI + Streamlit web UI</td></tr>
-              <tr><td class="metric-name">Matching approach</td><td class="metric-val flag-note">Rule-based, traceable phrases</td></tr>
-              <tr><td class="metric-name">Exports</td><td class="metric-val">DOCX / PDF reports</td></tr>
-            </tbody>
-          </table>
-          <div class="project-links">
-            <a href="https://github.com/aboladvisuals/cv_analyzer" target="_blank" rel="noopener noreferrer">GitHub — CV Analyzer</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="chip-row">
-            <span class="chip">Front-end utility</span>
-            <span class="chip">Not full-stack</span>
-          </div>
-          <div class="project-head">
-            <h4 class="project-title">RCCG Games Day Coordinator Portal</h4>
-            <span class="project-stack">HTML · CSS · JavaScript</span>
-          </div>
-          <p class="project-desc">Lightweight client-side portal: enter a first name to view an assigned role for a games-day event. Classified as a front-end utility, not a full-stack application.</p>
-          <div class="project-links">
-            <a href="https://github.com/aboladvisuals/rccg-games-portal" target="_blank" rel="noopener noreferrer">GitHub — RCCG Games Portal</a>
-          </div>
-        </article>
-
-        <h3>More projects / GitHub</h3>
-        <div class="more-grid">
-          <article class="more-card">
-            <h4>ControlDeck NG live UI</h4>
-            <p>Public GitHub Pages demo of the hospitality BI POC. Mock data shaped by the restaurant analysis; not a live POS feed.</p>
-            <a href="https://aboladvisuals.github.io/controldeck-ng/" target="_blank" rel="noopener noreferrer">Live demo</a>
-          </article>
-          <article class="more-card">
-            <h4>Project case studies</h4>
-            <p>Longer write-ups of selected projects: problem, data, method, architecture, findings and limits, each linked to its source.</p>
-            <a href="/projects/">All case studies</a>
-          </article>
-          <article class="more-card">
-            <h4>Public GitHub profile</h4>
-            <p>Additional SQL, Python and course repositories live on GitHub. Featured work above is the curated set.</p>
-            <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">github.com/aboladvisuals</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="building" aria-labelledby="building-heading">
-        <p class="section-label">F6</p>
-        <h2 id="building-heading">Currently Building</h2>
-        <p class="section-intro">Active development track — work in progress, not finished portfolio claims.</p>
-
-        <article class="job">
-          <div class="job-top"><span class="job-title">NHS A&amp;E Operational Performance Analysis</span></div>
-          <ul><li>Analysing NHS England public A&amp;E monthly data against the 78% four-hour target, using SQL Server and Power BI.</li></ul>
-        </article>
-        <article class="job">
-          <div class="job-top"><span class="job-title">Continuously developing</span></div>
-          <ul>
-            <li>Deepening full-stack delivery on real business workflows (booking, admin, persistence, deploy).</li>
-            <li>Turning analytical findings into usable product surfaces (ControlDeck-style BI UIs).</li>
-            <li>Strengthening test coverage and evidence discipline in tooling such as CV Analyzer.</li>
-            <li>AWS analytics &amp; data-engineering learning paths — training environment, not production experience.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="skills" aria-labelledby="skills-heading">
-        <p class="section-label">G7</p>
-        <h2 id="skills-heading">Skills</h2>
-        <p class="section-intro">Each skill is mapped to the public project that shows it on the <a href="/projects/#skills-evidence">skills and evidence page</a>.</p>
-        <div class="skill-grid">
-          <div class="skill-cell">
-            <h3>Data &amp; BI</h3>
-            <p>SQL Server, SSMS, Excel, Power Query, Power Pivot, Power BI, DAX, Python (pandas), R, Tableau, Looker Studio, BigQuery</p>
-          </div>
-          <div class="skill-cell">
-            <h3>Frontend</h3>
-            <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Next.js, Tailwind CSS, Recharts, Vite</p>
-          </div>
-          <div class="skill-cell">
-            <h3>Backend</h3>
-            <p>Node.js, Next.js API routes, REST APIs, NextAuth, Prisma, Zod validation, Resend email, Python (CLI/Streamlit apps)</p>
-          </div>
-          <div class="skill-cell">
-            <h3>Databases</h3>
-            <p>PostgreSQL, SQL Server, SQLite, Prisma schema &amp; migrations</p>
-          </div>
-          <div class="skill-cell">
-            <h3>Tools</h3>
-            <p>Git/GitHub, VS Code / Cursor, pytest, Excel / Power Query, Jupyter</p>
-          </div>
-          <div class="skill-cell">
-            <h3>Practice</h3>
-            <p>Data cleaning &amp; validation, KPI definition, grain checking, EDA, root-cause analysis, evidence-based recommendations, stakeholder presentation</p>
-          </div>
-        </div>
-        <p class="skill-note"><strong>Cloud (learning):</strong> AWS analytics &amp; data-engineering learning paths (S3, Glue, Athena, Redshift, Bedrock) — training environment, not production experience. Full Stack JavaScript certified (The Odin Project).</p>
-      </section>
-
-      <footer id="contact" aria-labelledby="contact-heading">
-        <p class="section-label">H8</p>
-        <h2 id="contact-heading">Contact</h2>
-        <div class="contact-row">
-          <a href="mailto:aboladeanuoluwapo@gmail.com">aboladeanuoluwapo@gmail.com</a>
-          <a href="https://linkedin.com/in/emmanuel-aboladesek" target="_blank" rel="noopener noreferrer">linkedin.com/in/emmanuel-aboladesek</a>
-          <a href="https://github.com/aboladvisuals" target="_blank" rel="noopener noreferrer">github.com/aboladvisuals</a>
-        </div>
-      </footer>
-      </main>
-
-    </div>
-  </div>
-</div>
-
-<nav class="tab-bar" id="tabBar" aria-label="Section navigation">
-  <a href="#profile" class="active">Profile</a>
-  <a href="#experience">Experience</a>
-  <a href="#how-i-work">How I Work</a>
-  <a href="#data-bi">Data &amp; BI</a>
-  <a href="#fullstack">Full-Stack</a>
-  <a href="#building">Currently Building</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap bar">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">EA</span><span>Emmanuel Abolade<small>Data · BI · Full-Stack · Hull, UK</small></span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+<nav id="site-nav" class="nav" aria-label="Primary">
+<a href="/#work">Work</a>
+<a href="/projects/">Case studies</a>
+<a href="/#skills">Skills</a>
+<a href="/#experience">Experience</a>
+<a href="/#contact" class="nav-cta">Contact</a>
 </nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" data-gl aria-labelledby="hero-title">
+<div class="hero-stage" aria-hidden="true">
+<canvas id="hero-canvas"></canvas>
+<img class="poster" src="/assets/hero-poster.webp" srcset="/assets/hero-poster-800.webp 800w, /assets/hero-poster.webp 1600w" sizes="100vw" alt="" width="1600" height="1000" loading="lazy" decoding="async">
+</div>
+<div class="wrap">
+<div class="hero-inner">
+<p class="eyebrow">Data Analyst · BI Developer · Full-Stack Developer · Hull, UK</p>
+<h1 id="hero-title">Emmanuel <span class="serif">Abolade</span></h1>
+<p class="role">I turn business data into decisions, and decisions into working software.</p>
+<p class="lede">I take operational and performance data from raw tables to a decision: clean it, define the KPI from the source field, check the grain before joining, and recommend only what the evidence supports. Then I build the tools that keep the answer in front of people: APIs, dashboards and full-stack applications.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#work">See the evidence <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn" href="/projects/">All case studies</a>
+</div>
+<div class="hero-meta">
+<a href="mailto:aboladeanuoluwapo@gmail.com"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> Email</a>
+<a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.17 0h13.66C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.17 1.15H1.17C.52 16 0 15.48 0 14.85V1.15Zm4.94 12.24V6.17H2.54v7.22h2.4ZM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01Zm4.91 8.21V9.36c0-.22.02-.43.08-.59.18-.43.57-.88 1.23-.88.87 0 1.22.66 1.22 1.63v3.87h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.27 0-1.84.7-2.16 1.2v.02h-.02l.02-.02V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4Z"/></svg> LinkedIn</a>
+<a href="https://github.com/aboladvisuals" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg> GitHub</a>
+</div>
+</div>
+</div>
+<div class="stage-ctrl">
+<div class="stage-legend" aria-hidden="true"><span><i style="background:var(--amber)"></i>Data</span><span><i style="background:var(--teal)"></i>Intelligence</span><span><i style="background:var(--azure)"></i>Systems</span></div>
+<button type="button" class="stage-toggle" aria-pressed="false"><svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4 3h3v10H4zM9 3h3v10H9z"/></svg><span>Pause motion</span></button>
+</div>
+</section>
 
-<script defer>
-  function buildRowRuler(){
-    var ruler = document.getElementById('rowRuler');
-    var contentCol = document.querySelector('.content-col');
-    if(!ruler || !contentCol) return;
-    var contentHeight = contentCol.offsetHeight;
-    var rowH = 34;
-    var count = Math.ceil(contentHeight / rowH);
-    ruler.innerHTML = '';
-    for(var i=1;i<=count;i++){
-      var s = document.createElement('span');
-      s.style.height = rowH+'px';
-      s.style.lineHeight = rowH+'px';
-      s.textContent = i;
-      ruler.appendChild(s);
-    }
-  }
-  window.addEventListener('load', buildRowRuler);
-  window.addEventListener('resize', buildRowRuler);
+<section class="proof" aria-label="At a glance">
+<div class="wrap">
+<div class="cell"><strong>9</strong><span>case studies with code or live evidence</span></div>
+<div class="cell"><strong>5</strong><span>live apps, demos and prototypes</span></div>
+<div class="cell"><strong>150</strong><span>automated tests passing in two featured apps</span></div>
+<div class="cell"><strong>120k</strong><span>support tickets in one Power BI baseline</span></div>
+</div>
+</section>
 
-  var tabs = document.querySelectorAll('.tab-bar a');
-  var sections = Array.from(tabs).map(function(t){ return document.querySelector(t.getAttribute('href')); });
-  function onScroll(){
-    var pos = window.scrollY + 120;
-    var current = sections[0];
-    sections.forEach(function(sec){ if(sec && sec.offsetTop <= pos) current = sec; });
-    if(!current) return;
-    tabs.forEach(function(t){
-      t.classList.toggle('active', t.getAttribute('href') === '#'+current.id);
-    });
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-</script>
+<section class="section" id="profile" aria-labelledby="profile-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">01 — What I do</span><h2 id="profile-title">Three strengths, <span class="serif">one discipline.</span></h2></div>
+<p>Analysis and software share one standard: define the question, respect the grain, enforce constraints, and only ship claims the evidence supports.</p>
+</div>
+<div class="pillars">
+<article class="pillar" style="--accent:var(--amber)" data-reveal>
+<div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+<h3>Data intelligence &amp; business analytics</h3>
+<p>SQL, Python and Power BI work that starts from a business decision: KPI definitions from source fields, cross-checked findings and dashboards built for action.</p>
+<ul><li class="chip">SQL Server</li><li class="chip">Power BI · DAX</li><li class="chip">Python · pandas</li><li class="chip">Excel · Power Query</li><li class="chip">Tableau</li></ul>
+<div class="evidence"><a href="/projects/olist-marketplace-delivery-sla/">Olist SLA in T-SQL</a><a href="/projects/restaurant-financial-intelligence/">Restaurant financial controls</a><a href="/projects/grandstay-hospitality-operations/">GrandStay Power BI baseline</a></div>
+</article>
+<article class="pillar" style="--accent:var(--azure)" data-reveal>
+<div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<h3>Full-stack software engineering</h3>
+<p>Typed front ends, APIs, relational persistence, authentication and deployment, with tests on the paths that matter.</p>
+<ul><li class="chip">React · Next.js</li><li class="chip">TypeScript</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL · Supabase</li><li class="chip">Vercel · Render</li></ul>
+<div class="evidence"><a href="/projects/event-travel-intelligence/">Event Travel Intelligence</a><a href="/projects/fountain-of-prayer-church-platform/">Church platform: roles &amp; realtime</a><a href="/projects/controldeck-ng/">ControlDeck NG</a></div>
+</article>
+<article class="pillar" style="--accent:var(--teal)" data-reveal>
+<div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M5 19l2.5-2.5M16.5 7.5 19 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+<h3>Intelligent business solutions</h3>
+<p>Software that solves practical operational, financial and organisational problems, and uses automation or AI only where it can be verified.</p>
+<ul><li class="chip">Decision support</li><li class="chip">Guarded AI</li><li class="chip">Automation</li><li class="chip">Exception reporting</li></ul>
+<div class="evidence"><a href="/projects/cv-analyzer-job-match/">CV Analyzer: evidence engine</a><a href="/projects/controldeck-ng/">Analysis turned into a product</a><a href="/projects/clouddesk-support-root-cause/">CloudDesk root cause</a></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="work" aria-labelledby="work-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">02 — Selected work</span><h2 id="work-title">Real projects, <span class="serif">real evidence.</span></h2></div>
+<p>Selected analytics, BI and software projects. Figures come from the project repositories, published write-ups and live demos, and each card links to the source.</p>
+</div>
+<div class="filters" role="group" aria-label="Filter projects" data-filter-group="work-grid" data-filter-status="work-grid-status" hidden>
+<button type="button" data-filter="all" aria-pressed="true">All work</button>
+<button type="button" data-filter="data" aria-pressed="false">Data &amp; BI</button>
+<button type="button" data-filter="software" aria-pressed="false">Software engineering</button>
+<button type="button" data-filter="ai" aria-pressed="false">Applied AI</button>
+</div><p id="work-grid-status" class="sr-only" aria-live="polite"></p>
+<div class="work" id="work-grid">
+<article class="card wide" data-cat="software data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/event-travel-intelligence-home.webp" alt="Event Travel Intelligence web app home screen with event selection and journey inputs over a map" width="800" height="500" loading="lazy" decoding="async"><div class="tagline"><span class="status live">Live demo</span></div></div>
+<div class="body">
+<span class="kind">Full-stack · Decision intelligence</span>
+<h3><a href="/projects/event-travel-intelligence/">Event Travel Intelligence</a></h3>
+<p>A travel-intelligence platform for journeys to major UK events. Enter a starting point and an event to get route analysis, event-adjusted journey estimates, travel risk, Park &amp; Ride options, an interactive map and overnight return analysis. Modelled conditions are clearly separated from measured live data.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">SQLite</li><li class="chip">JavaScript</li><li class="chip">Leaflet</li><li class="chip">OSRM</li><li class="chip">Nominatim</li></ul>
+<div class="metrics"><div><b>Outbound + return</b><span>journey analysis incl. overnight</span></div><div><b>7 test modules</b><span>API, engine, live transport</span></div><div><b>Pages + Render</b><span>frontend and API hosting</span></div></div>
+<div class="links"><a class="primary" href="/projects/event-travel-intelligence/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://aboladvisuals.github.io/event-travel-intelligence/" rel="noopener" aria-label="Live demo: Event Travel Intelligence">Live demo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/event-travel-intelligence" rel="noopener" aria-label="Code: Event Travel Intelligence">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card" data-cat="data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/restaurant-ceo-overview.webp" alt="Power BI CEO overview for the restaurant financial analysis with sales, payments and trend visuals" width="800" height="470" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Portfolio analysis</span></div></div>
+<div class="body">
+<span class="kind">Data &amp; BI · Financial controls</span>
+<h3><a href="/projects/restaurant-financial-intelligence/">Restaurant Financial Intelligence &amp; CEO Dashboard</a></h3>
+<p>Multi-unit hospitality financial analysis that surfaced a control gap, not just a dashboard. It became the grounding for the ControlDeck NG product UI.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Python</li><li class="chip">pandas</li><li class="chip">SQL</li><li class="chip">Power Query</li><li class="chip">Power BI</li></ul>
+<div class="metrics"><div><b>≈ ₦2.89bn</b><span>recorded sales</span></div><div><b>19,146</b><span>payments without payee</span></div><div><b>Apr 2026</b><span>expense records collapse</span></div></div>
+<div class="links"><a class="primary" href="/projects/restaurant-financial-intelligence/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/restaurant_ceo_analysis" rel="noopener" aria-label="Code: Restaurant Financial Intelligence & CEO Dashboard">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card" data-cat="software data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/controldeck-ng-ceo-home.webp" alt="ControlDeck NG CEO Home screen with naira KPI cards, a revenue and expense trend and critical alerts" width="800" height="500" loading="lazy" decoding="async"><div class="tagline"><span class="status poc">Proof of concept · live</span></div></div>
+<div class="body">
+<span class="kind">Full-stack · BI product UI</span>
+<h3><a href="/projects/controldeck-ng/">ControlDeck NG — Executive BI Dashboard</a></h3>
+<p>The restaurant analysis turned into a product surface: CEO Home, Financial Control Centre, Sales, Cost &amp; Profitability, Inventory, Purchasing, an AI assistant with demo responses, and alerts. Mock data shaped by real findings.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">React 19</li><li class="chip">TypeScript</li><li class="chip">Vite</li><li class="chip">Tailwind</li><li class="chip">Recharts</li></ul>
+<div class="metrics"><div><b>8 screens</b><span>single-page app</span></div><div><b>₦2.888B</b><span>grounding sales figure</span></div><div><b>Mock data</b><span>no live POS feed</span></div></div>
+<div class="links"><a class="primary" href="/projects/controldeck-ng/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://aboladvisuals.github.io/controldeck-ng/" rel="noopener" aria-label="Live demo: ControlDeck NG — Executive BI Dashboard">Live demo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/controldeck-ng" rel="noopener" aria-label="Code: ControlDeck NG — Executive BI Dashboard">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card wide" data-cat="software" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/fountain-of-prayer-hull-home.webp" alt="Public homepage of the church website with a plum and gold design and a Plan your visit button" width="800" height="500" loading="lazy" decoding="async"><div class="tagline"><span class="status live">Live public site</span></div></div>
+<div class="body">
+<span class="kind">Full-stack · Auth, roles &amp; realtime</span>
+<h3><a href="/projects/fountain-of-prayer-church-platform/">Church Website &amp; Presence Platform</a></h3>
+<p>A Next.js 16 and Supabase platform for a church in Hull: a public visitor website, sign-in for members, role-scoped pastor, admin and media areas protected by row-level security, and a projector display updated in real time from the media dashboard.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Next.js 16</li><li class="chip">React 19</li><li class="chip">TypeScript</li><li class="chip">Supabase</li><li class="chip">Postgres RLS</li><li class="chip">Realtime</li><li class="chip">Vercel</li></ul>
+<div class="metrics"><div><b>33 tests</b><span>auth, session and roles, passing</span></div><div><b>4 signed-in areas</b><span>member, pastor, admin, media</span></div><div><b>Realtime</b><span>presentation display</span></div></div>
+<div class="links"><a class="primary" href="/projects/fountain-of-prayer-church-platform/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://rccg-fountain-of-prayer-hull.vercel.app/" rel="noopener" aria-label="Live site: Church Website & Presence Platform">Live site <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+</div>
+</article>
+<article class="card" data-cat="software ai" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/cv-analyzer-evidence-gaps.webp" alt="CV Analyzer Streamlit interface showing the evidence matrix" width="800" height="409" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Completed &amp; tested</span></div></div>
+<div class="body">
+<span class="kind">Software · Applied AI (guarded)</span>
+<h3><a href="/projects/cv-analyzer-job-match/">CV Analyzer &amp; Job Match Optimizer</a></h3>
+<p>Matches a CV against a real job description with a traceable evidence matrix and gap analysis. An optional AI phrasing layer is checked after the fact and rejected if it adds anything the CV cannot evidence.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Python</li><li class="chip">Streamlit</li><li class="chip">pdfplumber</li><li class="chip">reportlab</li><li class="chip">pytest</li></ul>
+<div class="metrics"><div><b>117 tests</b><span>passing locally</span></div><div><b>CLI + web</b><span>one shared engine</span></div><div><b>DOCX / PDF</b><span>report export</span></div></div>
+<div class="links"><a class="primary" href="/projects/cv-analyzer-job-match/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/cv_analyzer" rel="noopener" aria-label="Code: CV Analyzer & Job Match Optimizer">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card" data-cat="data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/olist-delivery-sla.webp" alt="Olist delivery SLA analysis chart of late-delivery rates" width="800" height="434" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Portfolio analysis</span></div></div>
+<div class="body">
+<span class="kind">Data &amp; BI · SQL Server</span>
+<h3><a href="/projects/olist-marketplace-delivery-sla/">Olist Marketplace — Delivery SLA &amp; Seller Sizing</a></h3>
+<p>Public Kaggle e-commerce data analysed in T-SQL and cross-checked in Python, with a recommendation targeted at the sellers driving late volume.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">SQL Server</li><li class="chip">T-SQL</li><li class="chip">Python</li><li class="chip">Tableau</li></ul>
+<div class="metrics"><div><b>96,470</b><span>delivered orders</span></div><div><b>6.77%</b><span>late-delivery rate</span></div><div><b>44%</b><span>of late orders >8 days</span></div></div>
+<div class="links"><a class="primary" href="/projects/olist-marketplace-delivery-sla/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/olist_marketplace_sla" rel="noopener" aria-label="Code: Olist Marketplace — Delivery SLA & Seller Sizing">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card third" data-cat="data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/grandstay-executive-dashboard.webp" alt="GrandStay Power BI executive dashboard for guest-support operations" width="800" height="551" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Portfolio analysis</span></div></div>
+<div class="body">
+<span class="kind">Data &amp; BI · Power BI</span>
+<h3><a href="/projects/grandstay-hospitality-operations/">GrandStay Hospitality — Operations Intelligence</a></h3>
+<p>A ticket-level baseline for guest-support contacts to evaluate an automation opportunity.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Excel</li><li class="chip">Power Query</li><li class="chip">Power BI</li></ul>
+<div class="metrics"><div><b>120,000</b><span>tickets</span></div><div><b>28.09%</b><span>SLA met</span></div><div><b>60.1%</b><span>repetitive</span></div></div>
+<div class="links"><a class="primary" href="/projects/grandstay-hospitality-operations/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/grandstay-hospitality-operations" rel="noopener" aria-label="Code: GrandStay Hospitality — Operations Intelligence">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card third" data-cat="data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/clouddesk-executive-overview.webp" alt="CloudDesk Power BI executive overview of support resolution times" width="800" height="443" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Portfolio analysis</span></div></div>
+<div class="body">
+<span class="kind">Data &amp; BI · Statistics</span>
+<h3><a href="/projects/clouddesk-support-root-cause/">CloudDesk — Support Root Cause</a></h3>
+<p>Hypotheses on documentation, reassignment, team and category tested against resolution time, CSAT and renewal.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Python</li><li class="chip">pandas</li><li class="chip">statsmodels</li><li class="chip">Power BI</li></ul>
+<div class="metrics"><div><b>2,400</b><span>tickets</span></div><div><b>7.80 h</b><span>median resolution</span></div><div><b>4.52</b><span>average CSAT</span></div></div>
+<div class="links"><a class="primary" href="/projects/clouddesk-support-root-cause/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/clouddesk_analytics" rel="noopener" aria-label="Code: CloudDesk — Support Root Cause">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+<article class="card third" data-cat="data" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/nigeria-at-66-dashboard.webp" alt="Nigeria at 66 Power BI dashboard with KPI cards and a 1960 to 2025 trend" width="800" height="466" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Completed analysis</span></div></div>
+<div class="body">
+<span class="kind">Data &amp; BI · API to Power BI</span>
+<h3><a href="/projects/nigeria-at-66-world-bank-data-story/">Nigeria at 66 — World Bank Data Story</a></h3>
+<p>World Bank API extraction in Python, pandas validation and a one-page Power BI story.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Python</li><li class="chip">requests</li><li class="chip">pandas</li><li class="chip">Power BI</li></ul>
+<div class="metrics"><div><b>7 × 4</b><span>indicators × countries</span></div><div><b>1,848</b><span>rows prepared</span></div><div><b>1960–2025</b><span>coverage</span></div></div>
+<div class="links"><a class="primary" href="/projects/nigeria-at-66-world-bank-data-story/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/nigeria-at-66" rel="noopener" aria-label="Code: Nigeria at 66 — World Bank Data Story">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="how-i-work" aria-labelledby="how-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">03 — How I work</span><h2 id="how-title">From raw tables <span class="serif">to running systems.</span></h2></div>
+<p>Analysis that stops at a slide deck leaves the operational problem unsolved; software that ignores grain and validation invents confidence.</p>
+</div>
+<div class="pipeline" data-reveal>
+<div class="step" style="--c:var(--amber)"><span class="n">01</span><h3>Question</h3><p>Start from the business decision, not the chart. Clarify users and non-goals.</p></div>
+<div class="step" style="--c:var(--amber)"><span class="n">02</span><h3>Data</h3><p>Profile source tables, document grain before joins, keep exclusions auditable.</p></div>
+<div class="step" style="--c:var(--teal)"><span class="n">03</span><h3>Insight</h3><p>Define KPIs from source fields and cross-check findings in more than one tool.</p></div>
+<div class="step" style="--c:var(--teal)"><span class="n">04</span><h3>Decision</h3><p>Recommend actions only where the evidence is strong enough to act.</p></div>
+<div class="step" style="--c:var(--azure)"><span class="n">05</span><h3>System</h3><p>Build the product: entities and constraints first, then UI, tests and deployment.</p></div>
+</div>
+<div class="practice">
+<div class="panel" data-reveal><h3>Analytical practice</h3><ul><li>Start from the business decision, not the chart.</li><li>Profile source tables and document grain before joins.</li><li>Clean and validate with explicit rules; keep exclusions auditable.</li><li>Define KPIs from source fields, not preferred narratives.</li><li>Cross-check findings in more than one tool when the stakes are high.</li></ul></div>
+<div class="panel" data-reveal><h3>Data → software</h3><p>Restaurant financial analysis became <a href="/projects/controldeck-ng/">ControlDeck NG</a>, a product UI over the same control gaps. Booking demand became Bibiunique: an availability API, a unique slot constraint and admin approval instead of inbox chaos. A church’s Sunday logistics became a <a href="/projects/fountain-of-prayer-church-platform/">role-based platform</a> with a realtime projector display.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="experience" aria-labelledby="exp-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">04 — Experience</span><h2 id="exp-title">Experience</h2></div>
+<p>Data analysis roles in the UK, alongside independent software projects.</p>
+</div>
+<div class="timeline">
+<div class="job" data-reveal><div class="when">2025 – Present<br>United Kingdom</div><div><h3>Data Analyst</h3><p class="org">Amdari</p><ul><li>Analyse business datasets to identify trends, patterns and performance gaps using Excel, Power Query, SQL, Python and R.</li><li>Develop analytical reports and dashboards in Power BI and Excel; build KPIs and performance metrics.</li><li>Query structured and relational datasets using SQL, including a three-table NHS A&amp;E analysis.</li><li>Present findings to stakeholders via dashboards, reports and stakeholder meetings.</li></ul></div></div>
+<div class="job" data-reveal><div class="when">2024 – 2025<br>United Kingdom</div><div><h3>Data Analyst</h3><p class="org">Pinntech Ltd</p><ul><li>Cleaned and transformed data using Excel, Power Query and SQL; performed validation and quality checks.</li><li>Queried and aggregated relational data, including a 191-row NHS A&amp;E activity dataset.</li><li>Built PowerPoint presentations and presented directly in stakeholder meetings.</li></ul></div></div>
+<div class="job" data-reveal><div class="when">Current<br>Remote</div><div><h3>Freelance</h3><p class="org">Data Annotation, Outlier AI, Handshake</p><ul><li>Light, ongoing freelance work in data annotation / AI evaluation and full stack development tasks.</li></ul></div></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="skills" aria-labelledby="skills-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">05 — Skills</span><h2 id="skills-title">Tools, <span class="serif">mapped to evidence.</span></h2></div>
+<p>Each skill is mapped to the public project that shows it on the <a href="/projects/#skills-evidence">skills and evidence page</a>.</p>
+</div>
+<div class="skills">
+<div class="skill-group" style="--accent:var(--amber)" data-reveal><h3><i></i>Data &amp; BI</h3><ul><li>SQL Server</li><li>SSMS</li><li>Excel</li><li>Power Query</li><li>Power Pivot</li><li>Power BI</li><li>DAX</li><li>Python (pandas)</li><li>R</li><li>Tableau</li><li>Looker Studio</li><li>BigQuery</li></ul></div>
+<div class="skill-group" style="--accent:var(--azure)" data-reveal><h3><i></i>Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Recharts</li><li>Vite</li><li>WebGL</li></ul></div>
+<div class="skill-group" style="--accent:var(--azure)" data-reveal><h3><i></i>Backend</h3><ul><li>Node.js</li><li>Next.js API routes &amp; server actions</li><li>REST APIs</li><li>FastAPI</li><li>NextAuth</li><li>Supabase Auth</li><li>Prisma</li><li>Zod validation</li><li>Resend email</li><li>Python (CLI / Streamlit apps)</li></ul></div>
+<div class="skill-group" style="--accent:var(--teal)" data-reveal><h3><i></i>Databases</h3><ul><li>PostgreSQL</li><li>Supabase (RLS, Realtime)</li><li>SQL Server</li><li>SQLite</li><li>Prisma schema &amp; migrations</li></ul></div>
+<div class="skill-group" style="--accent:var(--teal)" data-reveal><h3><i></i>Engineering practice</h3><ul><li>Git / GitHub</li><li>pytest</li><li>Node test runner</li><li>VS Code / Cursor</li><li>Jupyter</li><li>Vercel</li><li>Render</li><li>GitHub Pages</li></ul></div>
+<div class="skill-group" style="--accent:var(--amber)" data-reveal><h3><i></i>Analytical practice</h3><ul><li>Data cleaning &amp; validation</li><li>KPI definition</li><li>Grain checking</li><li>EDA</li><li>Root-cause analysis</li><li>Regression</li><li>Evidence-based recommendations</li><li>Stakeholder presentation</li></ul></div>
+</div>
+<p class="note-line"><strong>Applied AI:</strong> an optional, guarded LLM phrasing layer in <a href="/projects/cv-analyzer-job-match/">CV Analyzer</a> (OpenAI-compatible API, output verified against the evidence and rejected if it adds claims). <strong>Cloud (learning):</strong> AWS analytics and data-engineering learning paths (S3, Glue, Athena, Redshift, Bedrock), a training environment, not production experience. Full Stack JavaScript certified (The Odin Project).</p>
+</div>
+</section>
+
+<section class="section" id="more" aria-labelledby="more-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">06 — More work</span><h2 id="more-title">The wider archive</h2></div>
+<p>Smaller builds, prototypes, training simulations and earlier analyses. Additional SQL, Python and course repositories are on <a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a>.</p>
+</div>
+<div class="archive"><div class="arow" data-reveal><div><h3>Bibiunique Booking</h3><span class="meta">Next.js · TypeScript · Prisma · PostgreSQL · NextAuth · Resend</span></div><p>Appointment scheduling MVP for an independent makeup artist business: public pages and Book flow, an availability API, duplicate start-time prevention (unique Booking.startsAt), admin login to approve or cancel bookings and manage services, and confirmation emails.</p><div class="alinks"><a href="https://bibiunique-booking.vercel.app/" rel="noopener">Live demo</a><span class="private">Source code: private repository</span></div></div><div class="arow" data-reveal><div><h3>MediaSuite (MediaDesk) prototype</h3><span class="meta">React · TypeScript · Vite · Tailwind CSS</span></div><p>Interactive browser prototype for an all-in-one media production and church presentation workspace: media library, songs and lyrics, service planner and a preview-to-live projection flow. A proof of concept, not the final desktop application.</p><div class="alinks"><a href="https://aboladvisuals.github.io/MediaSuite/" rel="noopener">Live prototype</a><a href="https://github.com/aboladvisuals/MediaSuite" rel="noopener">Code</a></div></div><div class="arow" data-reveal><div><h3>GreenTech Manufacturing Downtime Analysis</h3><span class="meta">SQL Server · Power BI · Excel · Power Query · DAX</span></div><p>645 batches and 885 downtime events analysed; 56.3% batch delay rate, with Cleaning/Sanitation the leading cause (86 incidents).</p><div class="alinks"></div></div><div class="arow" data-reveal><div><h3>E-commerce Orders — Cleaning, EDA &amp; SQL</h3><span class="meta">Python (pandas) · SQLite · matplotlib</span></div><p>The same 1,200-order dataset across cleaning, SQL analysis and explanatory charts: 41% of orders cancelled or returned, $519,674 of revenue not collected.</p><div class="alinks"><a href="https://github.com/aboladvisuals/ecommerce-orders-sql-analysis" rel="noopener">SQL analysis</a><a href="https://github.com/aboladvisuals/ecommerce-orders-visualization" rel="noopener">Charts</a></div></div><div class="arow" data-reveal><div><h3>Daikibo Industrials — Deloitte job simulation</h3><span class="meta">Forage · Tableau · Excel</span></div><p>Training simulation (Forage / Deloitte Australia), not employment. Factory device downtime analysis and a Tableau dashboard with factory-to-device drill-through. Completed August 2026.</p><div class="alinks"><a href="https://github.com/aboladvisuals/daikibo-deloitte-data-analytics" rel="noopener">Code</a></div></div><div class="arow" data-reveal><div><h3>DecodeLab — Order cleaning &amp; EDA</h3><span class="meta">Python · pandas</span></div><p>Cleaned 1,200 e-commerce orders (types, dates, coupon fill, total checks) and documented distribution and status findings.</p><div class="alinks"><a href="https://github.com/aboladvisuals/decodelab-Project-1" rel="noopener">Code</a></div></div><div class="arow" data-reveal><div><h3>RCCG Games Day Coordinator Portal</h3><span class="meta">HTML · CSS · JavaScript</span></div><p>Lightweight client-side portal: enter a first name to see an assigned role for a games-day event. A front-end utility, not a full-stack application.</p><div class="alinks"><a href="https://github.com/aboladvisuals/rccg-games-portal" rel="noopener">Code</a></div></div></div>
+</div>
+</section>
+
+<section class="section" id="building" aria-labelledby="building-title">
+<div class="wrap">
+<div class="section-head" data-reveal>
+<div><span class="idx">07 — Currently building</span><h2 id="building-title">Work in progress</h2></div>
+<p>An active development track: work in progress, not finished portfolio claims.</p>
+</div>
+<div class="building">
+<div class="panel" data-reveal><h3>NHS A&amp;E Operational Performance Analysis</h3><p>Analysing NHS England public A&amp;E monthly data against the 78% four-hour target, using SQL Server and Power BI.</p></div>
+<div class="panel" data-reveal><h3>Continuously developing</h3><ul><li>Full-stack delivery on real business workflows (booking, roles, persistence, deployment).</li><li>Turning analytical findings into usable product surfaces.</li><li>Test coverage and evidence discipline in my own tools.</li><li>AWS analytics and data-engineering learning paths (training environment, not production experience).</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact" aria-labelledby="contact-title">
+<div class="wrap">
+<div class="contact-panel" data-reveal>
+<span class="idx">08 — Contact</span>
+<h2 id="contact-title">Have data that should be <span class="serif">driving decisions?</span></h2>
+<p>I’m open to data analyst, BI developer and full-stack developer roles. The quickest way to reach me is email; my LinkedIn and GitHub carry the rest of the story.</p>
+<div class="contact-links">
+<a href="mailto:aboladeanuoluwapo@gmail.com"><span>Email</span><b>aboladeanuoluwapo@gmail.com</b></a>
+<a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener"><span>LinkedIn</span><b>linkedin.com/in/emmanuel-aboladesek</b></a>
+<a href="https://github.com/aboladvisuals" rel="noopener"><span>GitHub</span><b>github.com/aboladvisuals</b></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>Emmanuel Abolade</h2>
+<p>Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. I turn operational data into decisions, and decisions into working software.</p>
+<p>Every figure on this site comes from a linked public repository, a published write-up or a live demo.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/projects/">All case studies</a></li>
+<li><a href="/projects/#skills-evidence">Skills and evidence</a></li>
+<li><a href="/#experience">Experience</a></li>
+</ul>
+</div>
+<div>
+<h2>Connect</h2>
+<ul>
+<li><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></li>
+<li><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a></li>
+<li><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="fine">
+<span>© 2026 Emmanuel Abolade · Hull, United Kingdom</span>
+<span>Last updated <time datetime="2026-11-12">12 November 2026</time></span>
+</div>
+</div>
+</footer>
 </body>
 </html>
