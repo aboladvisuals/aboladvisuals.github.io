@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GrandStay Hospitality Operations Intelligence — Power BI Case Study | Emmanuel Abolade</title>
 <meta name="description" content="Power BI and Power Query case study by Emmanuel Abolade: SLA, first-response and cost baseline across 120,000 hotel guest-support tickets, with method and limits.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Emmanuel Abolade">
 <link rel="canonical" href="https://aboladvisuals.github.io/projects/grandstay-hospitality-operations/">
-<meta name="theme-color" content="#1E7145">
+<meta name="theme-color" content="#07090f">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GrandStay Hospitality Operations Intelligence — Power BI Case Study | Emmanuel Abolade">
@@ -22,14 +23,15 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
-<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
 <meta name="twitter:title" content="GrandStay Hospitality Operations Intelligence — Power BI Case Study | Emmanuel Abolade">
 <meta name="twitter:description" content="Power BI and Power Query case study by Emmanuel Abolade: SLA, first-response and cost baseline across 120,000 hotel guest-support tickets, with method and limits.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/case-study.css">
+<meta name="twitter:image" content="https://aboladvisuals.github.io/assets/og-image.png">
+<meta name="twitter:image:alt" content="Emmanuel Abolade: Data Analyst, Business Intelligence Developer and Full-Stack Software Developer, Hull, UK. aboladvisuals.github.io">
+<script>(function(d){d.className='js'+(matchMedia('(prefers-reduced-motion: reduce)').matches?'':' motion')})(document.documentElement)</script>
+<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/site.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,7 +54,7 @@
         "@id": "https://aboladvisuals.github.io/#person"
       },
       "datePublished": "2026-11-11",
-      "dateModified": "2026-11-11",
+      "dateModified": "2026-11-12",
       "isPartOf": {
         "@id": "https://aboladvisuals.github.io/#website"
       },
@@ -90,59 +92,72 @@
 </script>
 </head>
 <body>
-<header class="topbar"><div class="wrap">
-<a href="/">Emmanuel Abolade · Data Analyst, BI &amp; Full-Stack Developer · Hull, UK</a>
-<a href="/projects/">All case studies</a>
-</div></header>
-<main class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header solid">
+<div class="wrap bar">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">EA</span><span>Emmanuel Abolade<small>Data · BI · Full-Stack · Hull, UK</small></span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+<nav id="site-nav" class="nav" aria-label="Primary">
+<a href="/#work">Work</a>
+<a href="/projects/" aria-current="page">Case studies</a>
+<a href="/#skills">Skills</a>
+<a href="/#experience">Experience</a>
+<a href="/#contact" class="nav-cta">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero">
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="wrap">
 <nav class="crumbs" aria-label="Breadcrumb"><ol>
 <li><a href="/">Emmanuel Abolade</a></li>
 <li><a href="/projects/">Case studies</a></li>
 <li aria-current="page">GrandStay Hospitality</li>
 </ol></nav>
-<h1>GrandStay Hospitality — Operations Intelligence (Power BI case study)</h1>
 <p class="kicker">Data &amp; BI · Excel · Power Query · Power BI</p>
-<p class="lede">A portfolio case study that builds a measurable time, scale and cost baseline for 120,000 guest-support tickets at a fictional global hotel group, before any decision to buy an automated &ldquo;travel concierge&rdquo;. Built in Excel, Power Query, PivotTables and Power BI.</p>
-<div class="links"><a href="https://github.com/aboladvisuals/grandstay-hospitality-operations" rel="noopener">GitHub repository</a><a href="https://github.com/aboladvisuals/grandstay-hospitality-operations/blob/main/docs/findings.md" rel="noopener">Full findings write-up</a></div>
-<div class="facts">
-<div class="fact"><span class="k">Type</span><span class="v">Portfolio case study (not a client engagement)</span></div>
-<div class="fact"><span class="k">Tools</span><span class="v">Excel · Power Query · PivotTables · Power BI · PowerPoint</span></div>
-<div class="fact"><span class="k">Grain</span><span class="v">1 row per ticket (120,000) + 12 monthly cost rows</span></div>
-<div class="fact"><span class="k">Period</span><span class="v">Tickets 9 Jul–7 Oct 2025; costs Nov 2024–Oct 2025</span></div>
+<h1>GrandStay Hospitality — Operations Intelligence (Power BI case study)</h1>
+<p class="lede">A portfolio case study that builds a measurable time, scale and cost baseline for 120,000 guest-support tickets at a fictional global hotel group, before any decision to buy an automated “travel concierge”. Built in Excel, Power Query, PivotTables and Power BI.</p>
+<div class="actions"><a class="btn btn-primary" href="https://github.com/aboladvisuals/grandstay-hospitality-operations" rel="noopener">GitHub repository <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn" href="https://github.com/aboladvisuals/grandstay-hospitality-operations/blob/main/docs/findings.md" rel="noopener">Full findings write-up <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+<div class="facts"><div class="fact"><span class="k">Type</span><span class="v">Portfolio case study (not a client engagement)</span></div><div class="fact"><span class="k">Tools</span><span class="v">Excel · Power Query · PivotTables · Power BI · PowerPoint</span></div><div class="fact"><span class="k">Grain</span><span class="v">1 row per ticket (120,000) + 12 monthly cost rows</span></div><div class="fact"><span class="k">Period</span><span class="v">Tickets 9 Jul–7 Oct 2025; costs Nov 2024–Oct 2025</span></div></div>
 </div>
-<figure><img src="/assets/screenshots/grandstay-executive-dashboard.webp" alt="GrandStay executive Power BI dashboard showing 120,000 tickets, median first response time of 4.7 minutes, 28.09% SLA met and 60.11% repetitive tickets" width="995" height="685" loading="lazy"><figcaption>Executive page of the Power BI dashboard (screenshot from the repository).</figcaption></figure>
-<h2>Problem</h2>
+</section>
+<div class="wrap case-layout">
+<aside class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#problem">Problem</a></li><li><a href="#data-and-method">Data and method</a></li><li><a href="#results">Results</a></li><li><a href="#findings">Findings</a></li><li><a href="#recommendations">Recommendations</a></li><li><a href="#what-this-project-demonstrates">What this project demonstrates</a></li><li><a href="#limits">Limits</a></li></ol></aside>
+<article class="prose">
+<figure><img alt="GrandStay executive Power BI dashboard showing 120,000 tickets, median first response time of 4.7 minutes, 28.09% SLA met and 60.11% repetitive tickets" decoding="async" height="685" loading="lazy" src="/assets/screenshots/grandstay-executive-dashboard.webp" width="995"/><figcaption>Executive page of the Power BI dashboard (screenshot from the repository).</figcaption></figure>
+<h2 id="problem">Problem</h2>
 <p>Guest support was under pressure: slow first response, missed SLAs, repetitive guest questions, rising cost per contact, falling utilisation and rising overtime. Leadership was considering an Intelligent Travel Concierge. This project measured the baseline first, so that any automation decision could be judged against facts rather than a vendor pitch.</p>
-<h2>Data and method</h2>
-<table><caption>Source tables and grain</caption><thead><tr><th scope="col">Source</th><th scope="col">Grain</th><th scope="col">Rows</th></tr></thead><tbody>
+<h2 id="data-and-method">Data and method</h2>
+<div aria-label="Source tables and grain" class="table-wrap" role="region" tabindex="0"><table><caption>Source tables and grain</caption><thead><tr><th scope="col">Source</th><th scope="col">Grain</th><th scope="col">Rows</th></tr></thead><tbody>
 <tr><td>Agent performance logs</td><td>1 ticket</td><td>120,000</td></tr>
 <tr><td>Cost efficiency metrics</td><td>1 month</td><td>12</td></tr>
 <tr><td>Knowledge / escalation sample</td><td>1 ticket</td><td>5,000</td></tr>
 <tr><td>Inquiry volume patterns</td><td>hour × region × channel</td><td>43,125</td></tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
-<li>Power Query metrics <code>FRT</code>, <code>HANDLE_TIME_MIN</code> and <code>SLA_STATUS</code>, using each ticket&rsquo;s own <code>sla_target_min</code> (Phone 1.5, Chat 2, Front-Desk 5, Email 30 minutes).</li>
+<li>Power Query metrics <code>FRT</code>, <code>HANDLE_TIME_MIN</code> and <code>SLA_STATUS</code>, using each ticket’s own <code>sla_target_min</code> (Phone 1.5, Chat 2, Front-Desk 5, Email 30 minutes).</li>
 <li>Ticket and cost tables were deliberately <strong>not joined</strong>, because they sit at different grains (ticket vs month).</li>
 <li>Median first response time is reported instead of the mean: the mean (10.0 min) is pulled up by Email (about 39 min), while live channels sit near 5 minutes.</li>
 </ul>
-<h2>Results</h2>
-<table><caption>Executive KPIs</caption><thead><tr><th scope="col">KPI</th><th scope="col">Result</th></tr></thead><tbody>
+<h2 id="results">Results</h2>
+<div aria-label="Executive KPIs" class="table-wrap" role="region" tabindex="0"><table><caption>Executive KPIs</caption><thead><tr><th scope="col">KPI</th><th scope="col">Result</th></tr></thead><tbody>
 <tr><td>Tickets</td><td>120,000</td></tr><tr><td>Median first response time</td><td>4.7 min</td></tr><tr><td>SLA met</td><td>28.09%</td></tr><tr><td>Median handle time</td><td>13.37 min</td></tr><tr><td>Repetitive tickets</td><td>60.11%</td></tr><tr><td>Cost per contact (Oct 2025)</td><td>$58.61</td></tr>
-</tbody></table>
-<table><caption>SLA and first response by channel (minutes)</caption><thead><tr><th scope="col">Channel</th><th scope="col">SLA met</th><th scope="col">Off-peak FRT</th><th scope="col">Peak FRT</th></tr></thead><tbody>
+</tbody></table></div>
+<div aria-label="SLA and first response by channel (minutes)" class="table-wrap" role="region" tabindex="0"><table><caption>SLA and first response by channel (minutes)</caption><thead><tr><th scope="col">Channel</th><th scope="col">SLA met</th><th scope="col">Off-peak FRT</th><th scope="col">Peak FRT</th></tr></thead><tbody>
 <tr><td>Phone</td><td>15.28%</td><td>2.80</td><td>6.20</td></tr><tr><td>Chat</td><td>23.00%</td><td>2.78</td><td>6.22</td></tr><tr><td>Email</td><td>47.68%</td><td>21.91</td><td>48.90</td></tr><tr><td>Front-Desk</td><td>60.77%</td><td>2.79</td><td>6.24</td></tr>
-</tbody></table>
-<table><caption>Cost and workforce, Nov 2024 vs Oct 2025</caption><thead><tr><th scope="col">Measure</th><th scope="col">First</th><th scope="col">Last</th></tr></thead><tbody>
+</tbody></table></div>
+<div aria-label="Cost and workforce, Nov 2024 vs Oct 2025" class="table-wrap" role="region" tabindex="0"><table><caption>Cost and workforce, Nov 2024 vs Oct 2025</caption><thead><tr><th scope="col">Measure</th><th scope="col">First</th><th scope="col">Last</th></tr></thead><tbody>
 <tr><td>Inquiries</td><td>11,649</td><td>16,219 (+39%)</td></tr><tr><td>Cost per contact</td><td>$52.71</td><td>$58.61</td></tr><tr><td>Utilisation</td><td>86.0%</td><td>72.8%</td></tr><tr><td>Overtime hours</td><td>1,196</td><td>1,824</td></tr>
-</tbody></table>
-<h2>Findings</h2>
+</tbody></table></div>
+<h2 id="findings">Findings</h2>
 <ul>
 <li><strong>Time.</strong> 72% of tickets missed SLA. Phone and Chat fail because their targets are 1.5–2 minutes, not because they are slower than Email.</li>
 <li><strong>Scale.</strong> 60% of tickets are flagged repetitive and take 10.8 minutes of handle time, versus 29.1 for other work.</li>
 <li><strong>Cost.</strong> Volume rose 39% while cost per contact rose and utilisation fell.</li>
-<li><strong>Automation.</strong> &ldquo;Minutes saved&rdquo; in the knowledge sample is largest on Legal, Billing, Emergency, Complaint and Contract tickets only because those tickets are already long, so it should not be used to rank automation candidates.</li>
+<li><strong>Automation.</strong> “Minutes saved” in the knowledge sample is largest on Legal, Billing, Emergency, Complaint and Contract tickets only because those tickets are already long, so it should not be used to rank automation candidates.</li>
 </ul>
-<h2>Recommendations</h2>
+<h2 id="recommendations">Recommendations</h2>
 <ol>
 <li>Staff and route Chat and Phone in peak hours before buying a new tool; keep Email on its 30-minute target.</li>
 <li>Pilot a concierge on repetitive FAQ categories on Chat, with a human handoff for non-standard requests.</li>
@@ -150,21 +165,54 @@
 <li>Review roster against peak demand rather than hiring 1:1 with monthly ticket growth.</li>
 <li>Report median FRT and FRT by channel instead of a single 10-minute company average.</li>
 </ol>
-<h2>What this project demonstrates</h2>
+<h2 id="what-this-project-demonstrates">What this project demonstrates</h2>
 <ul>
-<li><strong>Power Query modelling:</strong> ticket-level metrics (<code>FRT</code>, <code>HANDLE_TIME_MIN</code>, <code>SLA_STATUS</code>) built against each ticket&rsquo;s own SLA target.</li>
+<li><strong>Power Query modelling:</strong> ticket-level metrics (<code>FRT</code>, <code>HANDLE_TIME_MIN</code>, <code>SLA_STATUS</code>) built against each ticket’s own SLA target.</li>
 <li><strong>Grain discipline:</strong> ticket and monthly cost tables kept separate rather than joined at mismatched grains.</li>
 <li><strong>Power BI reporting:</strong> a three-page dashboard (executive, time and demand, cost and workforce).</li>
 <li><strong>Decision support:</strong> recommendations tied to the evidence, with an explicit warning against ranking automation by a misleading field.</li>
 </ul>
-<h2>Limits</h2>
-<p>No CSAT conclusion is drawn. The knowledge file is a sample. Cost cannot be sliced by channel. No bot was implemented, and no hours-saved or money-saved outcome exists in this dataset. The <code>.pbix</code> file and the 50&nbsp;MB Excel workbook are intentionally kept off GitHub.</p>
-
-<footer class="site">
-<p>Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
-<p><a href="/">Portfolio home</a><a href="/projects/">Case studies</a><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></p>
-<p>Last updated <time datetime="2026-11-11">11 November 2026</time>.</p>
-</footer>
+<h2 id="limits">Limits</h2>
+<p>No CSAT conclusion is drawn. The knowledge file is a sample. Cost cannot be sliced by channel. No bot was implemented, and no hours-saved or money-saved outcome exists in this dataset. The <code>.pbix</code> file and the 50 MB Excel workbook are intentionally kept off GitHub.</p>
+<p class="source-note">Written by <a href="/">Emmanuel Abolade</a>, Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. Every figure on this page comes from the linked public repository or live demo.</p>
+</article>
+</div>
+<nav class="wrap case-next" aria-label="More case studies">
+<a href="/projects/olist-marketplace-delivery-sla/"><span>Previous case study</span><b>Olist Marketplace Delivery SLA</b></a>
+<a class="next" href="/projects/clouddesk-support-root-cause/"><span>Next case study</span><b>CloudDesk Support Root Cause</b></a>
+</nav>
 </main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="cols">
+<div>
+<h2>Emmanuel Abolade</h2>
+<p>Data Analyst, Business Intelligence Developer and Full-Stack Software Developer based in Hull, UK. I turn operational data into decisions, and decisions into working software.</p>
+<p>Every figure on this site comes from a linked public repository, a published write-up or a live demo.</p>
+</div>
+<div>
+<h2>Explore</h2>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/projects/">All case studies</a></li>
+<li><a href="/projects/#skills-evidence">Skills and evidence</a></li>
+<li><a href="/#experience">Experience</a></li>
+</ul>
+</div>
+<div>
+<h2>Connect</h2>
+<ul>
+<li><a href="mailto:aboladeanuoluwapo@gmail.com">Email</a></li>
+<li><a href="https://linkedin.com/in/emmanuel-aboladesek" rel="noopener">LinkedIn</a></li>
+<li><a href="https://github.com/aboladvisuals" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="fine">
+<span>© 2026 Emmanuel Abolade · Hull, United Kingdom</span>
+<span>Last updated <time datetime="2026-11-12">12 November 2026</time></span>
+</div>
+</div>
+</footer>
 </body>
 </html>
