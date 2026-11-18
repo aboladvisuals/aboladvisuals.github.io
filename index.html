@@ -95,7 +95,7 @@
         "@id": "https://aboladvisuals.github.io/#website"
       },
       "inLanguage": "en-GB",
-      "dateModified": "2026-11-12",
+      "dateModified": "2026-11-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://aboladvisuals.github.io/assets/og-image.png",
@@ -175,8 +175,8 @@
 
 <section class="proof" aria-label="At a glance">
 <div class="wrap">
-<div class="cell"><strong>9</strong><span>case studies with code or live evidence</span></div>
-<div class="cell"><strong>5</strong><span>live apps, demos and prototypes</span></div>
+<div class="cell"><strong>10</strong><span>case studies with code or live evidence</span></div>
+<div class="cell"><strong>6</strong><span>live apps, demos and prototypes</span></div>
 <div class="cell"><strong>150</strong><span>automated tests passing in two featured apps</span></div>
 <div class="cell"><strong>120k</strong><span>support tickets in one Power BI baseline</span></div>
 </div>
@@ -201,7 +201,7 @@
 <h3>Full-stack software engineering</h3>
 <p>Typed front ends, APIs, relational persistence, authentication and deployment, with tests on the paths that matter.</p>
 <ul><li class="chip">React · Next.js</li><li class="chip">TypeScript</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL · Supabase</li><li class="chip">Vercel · Render</li></ul>
-<div class="evidence"><a href="/projects/event-travel-intelligence/">Event Travel Intelligence</a><a href="/projects/fountain-of-prayer-church-platform/">Church platform: roles &amp; realtime</a><a href="/projects/controldeck-ng/">ControlDeck NG</a></div>
+<div class="evidence"><a href="/projects/event-travel-intelligence/">Event Travel Intelligence</a><a href="/projects/fountain-of-prayer-church-platform/">Church platform: roles &amp; realtime</a><a href="/projects/controldeck-ng/">ControlDeck NG</a><a href="/projects/jobs-api-stripe-payments/">Jobs API: Stripe payments</a></div>
 </article>
 <article class="pillar" style="--accent:var(--teal)" data-reveal>
 <div class="ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M5 19l2.5-2.5M16.5 7.5 19 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
@@ -238,6 +238,18 @@
 <div class="links"><a class="primary" href="/projects/event-travel-intelligence/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://aboladvisuals.github.io/event-travel-intelligence/" rel="noopener" aria-label="Live demo: Event Travel Intelligence">Live demo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/event-travel-intelligence" rel="noopener" aria-label="Code: Event Travel Intelligence">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
 </div>
 </article>
+<article class="card wide" data-cat="software" data-reveal>
+<div class="media"><img src="/assets/screenshots/thumbs/jobs-api-stripe-docs.webp" alt="FastAPI Swagger documentation page (/docs) for the live Jobs API, showing the interactive OpenAPI interface" width="800" height="416" loading="lazy" decoding="async"><div class="tagline"><span class="status live">Live API · live-ready payments</span></div></div>
+<div class="body">
+<span class="kind">Full-stack · Payments API</span>
+<h3><a href="/projects/jobs-api-stripe-payments/">Jobs API with Stripe payments</a></h3>
+<p>A jobs-board API with a production-grade Stripe payment flow: hosted Checkout, signature-verified webhooks, idempotent recording and nightly reconciliation. The API is live; payments run in Stripe test mode and are ready to switch to live keys.</p>
+<ul class="stack" aria-label="Technologies"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL</li><li class="chip">psycopg</li><li class="chip">Stripe</li><li class="chip">Render</li><li class="chip">GitHub Actions</li></ul>
+<div class="metrics"><div><b>Hosted Checkout</b><span>card data never on the server</span></div><div><b>Idempotent writes</b><span>UNIQUE session id</span></div><div><b>Nightly reconcile</b><span>Stripe as source of truth</span></div></div>
+<div class="links"><a class="primary" href="/projects/jobs-api-stripe-payments/">Case study <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://jobs-api-no94.onrender.com/docs" rel="noopener" aria-label="Live API docs: Jobs API with Stripe payments">Live API docs <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3h7v7M13 3 5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/aboladvisuals/jobs-api" rel="noopener" aria-label="Code: Jobs API with Stripe payments">Code <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></div>
+</div>
+</article>
+
 <article class="card" data-cat="data" data-reveal>
 <div class="media"><img src="/assets/screenshots/thumbs/restaurant-ceo-overview.webp" alt="Power BI CEO overview for the restaurant financial analysis with sales, payments and trend visuals" width="800" height="470" loading="lazy" decoding="async"><div class="tagline"><span class="status done">Portfolio analysis</span></div></div>
 <div class="body">
@@ -449,7 +461,7 @@
 </div>
 <div class="fine">
 <span>© 2026 Emmanuel Abolade · Hull, United Kingdom</span>
-<span>Last updated <time datetime="2026-11-12">12 November 2026</time></span>
+<span>Last updated <time datetime="2026-11-18">18 November 2026</time></span>
 </div>
 </div>
 </footer>
