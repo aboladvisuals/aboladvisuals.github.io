@@ -1,5 +1,5 @@
 /*
- * Decision Engine — hero visual for aboladvisuals.github.io
+ * Decision Engine — hero visual for aboladlabs.com
  * A dependency-free WebGL2 scene: a GPU-animated data terrain (analytics),
  * an orbiting knowledge network with signal pulses (intelligence), feed
  * lines from data peaks into the network, and three system rings

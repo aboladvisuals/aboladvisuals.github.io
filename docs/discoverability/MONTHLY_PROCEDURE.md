@@ -47,7 +47,7 @@ Non-branded:
 8. React executive BI dashboard developer
 
 Platforms:
-- **Google** and **Bing**: is aboladvisuals.github.io (or a /projects/ page) on page 1? Note the position. Searching on page 2 is optional.
+- **Google** and **Bing**: is aboladlabs.com (or a /projects/ page) on page 1? Note the position. Searching on page 2 is optional.
 - **ChatGPT (with search on)**, **Perplexity**, **Gemini**, **Copilot**: ask the query as written. Record whether the answer *mentions* you (`appeared`) and whether it *links* to the portfolio (`ai_cited`, plus `cited_url`). Save a screenshot if you're cited.
 
 Add one row per platform × query to `tracker.csv` with today's date. Write `NOT TESTED` in the notes if you skipped a platform.
@@ -57,6 +57,6 @@ Add one row per platform × query to `tracker.csv` with today's date. Write `NOT
 - Indexed pages flat at 1–2 after two months → check *Not indexed* reasons and request indexing again for the missing case studies.
 - Impressions rising but no clicks → improve that page's title and description to match the queries in GSC.
 - Non-branded impressions still 0 after three months → the content needs more external references, for example LinkedIn posts that link to case-study URLs, plus GitHub repo homepage fields.
-- AI answers cite LinkedIn but not the portfolio → make sure LinkedIn's *Website* and *Featured* sections link to https://aboladvisuals.github.io/projects/.
+- AI answers cite LinkedIn but not the portfolio → make sure LinkedIn's *Website* and *Featured* sections link to https://aboladlabs.com/projects/.
 
 Nothing here guarantees rankings or AI citations. The procedure only measures change over time.
