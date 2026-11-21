@@ -3,4 +3,4 @@ Allow: /
 Disallow: /docs/
 Disallow: /scripts/
 
-Sitemap: https://aboladvisuals.github.io/sitemap.xml
+Sitemap: https://aboladlabs.com/sitemap.xml

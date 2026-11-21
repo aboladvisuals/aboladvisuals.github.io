@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Monthly discoverability check for https://aboladvisuals.github.io/ (stdlib only, free).
+"""Monthly discoverability check for https://aboladlabs.com/ (stdlib only, free).
 
 For every URL in the live sitemap it records: HTTP status, canonical match,
 meta robots / X-Robots-Tag, and sitemap inclusion. It also fetches a Bing
@@ -12,9 +12,9 @@ Usage:  python3 scripts/discoverability_check.py [--no-bing]
 import csv, datetime, re, sys, urllib.request, urllib.parse
 from pathlib import Path
 
-SITE = "https://aboladvisuals.github.io/"
+SITE = "https://aboladlabs.com/"
 OUT = Path(__file__).resolve().parent.parent / "docs" / "discoverability" / "indexing.csv"
-UA = "Mozilla/5.0 (compatible; discoverability-check/1.0; +https://aboladvisuals.github.io/)"
+UA = "Mozilla/5.0 (compatible; discoverability-check/1.0; +https://aboladlabs.com/)"
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-GB"})
@@ -27,14 +27,14 @@ def fetch(url):
         return 0, {}, str(e)
 
 def bing_site_hint():
-    q = urllib.parse.quote("site:aboladvisuals.github.io")
+    q = urllib.parse.quote("site:aboladlabs.com")
     status, _, body = fetch(f"https://www.bing.com/search?q={q}&setlang=en-GB&cc=GB")
     if status != 200:
         return f"bing http {status}"
     if "There are no results" in body:
         return "bing page said: no results"
     m = re.search(r'class="sb_count"[^>]*>([^<]*)', body)
-    hits = body.count("aboladvisuals.github.io")
+    hits = body.count("aboladlabs.com")
     return f"bing count text '{m.group(1) if m else ''}', page mentions={hits} (unverified)"
 
 def main():
