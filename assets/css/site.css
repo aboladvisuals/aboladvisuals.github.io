@@ -492,3 +492,36 @@ html, body { overflow-x: hidden; }
     padding-bottom: 80px;
   }
 }
+
+/* Final accessibility polish: touch targets for social and action links */
+.hero-meta a,
+.site-footer a,
+.links a,
+.card .links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+/* Ensure no horizontal overflow from larger targets */
+@media (max-width: 430px) {
+  .hero-meta a,
+  .links a {
+    min-width: 40px;
+    padding: 8px 10px;
+  }
+}
