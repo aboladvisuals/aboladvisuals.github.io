@@ -8,7 +8,7 @@
 <meta name="robots" content="index, follow">
 <meta name="author" content="Emmanuel Abolade">
 <link rel="canonical" href="https://aboladlabs.com/">
-<meta name="theme-color" content="#07090f">
+<meta name="theme-color" content="#07080a">
 <meta name="color-scheme" content="dark">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="google-site-verification" content="iWt-13vcx-ZYsT2TU1pMf49JvFjMpe5KXFu-865V3rM">
@@ -131,7 +131,7 @@
 }
 </script>
 </head>
-<body>
+<body class="site-world">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap bar">
@@ -148,7 +148,15 @@
 </div>
 </header>
 <main id="main">
-<section class="hero" data-gl aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-grid" aria-hidden="true"></div>
+<div class="hero-beam" aria-hidden="true"></div>
+<div class="aurora aurora-emerald" aria-hidden="true"></div>
+<div class="aurora aurora-cyan" aria-hidden="true"></div>
+<div class="aurora aurora-violet" aria-hidden="true"></div>
+<div class="hero-orbit" aria-hidden="true"></div>
+<div class="hero-orbit hero-orbit-secondary" aria-hidden="true"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
 <div class="hero-stage" aria-hidden="true">
 <canvas id="hero-canvas"></canvas>
 <img class="poster" src="/assets/hero-poster.webp" srcset="/assets/hero-poster-800.webp 800w, /assets/hero-poster.webp 1600w" sizes="100vw" alt="" width="1600" height="1000" loading="lazy" decoding="async">
@@ -156,12 +164,12 @@
 <div class="wrap">
 <div class="hero-inner">
 <p class="eyebrow">Data Analyst · BI Developer · Full-Stack Developer · Hull, UK</p>
-<h1 id="hero-title">Emmanuel <span class="serif">Abolade</span></h1>
+<h1 id="hero-title" class="hero-title">Intelligence.<br><span>Engineered.</span></h1>
 <p class="role">I turn business data into decisions, and decisions into working software.</p>
 <p class="lede">I take operational and performance data from raw tables to a decision: clean it, define the KPI from the source field, check the grain before joining, and recommend only what the evidence supports. Then I build the tools that keep the answer in front of people: APIs, dashboards and full-stack applications.</p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="#work">See the evidence <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a class="btn" href="/projects/">All case studies</a>
+<a class="button button-primary" href="#work">See the evidence <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="button" href="/projects/">All case studies</a>
 </div>
 <div class="hero-meta">
 <a href="mailto:hello@aboladlabs.com"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> Email</a>
@@ -176,12 +184,12 @@
 </div>
 </section>
 
-<section class="proof" aria-label="At a glance">
+<section class="telemetry-deck" aria-label="At a glance">
 <div class="wrap">
-<div class="cell"><strong>11</strong><span>case studies with code or live evidence</span></div>
-<div class="cell"><strong>7</strong><span>live apps, demos and prototypes</span></div>
-<div class="cell"><strong>150</strong><span>automated tests passing in two featured apps</span></div>
-<div class="cell"><strong>120k</strong><span>support tickets in one Power BI baseline</span></div>
+<div class="telemetry-card glass glass-lift"><strong>11</strong><span>case studies with code or live evidence</span></div>
+<div class="telemetry-card glass glass-lift"><strong>7</strong><span>live apps, demos and prototypes</span></div>
+<div class="telemetry-card glass glass-lift"><strong>150</strong><span>automated tests passing in two featured apps</span></div>
+<div class="telemetry-card glass glass-lift"><strong>120k</strong><span>support tickets in one Power BI baseline</span></div>
 </div>
 </section>
 
@@ -480,5 +488,10 @@
 </div>
 </div>
 </footer>
+
+<div class="experience-controls" style="position:fixed;bottom:12px;right:12px;z-index:200;background:rgba(7,8,10,.72);padding:8px 14px;border-radius:24px;backdrop-filter:blur(16px);font-size:11px;">
+<label style="margin-right:8px">Glow <input type="range" min="10" max="100" value="85" data-glow-control aria-label="Glow intensity" style="vertical-align:middle"></label>
+<button type="button" data-motion-control aria-pressed="false" style="background:none;border:1px solid #fff3;color:inherit;border-radius:12px;padding:4px 8px;cursor:pointer">Pause motion</button>
+</div>
 </body>
 </html>
