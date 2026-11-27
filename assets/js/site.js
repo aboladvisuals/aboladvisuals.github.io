@@ -63,6 +63,7 @@
         : Array.from(document.querySelectorAll('[data-cat], [data-project-categories]'));
       const counter = document.querySelector('[data-project-count]') || document.getElementById(filterGroup.getAttribute('data-filter-status') || '');
       if (!filterGroup || cards.length === 0) return;
+      filterGroup.hidden = false; // restore original visibility for hidden filter controls
       const buttons = Array.from(filterGroup.querySelectorAll('[data-filter]'));
       function applyFilter(category) {
         let visibleCount = 0;
