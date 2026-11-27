@@ -330,3 +330,41 @@ p { color: var(--muted); line-height: 1.8; }
 /* Experience controls */
 .experience-controls { display: flex; gap: 12px; align-items: center; font-size: 11px; color: var(--muted); }
 .experience-controls input[type="range"] { width: 80px; }
+
+/* Compatibility layer: map existing classes to Liquid Intelligence glass */
+.card, .pillar, .panel, .skill-group, .job, .step {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid var(--rim);
+  border-radius: var(--radius-large);
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.018) 70%), var(--glass);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
+  box-shadow: var(--glass-shadow);
+  transition: transform var(--transition-standard), box-shadow var(--transition-standard);
+}
+.card:hover, .pillar:hover, .glass-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--glass-shadow-hover);
+}
+.proof, .telemetry-deck {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+.cell, .telemetry-card {
+  padding: 22px 18px;
+  border-radius: var(--radius-large);
+  background: var(--glass);
+  border: 1px solid var(--rim);
+  backdrop-filter: blur(24px);
+}
+.btn, .button {
+  border-radius: 30px;
+}
+.site-header {
+  background: rgba(255,255,255,0.045);
+  backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--rim);
+}
