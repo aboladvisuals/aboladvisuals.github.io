@@ -392,3 +392,45 @@ p { color: var(--muted); line-height: 1.8; }
   .nav.open { opacity: 1; transform: none; visibility: visible; }
   .card, .card.wide { grid-column: span 12; display: flex; }
 }
+
+/* Maintenance: responsive and accessibility fixes */
+@media (max-width: 720px) {
+  .telemetry-deck, .proof {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .experience-controls {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    left: auto;
+    max-width: calc(100% - 16px);
+    font-size: 10px;
+    padding: 6px 10px;
+    z-index: 200;
+  }
+  .experience-controls input[type="range"] {
+    width: 60px;
+  }
+}
+@media (max-width: 430px) {
+  .telemetry-deck, .proof {
+    grid-template-columns: 1fr;
+  }
+  .experience-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+}
+/* Prevent horizontal overflow */
+html, body { overflow-x: hidden; }
+.project-preview img, .card .media img { max-width: 100%; height: auto; }
+/* Ensure touch targets */
+.button, .btn, .nav a, .filters button, .menu-btn {
+  min-height: 44px;
+  min-width: 44px;
+}
+/* Footer readability */
+.site-footer { font-size: 14px; line-height: 1.6; padding: 40px 0 60px; }
+.site-footer a { text-decoration: underline; text-underline-offset: 3px; }
