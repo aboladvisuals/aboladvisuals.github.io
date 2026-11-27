@@ -368,3 +368,27 @@ p { color: var(--muted); line-height: 1.8; }
   backdrop-filter: blur(24px) saturate(180%);
   border-bottom: 1px solid var(--rim);
 }
+
+/* Essential original layout rules restored for content preservation */
+.wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px); }
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--text-primary); color: var(--canvas); padding: 10px 14px; border-radius: 10px; font-weight: 600; text-decoration: none; }
+.skip:focus { top: 12px; }
+.site-header .bar { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--text-primary); text-decoration: none; font-weight: 600; }
+.nav { display: flex; align-items: center; gap: 4px; }
+.nav a { color: var(--text-secondary); text-decoration: none; font-size: 15px; padding: 8px 12px; border-radius: 999px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.filters button { font: inherit; font-size: 14px; color: var(--text-secondary); background: var(--glass); border: 1px solid var(--rim); border-radius: 999px; padding: 9px 16px; cursor: pointer; min-height: 40px; }
+.work { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+.card { grid-column: span 6; display: flex; flex-direction: column; }
+.card.wide { grid-column: span 12; display: grid; grid-template-columns: 1.25fr 1fr; }
+.card .media { position: relative; aspect-ratio: 16/10; overflow: hidden; }
+.card .media img { width: 100%; height: 100%; object-fit: cover; }
+.toc a.active { color: var(--green); font-weight: 600; }
+@media (max-width: 880px) {
+  .menu-btn { display: inline-flex; }
+  .nav { position: fixed; inset: 68px 0 auto 0; flex-direction: column; background: rgba(7,8,10,.96); backdrop-filter: blur(16px); transform: translateY(-8px); opacity: 0; visibility: hidden; }
+  .nav.open { opacity: 1; transform: none; visibility: visible; }
+  .card, .card.wide { grid-column: span 12; display: flex; }
+}

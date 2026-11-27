@@ -1,4 +1,4 @@
-/* AboladLabs Liquid Intelligence V2.0 — progressive enhancement */
+/* AboladLabs Liquid Intelligence V2.0 — progressive enhancement with original functionality restored */
 (function () {
   const root = document.documentElement;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -12,7 +12,7 @@
     function handlePointerMove(event) {
       if (!finePointer.matches || reduced.matches) return;
       if (!(event.target instanceof Element)) return;
-      const card = event.target.closest('.glass');
+      const card = event.target.closest('.glass, .card, .pillar, .telemetry-card');
       if (!card || !rootEl.contains(card)) {
         latestPointer = null;
         return;
@@ -30,10 +30,6 @@
       });
     }
     rootEl.addEventListener('pointermove', handlePointerMove, { passive: true });
-    return function cleanup() {
-      rootEl.removeEventListener('pointermove', handlePointerMove);
-      if (frameId !== null) cancelAnimationFrame(frameId);
-    };
   }
 
   function initialiseExperienceControls() {
@@ -57,34 +53,58 @@
   }
 
   function initialiseProjectFilters() {
-    const filterGroup = document.querySelector('[data-project-filters]');
-    const cards = Array.from(document.querySelectorAll('[data-project-categories]'));
-    const counter = document.querySelector('[data-project-count]');
-    if (!filterGroup || cards.length === 0) return;
-    const buttons = Array.from(filterGroup.querySelectorAll('[data-filter]'));
-    function applyFilter(category) {
-      let visibleCount = 0;
-      buttons.forEach((button) => {
-        const active = button.dataset.filter === category;
-        button.classList.toggle('active', active);
-        button.setAttribute('aria-pressed', String(active));
+    // Support both original (data-filter-group / data-cat) and new selectors
+    const groups = document.querySelectorAll('[data-filter-group], [data-project-filters]');
+    groups.forEach((filterGroup) => {
+      const targetId = filterGroup.getAttribute('data-filter-group') || filterGroup.getAttribute('data-project-filters');
+      const target = targetId ? document.getElementById(targetId) : null;
+      const cards = target
+        ? Array.from(target.querySelectorAll('[data-cat], [data-project-categories]'))
+        : Array.from(document.querySelectorAll('[data-cat], [data-project-categories]'));
+      const counter = document.querySelector('[data-project-count]') || document.getElementById(filterGroup.getAttribute('data-filter-status') || '');
+      if (!filterGroup || cards.length === 0) return;
+      const buttons = Array.from(filterGroup.querySelectorAll('[data-filter]'));
+      function applyFilter(category) {
+        let visibleCount = 0;
+        buttons.forEach((button) => {
+          const active = button.dataset.filter === category;
+          button.classList.toggle('active', active);
+          button.setAttribute('aria-pressed', String(active));
+        });
+        cards.forEach((card) => {
+          const cats = (card.getAttribute('data-cat') || card.dataset.projectCategories || '').split(/\s+/);
+          const visible = category === 'all' || cats.includes(category);
+          card.hidden = !visible;
+          if (visible) visibleCount += 1;
+        });
+        if (counter) counter.textContent = `${visibleCount} / ${cards.length}`;
+      }
+      filterGroup.addEventListener('click', (event) => {
+        if (!(event.target instanceof Element)) return;
+        const button = event.target.closest('[data-filter]');
+        if (!button || !filterGroup.contains(button)) return;
+        applyFilter(button.dataset.filter);
       });
-      cards.forEach((card) => {
-        const categories = (card.dataset.projectCategories || '').split(/\s+/);
-        const visible = category === 'all' || categories.includes(category);
-        card.hidden = !visible;
-        card.classList.toggle('project-card--featured', visible && category === 'all' && card.dataset.featured === 'true');
-        if (visible) visibleCount += 1;
-      });
-      if (counter) counter.textContent = `${visibleCount} / ${cards.length}`;
-    }
-    filterGroup.addEventListener('click', (event) => {
-      if (!(event.target instanceof Element)) return;
-      const button = event.target.closest('[data-filter]');
-      if (!button || !filterGroup.contains(button)) return;
-      applyFilter(button.dataset.filter);
+      applyFilter('all');
     });
-    applyFilter('all');
+  }
+
+  function initialiseTOC() {
+    const toc = document.querySelector('.toc');
+    if (!toc || !('IntersectionObserver' in window)) return;
+    const links = {};
+    toc.querySelectorAll('a[href^="#"]').forEach((a) => { links[a.getAttribute('href').slice(1)] = a; });
+    let current = null;
+    const tio = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          if (current) current.classList.remove('active');
+          current = links[en.target.id];
+          if (current) current.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    Object.keys(links).forEach((id) => { const el = document.getElementById(id); if (el) tio.observe(el); });
   }
 
   // Mobile navigation
@@ -106,4 +126,5 @@
   initialiseCursorPrism();
   initialiseExperienceControls();
   initialiseProjectFilters();
+  initialiseTOC();
 })();
