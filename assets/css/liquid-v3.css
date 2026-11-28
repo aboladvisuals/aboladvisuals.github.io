@@ -662,3 +662,88 @@ footer {
   }
 }
 
+
+/* V3 — SIGNATURE OPTICAL FINISH */
+
+body > header,
+.lg-showcase {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(135deg,rgba(24,23,39,.94),rgba(12,13,22,.85)) padding-box,
+    linear-gradient(145deg,rgba(255,255,255,.38),rgba(161,131,255,.06) 45%,rgba(176,151,255,.28)) border-box !important;
+}
+
+.lg-hero-shell .lg-showcase {
+  box-shadow:
+    inset 0 2px 1px rgba(255,255,255,.14),
+    inset 0 -8px 30px rgba(122,77,255,.07),
+    0 30px 80px rgba(0,0,0,.42),
+    0 0 70px rgba(110,70,220,.08);
+}
+
+.lg-hero-shell .lg-art {
+  border-radius: 28px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.28);
+}
+
+.lg-hero-shell .lg-art img {
+  border-radius: 19px;
+}
+
+.lg-controls button {
+  position: relative;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.lg-controls button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  border-top: 1px solid rgba(255,255,255,.3);
+  pointer-events: none;
+}
+
+a.primary, .btn.primary {
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+@media (hover:hover) {
+  a.primary:hover, .btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 36px rgba(170,130,255,.3);
+  }
+}
+
+.lg-hero-shell #hero-title {
+  text-wrap: balance;
+}
+
+.lg-hero-shell .lg-slide h3 {
+  text-wrap: balance;
+}
+
+.card, .project-card, .price-card {
+  box-shadow: 0 12px 32px rgba(0,0,0,.18);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  body > header,
+  .lg-showcase,
+  .card,
+  .project-card,
+  .price-card {
+    background: #171824 !important;
+    backdrop-filter: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lg-art,
+  .lg-controls button,
+  a.primary {
+    transition: none !important;
+  }
+}
+
